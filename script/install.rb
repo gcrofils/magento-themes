@@ -4,8 +4,6 @@ magentoTheme = "webandpeople-fashion"
 wwwroot = "/home/www"
 magentoCurrent = "magento"
 
-curDir = Dir.getwd 
+curScript = File.expand_path(File.join(Dir.getwd, __FILE__))
 
-puts  curDir
-
-puts __FILE__
+puts  curScript
