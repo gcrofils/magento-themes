@@ -9,4 +9,4 @@ skinPath = "skin"
 themePath = File.expand_path(File.join(File.dirname(File.join(Dir.getwd, __FILE__)), '..', magentoTheme))
 targetPath = File.expand_path(File.join(wwwroot, magentoCurrent))
 
-File.copy(File.join(themePath, appPath), targetPath)
+copy(File.join(themePath, appPath), targetPath)
