@@ -7,3 +7,5 @@ magentoCurrent = "magento"
 curDir = Dir.getwd 
 
 puts  curDir
+
+puts File.basename(__FILE__) 
