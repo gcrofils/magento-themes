@@ -1,6 +1,7 @@
 #!/usr/bin/ruby
 
 require 'ftools'
+require 'FileUtils'
 
 magentoTheme = "webandpeople-fashion"
 wwwroot = "/home/www"
@@ -11,4 +12,4 @@ skinPath = "skin"
 themePath = File.expand_path(File.join(File.dirname(File.join(Dir.getwd, __FILE__)), '..', magentoTheme))
 targetPath = File.expand_path(File.join(wwwroot, magentoCurrent))
 
-File.copy(File.join(themePath, appPath), targetPath)
+FileUtils.cp_r File.join(themePath, appPath), targetPath
