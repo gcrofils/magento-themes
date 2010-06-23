@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 
 require 'ftools'
-require 'FileUtils'
+require 'fileutils'
 
 magentoTheme = "webandpeople-fashion"
 wwwroot = "/home/www"
