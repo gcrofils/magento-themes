@@ -3,7 +3,10 @@
 magentoTheme = "webandpeople-fashion"
 wwwroot = "/home/www"
 magentoCurrent = "magento"
+appPath = "app"
+skinPath = "skin"
 
-curScript = File.expand_path(File.join(Dir.getwd, __FILE__))
+themePath = File.expand_path(File.join(File.dirname(File.join(Dir.getwd, __FILE__)), '..', magentoTheme))
+targetPath = File.expand_path(File.join(wwwroot, magentoCurrent))
 
-puts  curScript
+File.cp File.join(themepath, app) targetPath
