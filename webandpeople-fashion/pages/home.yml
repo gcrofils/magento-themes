@@ -1,0 +1,39 @@
+title:
+root_template: three_columns
+meta_keywords:
+meta_description:
+is_active: true
+content_heading:
+content:
+  <p><a title="Glamour Magento Theme" href="louis-vuitton.html"><img src="{{media url="Fashion/home_banner.jpg"}}" alt="Glamour Magento Theme" /></a></p>
+  <div>{{block type="catalog/product_list" template="catalog/product/home.phtml" category_id="HomeProductsCategoryID"}}</div>
+  <h5 class="uppercase">Fashion Houses</h5>
+  <p class="seo_links">
+    <a title="Armani" href="#">Armani</a> | 
+    <a title="Benetton Fashion" href="#">Benetton Fashion</a> | 
+    <a title="Biagiotti Laura" href="#">Biagiotti Laura</a> | 
+    <a title="Bottega Veneta " href="#">Bottega Veneta </a> | 
+    <a title="Capasa Ennio" href="#">Capasa Ennio</a> | 
+    <a title="Capucci Roberto" href="#">Capucci Roberto</a> | 
+    <a title="Cavalli" href="#">Cavalli</a> | 
+    <a title="Dell'Acqua Alessandro" href="#">DellAcqua Alessandro</a> | 
+    <a title="Diesel" href="#">Diesel</a> | 
+    <a title="Dolce & Gabbana" href="#">Dolce & Gabbana</a> | 
+    <a title="Donatella Versace" href="#">Donatella Versace</a> | 
+    <a title="Antonio Fusco" href="#">Antonio Fusco</a> |
+    <a title="Fendi" href="#">Fendi</a> |
+    <a title="Ferragamo Salvatore " href="#">Ferragamo Salvatore </a> |
+    <a title="Gianfranco Ferre" href="#">Gianfranco Ferre</a> | 
+    <a title="Gucci " href="#">Gucci </a> |
+    <a title="Missoni" href="#">Missoni</a> |
+    <a title="Moschino Franco" href="#">Moschino Franco</a> |
+    <a title="Prada" href="#">Prada</a> |
+    <a title="Renato Balestra" href="#">Renato Balestra</a> | 
+    <a title="Rocco Barocco" href="#">Rocco Barocco</a> | 
+    <a title="Schiaparelli Elsa" href="#">Schiaparelli Elsa</a> | 
+    <a title="Sorelle Fontana" href="#">Sorelle Fontana</a> | 
+    <a title="Valentino" href="#">Valentino</a> | 
+    <a title="Versace Gianni" href="#">Versace Gianni</a>
+  </p>          
+
+layout_update_xml: 
