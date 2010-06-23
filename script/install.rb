@@ -8,4 +8,4 @@ curDir = Dir.getwd
 
 puts  curDir
 
-puts File.basename(__FILE__) 
+puts __FILE__
