@@ -9,6 +9,11 @@ MYSQL_USER      = '<user>'
 MYSQL_PASSWORD  = '<password>'
 TRACE_LOG       = '<tracefile>'
 
+MYSQL_DATABASE  = 'magento'
+MYSQL_USER      = 'magentouser'
+MYSQL_PASSWORD  = 'magento09'
+TRACE_LOG       = '/home/ubuntu/test.log'
+
 magentoTheme = "webandpeople-fashion"
 wwwroot = "/home/www"
 magentoCurrent = "magento"
@@ -32,15 +37,18 @@ queries = Array.new
 
 Dir["#{blocksPath}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
   identifier = File.basename(file, ".yml")
-  queries << "delete from cms_block where identifier=#{identifier}"
+  queries << "delete from cms_block where identifier='#{identifier}'"
   params = YAML.load_file( file )
+  params['idenfifier'] = identifier
   queries << "insert into cms_block (#{params.keys.join(',')}) values ('#{params.values.join('\',\'')}')"
 end
 
-puts queries.inspect
+Dir["#{pagesPath}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
+  identifier = File.basename(file, ".yml")
+  queries << "delete from cms_page where identifier='#{identifier}'"
+  params = YAML.load_file( file )
+  params['idenfifier'] = identifier
+  queries << "insert into cms_page (#{params.keys.join(',')}) values ('#{params.values.join('\',\'')}')"
+end
 
-
-
-
-data = YAML.load_file( File.join(pagesPath, 'home.yml' ))
-puts data.inspect
+queries.each{|q| execSql(q)}
