@@ -14,15 +14,21 @@ skinPath = "skin"
 themePath = File.expand_path(File.join(File.dirname(File.join(Dir.getwd, __FILE__)), '..', magentoTheme))
 targetPath = File.expand_path(File.join(wwwroot, magentoCurrent))
 pagesPath = File.expand_path(File.join(themePath, 'pages'))
-blocsPath = File.expand_path(File.join(themePath, 'blocs'))
+blocksPath = File.expand_path(File.join(themePath, 'blocks'))
 
 
 FileUtils.cp_r File.join(themePath, appPath), targetPath
 FileUtils.cp_r File.join(themePath, skinPath), targetPath
 
+Dir["#{blocksPath}/*"].select { |file| /(yaml|yml)$/ =~ file }.each do |file|
+  puts file.inspect
+  data = YAML.load_file( file )
+  puts data.inspect
+end
 
-data = YAML.load_file( File.join(blocsPath, 'left_info.yml' ))
-puts data.inspect
+
+
+
 
 data = YAML.load_file( File.join(pagesPath, 'home.yml' ))
 puts data.inspect
