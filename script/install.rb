@@ -18,7 +18,7 @@ blocsPath = File.expand_path(File.join(wwwroot, 'blocs'))
 
 
 FileUtils.cp_r File.join(themePath, appPath), targetPath
-FileUtils.cp_r File.join(skinPath, appPath), targetPath
+FileUtils.cp_r File.join(themePath, skinPath), targetPath
 
 
 data = YAML.load_file( File.join(blocsPath, 'left_info.yml' ))
