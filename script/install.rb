@@ -21,5 +21,5 @@ FileUtils.cp_r File.join(themePath, appPath), targetPath
 FileUtils.cp_r File.join(skinPath, appPath), targetPath
 
 
-data = YAML.load_file( File.join(blocsPath, 'left_info.yml' )
+data = YAML.load_file( File.join(blocsPath, 'left_info.yml' ))
 puts data.inspect
