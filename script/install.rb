@@ -4,10 +4,10 @@ require 'ftools'
 require 'fileutils'
 require 'yaml'
 
-MYSQL_DATABASE  = '<database>'
-MYSQL_USER      = '<user>'
-MYSQL_PASSWORD  = '<password>'
-TRACE_LOG       = '<tracefile>'
+#MYSQL_DATABASE  = '<database>'
+#MYSQL_USER      = '<user>'
+#MYSQL_PASSWORD  = '<password>'
+#TRACE_LOG       = '<tracefile>'
 
 MYSQL_DATABASE  = 'magento'
 MYSQL_USER      = 'magentouser'
@@ -39,7 +39,7 @@ Dir["#{blocksPath}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
   identifier = File.basename(file, ".yml")
   queries << "delete from cms_block where identifier='#{identifier}'"
   params = YAML.load_file( file )
-  params['idenfifier'] = identifier
+  params['identifier'] = identifier
   queries << "insert into cms_block (#{params.keys.join(',')}) values ('#{params.values.join('\',\'')}')"
 end
 
@@ -47,7 +47,7 @@ Dir["#{pagesPath}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
   identifier = File.basename(file, ".yml")
   queries << "delete from cms_page where identifier='#{identifier}'"
   params = YAML.load_file( file )
-  params['idenfifier'] = identifier
+  params['identifier'] = identifier
   queries << "insert into cms_page (#{params.keys.join(',')}) values ('#{params.values.join('\',\'')}')"
 end
 
