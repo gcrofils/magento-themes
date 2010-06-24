@@ -37,7 +37,7 @@ Dir["#{blocksPath}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
   queries << "insert into cms_block (#{params.keys.join(',')}) values ('#{params.values.join('\',\'')}')"
 end
 
-queries.inspect
+puts queries.inspect
 
 
 
