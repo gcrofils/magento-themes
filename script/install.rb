@@ -48,7 +48,7 @@ Dir["#{pagesPath}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
   queries << "delete from cms_page where identifier='#{identifier}'"
   params = YAML.load_file( file )
   params['identifier'] = identifier
-  queries << "insert into cms_page (#{params.keys.join(',')}) values ('#{params.values.gsub('\'','\\\'').join('\',\'')}')"
+  queries << "insert into cms_page (#{params.keys.join(',')}) values ('#{params.values.map{|x| x.gsub('\'','\\\'')}.join('\',\'')}')"
 end
 
 queries.each{|q| execSql(q)}
