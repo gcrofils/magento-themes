@@ -14,7 +14,7 @@ skinPath = "skin"
 themePath = File.expand_path(File.join(File.dirname(File.join(Dir.getwd, __FILE__)), '..', magentoTheme))
 targetPath = File.expand_path(File.join(wwwroot, magentoCurrent))
 pagesPath = File.expand_path(File.join(themePath, 'pages'))
-blocsPath = File.expand_path(File.join(wwwroot, 'blocs'))
+blocsPath = File.expand_path(File.join(themePath, 'blocs'))
 
 
 FileUtils.cp_r File.join(themePath, appPath), targetPath
