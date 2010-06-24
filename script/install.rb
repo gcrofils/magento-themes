@@ -23,3 +23,6 @@ FileUtils.cp_r File.join(themePath, skinPath), targetPath
 
 data = YAML.load_file( File.join(blocsPath, 'left_info.yml' ))
 puts data.inspect
+
+data = YAML.load_file( File.join(pagesPath, 'home.yml' ))
+puts data.inspect
