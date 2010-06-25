@@ -47,12 +47,12 @@ paths = {'page' => pagesPath, 'block' => blocksPath}
     params['identifier'] = identifier
   
     values = params.values.map{|v| v.is_a?(String) ? "'#{v}'" : v}
-    values[] = 'now()'
-    values[] = 'now()'
+    values << 'now()'
+    values << 'now()'
   
     keys = params.keys
-    keys[] = 'creation_time'
-    keys[] = 'update_time'
+    keys << 'creation_time'
+    keys << 'update_time'
       
     queries << "insert into cms_#{t} (#{keys.join(',')}) values (#{values.join(',')})"
   end
