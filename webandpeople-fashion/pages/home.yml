@@ -1,8 +1,8 @@
-title:
+title: home
 root_template: three_columns
 meta_keywords:
 meta_description:
-is_active: true
+is_active: 1
 content_heading:
 content:
   <p><a title="Glamour Magento Theme" href="louis-vuitton.html"><img src="{{media url="Fashion/home_banner.jpg"}}" alt="Glamour Magento Theme" /></a></p>
