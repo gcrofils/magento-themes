@@ -2,7 +2,6 @@ title: home
 root_template: three_columns
 meta_keywords:
 meta_description:
-is_active: 1
 content_heading:
 content:
   <p><a title="Glamour Magento Theme" href="louis-vuitton.html"><img src="{{media url="Fashion/home_banner.jpg"}}" alt="Glamour Magento Theme" /></a></p>
@@ -35,5 +34,5 @@ content:
     <a title="Valentino" href="#">Valentino</a> | 
     <a title="Versace Gianni" href="#">Versace Gianni</a>
   </p>          
-
 layout_update_xml: 
+is_active: 1

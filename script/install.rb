@@ -46,7 +46,7 @@ paths = {'page' => pagesPath, 'block' => blocksPath}
     params = YAML.load_file( file )
     params['identifier'] = identifier
   
-    values = params.values.map{|v| v.is_a?(String) ? "'#{v}'" : v}
+    values = params.values.map{|v| v.is_a?(String) ? "'#{v}'" : (v.nil? ? 'NULL' : v)}
     values << 'now()'
     values << 'now()'
   
