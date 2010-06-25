@@ -2,7 +2,7 @@ title: home
 root_template: three_columns
 meta_keywords: home
 meta_description: home
-content_heading:
+content_heading: .
 content:
   <p><a title="Glamour Magento Theme" href="louis-vuitton.html"><img src="{{media url="Fashion/home_banner.jpg"}}" alt="Glamour Magento Theme" /></a></p>
   <div>{{block type="catalog/product_list" template="catalog/product/home.phtml" category_id="HomeProductsCategoryID"}}</div>
