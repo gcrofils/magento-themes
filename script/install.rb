@@ -40,7 +40,7 @@ paths = {'page' => pagesPath, 'block' => blocksPath}
 
 %w[page block].each do |t|
 
-  Dir["#{path[t]}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
+  Dir["#{paths[t]}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
     identifier = File.basename(file, ".yml")
     queries << "delete from cms_#{t} where identifier='#{identifier}'"
     params = YAML.load_file( file )
