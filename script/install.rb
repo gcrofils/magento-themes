@@ -47,8 +47,8 @@ paths = {'page' => pagesPath, 'block' => blocksPath}
     params['identifier'] = identifier
   
     values = params.values.map{|v| v.is_a?(String) ? "'#{v}'" : v}
-    values[] = now()
-    values[] = now()
+    values[] = 'now()'
+    values[] = 'now()'
   
     keys = params.keys
     keys[] = 'creation_time'
