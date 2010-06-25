@@ -36,20 +36,27 @@ FileUtils.cp_r File.join(themePath, skinPath), targetPath
 
 queries = Array.new
 
-Dir["#{blocksPath}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
-  identifier = File.basename(file, ".yml")
-  queries << "delete from cms_block where identifier='#{identifier}'"
-  params = YAML.load_file( file )
-  params['identifier'] = identifier
-  queries << "insert into cms_block (#{params.keys.join(',')}) values ('#{params.values.join('\',\'')}')"
-end
+paths = {'page' => pagesPath, 'block' => blockPath}
 
-Dir["#{pagesPath}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
-  identifier = File.basename(file, ".yml")
-  queries << "delete from cms_page where identifier='#{identifier}'"
-  params = YAML.load_file( file )
-  params['identifier'] = identifier
-  queries << "insert into cms_page (#{params.keys.join(',')}) values ('#{params.values.join('\',\'')}')"
+%w[page block].each do |t|
+
+  Dir["#{path[t]}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
+    identifier = File.basename(file, ".yml")
+    queries << "delete from cms_#{t} where identifier='#{identifier}'"
+    params = YAML.load_file( file )
+    params['identifier'] = identifier
+  
+    values = params.values.map{|v| v.is_a?(String) ? "'#{v}'" : v}
+    values[] = now()
+    values[] = now()
+  
+    keys = params.keys
+    keys[] = 'creation_time'
+    keys[] = 'update_time'
+      
+    queries << "insert into cms_#{t} (#{keys.join(',')}) values (#{values.join(',')})"
+  end
+
 end
 
 queries.each{|q| execSql(q)}
