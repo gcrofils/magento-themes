@@ -36,7 +36,7 @@ FileUtils.cp_r File.join(themePath, skinPath), targetPath
 
 queries = Array.new
 
-paths = {'page' => pagesPath, 'block' => blockPath}
+paths = {'page' => pagesPath, 'block' => blocksPath}
 
 %w[page block].each do |t|
 
