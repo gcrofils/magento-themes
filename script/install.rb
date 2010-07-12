@@ -28,7 +28,7 @@ blocksPath = File.expand_path(File.join(themePath, 'blocks'))
 def execSql(sql)
  cmd = "mysql -u#{MYSQL_USER} -p#{MYSQL_PASSWORD} -e \"connect #{MYSQL_DATABASE}; #{sql.gsub('"','\"')}; \""
  system "#{cmd}" 
- puts "#{cmd}" 
+ #puts "#{cmd}" 
 end
 
 FileUtils.cp_r File.join(themePath, appPath), targetPath
@@ -55,6 +55,7 @@ paths = {'page' => pagesPath, 'block' => blocksPath}
     keys << 'update_time'
       
     queries << "insert into cms_#{t} (#{keys.join(',')}) values (#{values.join(',')})"
+    queries << "insert into cms_#{t}_store (store_id, #{t}_id) select 1, #{t}_id from cms_#{t} where identifier = '#{identifier}'"
   end
 
 end
