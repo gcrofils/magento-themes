@@ -3,10 +3,16 @@
     
   </head>
   <body>
-    <div class="header"><?=$this->getChildHtml('header')?></div>
-    <div class="main">
+    <div class="header-container"><?= $this->getChildHtml('header') ?></div>
+    <div class="contents-container">
+      <div class="main-contents"><?= $this->getChildHtml('contents') ?></div>
+      <div class="right-column"><?= $this->getChildHtml('right') ?></div>
+      <div class="cobranding"><?= $this->getChildHtml('cobranding') ?></div>
+      <div class="bottom"><?= $this->getChildHtml('bottom') ?></div>
     </div>
-    <div class="footer"><?=$this->getChildHtml('foo')?></div>
-       
+    <div class="footer-container">
+    	<div class="seo"><?= $this->getChildHtml('seo') ?></div>
+    	<div class="footer"><?= $this->getChildHtml('footer') ?></div>
+    </div>
   </body>
 </html>
