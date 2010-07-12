@@ -14,7 +14,7 @@ MYSQL_USER      = 'magentouser'
 MYSQL_PASSWORD  = 'magento09'
 TRACE_LOG       = '/home/ubuntu/test.log'
 
-magentoTheme = "webandpeople-fashion"
+magentoTheme = "delhaye"
 wwwroot = "/home/www"
 magentoCurrent = "magento"
 appPath = "app"
