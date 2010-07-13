@@ -91,7 +91,7 @@ ul,ol         { list-style:none; }
 
 
 /* Layout ================================================================================ */
-.wrapper { min-width:954px; width:70%; border:solid 1px blue; margin-top:50px; margin-bottom:50px; margin-left: auto; margin-right: auto; box-shadow: 10px 10px 5px #888; padding: 5px 5px 5px 15px;}
+.wrapper { min-width:954px; width:70%; padding:0; margin-top:50px; margin-bottom:50px; margin-left: auto; margin-right: auto; background:#ffffff;}
 .page {}
 .page-print { background:#fff; padding:25px 30px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
@@ -106,7 +106,6 @@ ul,ol         { list-style:none; }
 
 /* home layout */
 .home-layout { float:none; width:90%; min-width:954px;}
-.header { background:#ffffff url(../images/home/header-left.png) repeat-y right; text-align:left;}
 .main-left { }
 .main-right { }
 .main-top-left { width:282px; height:194px; background: url(../images/home/top-left-corner.png); float:left; margin-left:-140px;}
@@ -500,9 +499,9 @@ tr.summary-details-excluded { font-style:italic; }
 /* Header ================================================================================ */
 .logo { float:left; }
 /*.header-container { border-top:5px solid #0d2131; border-bottom:1px solid #415966; background:url(../images/bkg_header.jpg) 50% 0 repeat; }*/
-.header-container { border:0px; background:url(../images/home/header-logo.png) 0 0 no-repeat; }
-.header-left {float:right;}
-.header { width:930px; margin:0 auto; padding:0px; text-align:right; position:relative; z-index:10; }
+.header-container { border:0px; padding:0px; background:url(../images/home/header-right.png) repeat-x; }
+.header { }
+.header .header-right { width:224px; padding-top:80px; background:url(../images/home/header-right-decoration.png) no-repeat; }
 .header .logo { float:left; margin:3px 0 10px 12px; text-decoration:none !important; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; }

@@ -6,10 +6,7 @@
   <body<?= $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
     <?php echo $this->getChildHtml('after_body_start') ?>
     <div class="wrapper">
-  	<div class="main-container home-layout">
-  	  <div class="header">
-  	  	<img src="http://delhaye.milizone.com/skin/frontend/delhaye/default/images/home/header-logo.png" alt="*"/>
-  	  </div>
+  	  <?php echo $this->getChildHtml('header') ?>
       <div class="main-left">
       	<div class="main-right">
       		<div class="main-top">
