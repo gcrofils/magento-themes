@@ -1,12 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?= $this->getLang() ?>" lang="<?= $this->getLang() ?>">
   <head>
-    <?php echo $this->getChildHtml('head') ?>
+    <?= $this->getChildHtml('head') ?>
   </head>
   <body<?= $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
-    <?php echo $this->getChildHtml('after_body_start') ?>
+    <?= $this->getChildHtml('after_body_start') ?>
     <div class="wrapper">
-  	  <?php echo $this->getChildHtml('header') ?>
+  	  <?= $this->getChildHtml('header') ?>
       <div class="main-left">
       	<div class="main-right">
       		<div class="main-top">
@@ -15,15 +15,15 @@
       			MENU
       		</div>
       		<div class="main-content">
-      		    <?php echo $this->getChildHtml('content') ?>
+      		    <?= $this->getChildHtml('content') ?>
       		</div>
       		<div class="main-bottom">
       			<div class="main-bottom-right"></div>
-      			 {{block type="cms/block" block_id="brands" template="cms/content.phtml"}}
+      			 <?= $this->getLayout()->createBlock('cms/block')->setBlockId('brands')->toHTML();?>
       		</div>
       	</div>
       </div>
-      <?php echo $this->getChildHtml('footer') ?>
+      <?= $this->getChildHtml('footer') ?>
      </div>
 	</body>
 </html>
