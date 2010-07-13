@@ -496,8 +496,8 @@ tr.summary-details-excluded { font-style:italic; }
 /* ======================================================================================= */
 
 /* search form */
-.header .form-search { height:124px; width:263px; background:url(../images/home/search-decoration.png) 0 0 no-repeat; padding:1px 0 0 16px; }
-.header .form-search button.button span { border:0; height:21px; background:url(../images/icon/btn_submit-arrow.png) 0 0 no-repeat; padding:0 0 0 3px; font:bold 11px/21px Tahoma, Verdana, Arial, sans-serif; }
+.main-content .form-search { height:124px; width:263px; background:url(../images/home/search-decoration.png) 0 0 no-repeat; padding:1px 0 0 16px; }
+.main-content .form-search button.button span { border:0; height:21px; background:url(../images/icon/btn_submit-arrow.png) 0 0 no-repeat; padding:0 0 0 3px; font:bold 11px/21px Tahoma, Verdana, Arial, sans-serif; }
 
 
 
