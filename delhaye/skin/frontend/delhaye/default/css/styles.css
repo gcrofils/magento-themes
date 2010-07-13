@@ -91,7 +91,7 @@ ul,ol         { list-style:none; }
 
 
 /* Layout ================================================================================ */
-.wrapper { min-width:954px; width:70%; border:solid 5px blue; margin-top:50px; margin-bottom:50px; margin-left: auto; margin-right: auto; }
+.wrapper { min-width:954px; width:70%; border:solid 1px blue; margin-top:50px; margin-bottom:50px; margin-left: auto; margin-right: auto; box-shadow: 10px 10px 5px #888; padding: 5px 5px 5px 15px;}
 .page {}
 .page-print { background:#fff; padding:25px 30px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
