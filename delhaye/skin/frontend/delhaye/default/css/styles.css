@@ -109,7 +109,7 @@ ul,ol         { list-style:none; }
 .header { background:#ffffff url(../images/home/header-left.png) repeat-y right; text-align:left;}
 .main-left { }
 .main-right { }
-.main-top-left { width:282px; height:194px; background: url(../images/home/top-left-corner.png); float:left; left:-140px;}
+.main-top-left { width:282px; height:194px; background: url(../images/home/top-left-corner.png); float:left; margin-left:-140px;}
 .main-top-right { width:231px; height:194px; background: url(../images/home/right.png); float:right; }
 .main-top { border:solid 5px blue; min-height:194px; background:#ffffff url(../images/home/top.png) repeat-x ; }
 .main-content { border:solid 5px red; }
