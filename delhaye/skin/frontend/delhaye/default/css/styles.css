@@ -107,11 +107,14 @@ ul,ol         { list-style:none; }
 /* home layout */
 .home-layout { float:none; width:90%; min-width:954px;}
 .header { background:#ffffff url(../images/home/header-left.png) repeat-y right; text-align:left;}
-.main-left { min-height:194px; background:#ffffff url(../images/home/top-left-corner.png) no-repeat; border:solid 5px red; z-index:99; }
-.main-right { height:194px; background:#ffffff url(../images/home/right.png) no-repeat left; }
-.main-top { height:194px; background:#ffffff url(../images/home/top.png) repeat-x ; z-index:10;}
+.main-left { }
+.main-right { }
+.main-top-left { height:194px; background:#ffffff url(../images/home/top-left-corner.png) no-repeat; }
+.main-top-right { height:194px; background:#ffffff url(../images/home/right.png) no-repeat right; }
+.main-top { height:194px; background:#ffffff url(../images/home/top.png) repeat-x ; }
 .main-content { border: solid 1px red; }
-.main-bottom { height:142px; background:#ffffff url(../images/home/bottom.png) repeat-x ; }
+.main-bottom { height:261px; background:#ffffff url(../images/home/bottom.png) repeat-x ; }
+.main-top-right { height:261px; background:#ffffff url(../images/home/bottom-right-corner.png) no-repeat right; }
 .seo { }
 
 /* 1 Column Layout */
