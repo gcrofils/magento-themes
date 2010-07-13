@@ -2,7 +2,7 @@ title: home
 root_template: home
 meta_keywords: home
 meta_description: home
-content_heading: 
+content_heading: false
 content:
   <h1>HOME</h1>       
 layout_update_xml: 
