@@ -109,7 +109,7 @@ ul,ol         { list-style:none; }
 .main-left { }
 .main-right { }
 .main-top { min-height:194px; background:url(../images/home/top.png) repeat-x ; }
-.main-top-left { width:284px; height:194px; background: url(../images/home/top-left-corner.png); float:left; margin-left:-19px;}
+.main-top-left { width:283px; height:194px; background: url(../images/home/top-left-corner.png); float:left; margin-left:-19px;}
 .main-top-right { width:231px; height:194px; background: url(../images/home/right.png); float:right; margin-right:-5px;}
 
 .main-content { border:solid 5px red; }
@@ -502,7 +502,7 @@ tr.summary-details-excluded { font-style:italic; }
 /*.header-container { border-top:5px solid #0d2131; border-bottom:1px solid #415966; background:url(../images/bkg_header.jpg) 50% 0 repeat; }*/
 .header-container { border:0px; padding:0px; background:url(../images/home/header-right.png) repeat-y right; }
 .header { }
-.header .header-right { width:224px; padding-top:80px; background:url(../images/home/header-right-decoration.png) no-repeat; float:right; }
+.header .header-right { width:225px; padding-top:80px; background:url(../images/home/header-right-decoration.png) no-repeat; float:right; }
 .header .logo { float:left; margin:3px 0 10px 12px; text-decoration:none !important; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; }
