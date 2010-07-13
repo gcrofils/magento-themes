@@ -107,7 +107,7 @@ ul,ol         { list-style:none; }
 /* home layout */
 .home-layout { float:none; width:90%; min-width:954px;}
 .header { background:#ffffff url(../images/home/header-left.png) repeat-y right; }
-.main-left { height:194px; background:#ffffff url(../images/home/top-left-corner.png) no-repeat left; }
+.main-left { background:#ffffff url(../images/home/top-left-corner.png); }
 .main-right { height:194px; background:#ffffff url(../images/home/right.png) no-repeat left; }
 .main-top { height:194px; background:#ffffff url(../images/home/top.png) repeat-x ; }
 .main-content { border: solid 1px red; }
