@@ -3,7 +3,9 @@
   <head>
     <?php echo $this->getChildHtml('head') ?>
   </head>
-  <body>
+  <body<?= $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+    <?php echo $this->getChildHtml('after_body_start') ?>
+    <div class="wrapper">
   	<div class="main-container home-layout">
   	  <div class="header">
   	  	<img src="http://delhaye.milizone.com/skin/frontend/delhaye/default/images/home/header-logo.png" alt="*"/>
@@ -26,5 +28,6 @@
       </div>
       <div class="seo">SEO</div>
       <div class="footer">FOOTER</div>
+     </div>
 	</body>
 </html>
