@@ -111,7 +111,7 @@ ul,ol         { list-style:none; }
 .main-top { min-height:69px; background:url(../images/home/top.png) repeat-x ; border:solid 1px red;}
 .main-top-left { border:solid 1px blue; width:175px; height:184px; background: url(../images/home/top-left-corner.png); float:left; margin-left:-13px; margin-top:-1px;}
 .main-top-right { border:solid 1px green; width:226px; height:69px; background: url(../images/home/right.png); float:right; margin-right:0px;}
-.main-content { min-height:500px;  }
+.main-content { min-height:300px;  }
 .main-bottom { height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; }
 .main-bottom-right { width:172px; height:122px; background: url(../images/home/bottom-right-corner.png); float:right; margin-right:-1px; margin-top:139px; }
 
