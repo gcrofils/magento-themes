@@ -15,11 +15,11 @@
       			MENU
       		</div>
       		<div class="main-content">
-      		    MAIN CONTENT
+      		    <?php echo $this->getChildHtml('content') ?>
       		</div>
       		<div class="main-bottom">
       			<div class="main-bottom-right"></div>
-      			MARQUES
+      			 {{block type="cms/block" block_id="brands" template="cms/content.phtml"}}
       		</div>
       	</div>
       </div>

@@ -1,0 +1,7 @@
+title: brands
+is_active: 1
+content: 
+  <img src="{{skin url="logo/gucci.jpg"}}" alt="Gucci" />
+  <img src="{{skin url="logo/breitling.jpg"}}" alt="Breitling" />
+  <br>
+  Retrouvez nos marques dans nos boutiques.
