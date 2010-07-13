@@ -57,7 +57,7 @@ Default layout, loads most of the pages
             
 			<block type="core/text_list" name="top.menu" as="topMenu"/>
 			
-			<block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
+			<block type="core/template" name="mini.search" as="miniSearch" template="catalogsearch/form.mini.phtml"/>
 
             <block type="page/html_breadcrumbs" name="breadcrumbs" as="breadcrumbs"/>
 
