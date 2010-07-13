@@ -496,8 +496,8 @@ tr.summary-details-excluded { font-style:italic; }
 /* ======================================================================================= */
 
 /* search form */
-.main-content .form-search { height:124px; width:263px; background:url(../images/home/search-decoration.png) 0 0 no-repeat; margin-top:-5px; padding:22px 0 0 100px; }
-.main-content .form-search label { float:left; width:24px; height:21px; text-align:left; text-indent:-999em; overflow:hidden; text-transform:uppercase}
+.main-content .form-search { border:solid 1px blue; height:124px; width:263px; background:url(../images/home/search-decoration.png) 0 0 no-repeat; margin-top:-25px; padding:22px 0 0 100px; }
+.main-content .form-search label { border:solid 5px red; float:left; width:24px; height:21px; text-align:left; text-indent:-999em; overflow:hidden; text-transform:uppercase;}
 .main-content .form-search input.input-text { float:left; border-color:#5c7989; width:209px; margin-right:4px; }
 .main-content .form-search button.button { float:left; }
 .main-content .form-search button.button span { border:0; height:39px; background:url(../images/icon/btn_submit-arrow.png) 0 0 no-repeat; padding:0px; font:bold 11px/21px Tahoma, Verdana, Arial, sans-serif; }
