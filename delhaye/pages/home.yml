@@ -2,7 +2,7 @@ title: home
 root_template: home
 meta_keywords: home
 meta_description: home
-content_heading: <div style="display:nonek">HEAD OF HOME</div>
+content_heading: <div style="display:none">HEAD OF HOME</div>
 content:
   <h1>HOME</h1>       
 layout_update_xml: 
