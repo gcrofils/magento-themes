@@ -5,6 +5,6 @@ meta_description: home
 content_heading: <div style="display:none"></div>
 content:
   <h1>YAHOOOOO ! Custom Home te voila</h1>  
-  <img src="{{skin url='images/home/header-logo.png'}}" alt="*"/>        
+  <img src="{{skin url=\'images/home/header-logo.png\'}}" alt="*"/>        
 layout_update_xml: 
 is_active: 1
