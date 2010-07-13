@@ -7,16 +7,6 @@
     <?= $this->getChildHtml('after_body_start') ?>
     <div class="wrapper">
   	  <?= $this->getChildHtml('header') ?>
-  	  TOP SEARCH
- <?php echo $this->getChildHtml('topSearch') ?>
- <p class="welcome-msg"><?php echo $this->getWelcome()?></p>
- TOPLINKS
-<?php echo $this->getChildHtml('topLinks') ?>
-STORE LANGUAGE
-<?php echo $this->getChildHtml('store_language') ?>
-TOP MENU
-<?php echo $this->getChildHtml('topMenu') ?>
-  	  
       <div class="main-left">
       	<div class="main-right">
       		<div class="main-top">
@@ -25,6 +15,9 @@ TOP MENU
 
       		</div>
       		<div class="main-content">
+      		FOOTER
+      		<?php echo $this->getChildHtml() ?>
+        <address><?php echo $this->getCopyright() ?></address>
       		   TOP MENU
       		   <?php echo $this->getChildHtml('topMenu') ?>
       		</div>
@@ -36,15 +29,5 @@ TOP MENU
       </div>
       <?= $this->getChildHtml('footer') ?>
      </div>
-     TOP SEARCH
- <?php echo $this->getChildHtml('topSearch') ?>
- <p class="welcome-msg"><?php echo $this->getWelcome()?></p>
- TOPLINKS
-<?php echo $this->getChildHtml('topLinks') ?>
-STORE LANGUAGE
-<?php echo $this->getChildHtml('store_language') ?>
-TOP MENU
-<?php echo $this->getChildHtml('topMenu') ?>
-     
 	</body>
 </html>
