@@ -3,7 +3,15 @@
 require 'ftools'
 require 'fileutils'
 require 'yaml'
+require 'getoptlong'
 
+opts = GetoptLong.new(
+    [ "--theme",             "-t",   GetoptLong::REQUIRED_ARGUMENT ],
+    [ "--version",          "-v",   GetoptLong::NO_ARGUMENT ]
+    )
+    
+
+  
 #MYSQL_DATABASE  = '<database>'
 #MYSQL_USER      = '<user>'
 #MYSQL_PASSWORD  = '<password>'
@@ -19,6 +27,21 @@ wwwroot = "/home/www"
 magentoCurrent = "magento"
 appPath = "app"
 skinPath = "skin"
+
+begin
+  opts.each do |opt, arg|
+  	case opt
+  	  when "--version"
+        print $0, ", version ", version, "\n"
+        exit(0)
+      when "--theme"
+        magentoTheme = arg.strip
+        puts "setup magentoTheme #{magentoTheme}"
+    end
+  end
+end
+rescue
+end
 
 themePath = File.expand_path(File.join(File.dirname(File.join(Dir.getwd, __FILE__)), '..', magentoTheme))
 targetPath = File.expand_path(File.join(wwwroot, magentoCurrent))
