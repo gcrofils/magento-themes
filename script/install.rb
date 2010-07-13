@@ -39,7 +39,6 @@ begin
         puts "setup magentoTheme #{magentoTheme}"
     end
   end
-end
 rescue
 end
 

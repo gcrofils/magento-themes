@@ -3,29 +3,22 @@
   <head>
     <?php echo $this->getChildHtml('head') ?>
   </head>
-  <body<?= $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
-    <?php echo $this->getChildHtml('after_body_start') ?>
-    <div class="wrapper">
-      <?php echo $this->getChildHtml('global_notices') ?>
-      <div class="page">
-      	<?php echo $this->getChildHtml('header') ?>
-        <div class="main-container home-layout">
-            <div class="main">
-                <div class="col-wrapper">
-                    <div class="col-main">
-                        <?php echo $this->getChildHtml('global_messages') ?>
-                        <?php echo $this->getChildHtml('content') ?>
-                    </div>
-                </div>
-            </div>
-            <div class="seo">
-            	SEO
-            </div>
-        </div>
-        <?php echo $this->getChildHtml('footer') ?>
-        <?php echo $this->getChildHtml('before_body_end') ?>
-    </div>
-</div>
-  <?php echo $this->getAbsoluteFooter() ?>
-  </body>
+  <body>
+  	<div class="main-container home-layout">
+  	  <div class="header">
+  	  	<img src="{{skin url='images/home/header-logo.png'}}" alt="*"/>
+  	  </div>
+      <div class="main-left">
+      	<div class="main-right">
+      		<div class="main-top"></div>
+      		<div class="main-content">
+      			<?php echo $this->getChildHtml('global_messages') ?>
+            	<?php echo $this->getChildHtml('content') ?>
+      		</div>
+      		<div class="main-bottom"></div>
+      	</div>
+      </div>
+      <div class="seo">SEO</div>
+      <div class="footer">FOOTER</div>
+	</body>
 </html>
