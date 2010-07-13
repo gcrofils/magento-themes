@@ -499,9 +499,9 @@ tr.summary-details-excluded { font-style:italic; }
 /* Header ================================================================================ */
 .logo { float:left; }
 /*.header-container { border-top:5px solid #0d2131; border-bottom:1px solid #415966; background:url(../images/bkg_header.jpg) 50% 0 repeat; }*/
-.header-container { border:0px; padding:0px; background:url(../images/home/header-right.png) repeat-x; }
+.header-container { border:0px; padding:0px; background:url(../images/home/header-right.png) repeat-y right; }
 .header { }
-.header .header-right { width:224px; padding-top:80px; background:url(../images/home/header-right-decoration.png) no-repeat; }
+.header .header-right { width:224px; padding-top:80px; background:url(../images/home/header-right-decoration.png) no-repeat; float:right; }
 .header .logo { float:left; margin:3px 0 10px 12px; text-decoration:none !important; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; }
