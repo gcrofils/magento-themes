@@ -114,7 +114,7 @@ ul,ol         { list-style:none; }
 
 .main-content {  }
 .main-bottom { height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; }
-.main-bottom-right { width:156px; height:122px; background: url(../images/home/bottom-right-corner.png); float:right; margin-right:-1px; margin-top:139px; }
+.main-bottom-right { width:172px; height:122px; background: url(../images/home/bottom-right-corner.png); float:right; margin-right:-1px; margin-top:139px; }
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
@@ -1593,7 +1593,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Footer ================================================================================ */
-.footer-container { border-top:15px solid #8f8086; }
+.footer-container { border:0px solid #8f8086; }
 .footer { }
 .footer .store-switcher { display:inline; margin:0 5px 0 0; color:#fff; }
 .footer .store-switcher label { font-weight:bold; vertical-align:middle; }
