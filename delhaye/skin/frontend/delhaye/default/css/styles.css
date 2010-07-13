@@ -529,8 +529,8 @@ tr.summary-details-excluded { font-style:italic; }
 .header-container .top-container a { font-size:11px; color:#ebbc58; }
 
 /********** < Navigation */
-.nav-container { padding-top:12px;  }
-#nav { margin:5 auto; padding-left:40px; font-size:15px; }
+.nav-container { padding-top:15px;  }
+#nav { margin:5 auto; }
 
 /* All Levels */ /* Style consistent throughout all nav levels */
 #nav li { position:relative; text-align:left; }
@@ -545,7 +545,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* 0 Level */
 #nav li { float:left; }
 #nav li.active a { color:#d96708; }
-#nav a { float:left; padding:5px 12px 6px 8px; color:#ffffff;  font-size:30px;}
+#nav a { float:left; padding:5px 20px 6px 8px; color:#ffffff;  font-size:30px;}
 #nav li.over a,
 #nav a:hover { color:#d96708; }
 
