@@ -34,11 +34,11 @@
     <global>
         <page>
             <layouts>
-                <empty module="page" translate="label">
+                <home module="page" translate="label">
                     <label>Home</label>
                     <template>page/home.phtml</template>
                     <layout_handle>home</layout_handle>
-                </empty>
+                </home>
             </layouts>
         </page>
     </global>
