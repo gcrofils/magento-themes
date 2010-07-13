@@ -545,7 +545,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* 0 Level */
 #nav li { float:left; }
 #nav li.active a { color:#d96708; }
-#nav a { float:left; padding:5px 30px 6px 8px; color:#ffffff;  font-size:24px;}
+#nav a { float:left; padding:5px 30px 60px 8px; color:#ffffff;  font-size:22px;}
 #nav li.over a,
 #nav a:hover { color:#d96708; }
 
