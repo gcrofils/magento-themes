@@ -529,7 +529,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header-container .top-container a { font-size:11px; color:#ebbc58; }
 
 /********** < Navigation */
-.nav-container { margin-top:10px;  }
+.nav-container { margin-top:50px;  }
 #nav { margin:5 auto; padding:0 16px; font-size:20px; color:#ffffff }
 
 /* All Levels */ /* Style consistent throughout all nav levels */
