@@ -109,8 +109,8 @@ ul,ol         { list-style:none; }
 .main-left { }
 .main-right { }
 .main-top { min-height:194px; background:url(../images/home/top.png) repeat-x ; }
-.main-top-left { width:284px; height:194px; background: url(../images/home/top-left-corner.png); float:left; margin-left:-20px;}
-.main-top-right { width:231px; height:194px; background: url(../images/home/right.png); float:right; margin-left:5px;}
+.main-top-left { width:284px; height:194px; background: url(../images/home/top-left-corner.png); float:left; margin-left:-19px;}
+.main-top-right { width:231px; height:194px; background: url(../images/home/right.png); float:right; margin-right:-5px;}
 
 .main-content { border:solid 5px red; }
 .main-bottom { height:261px; background:#ffffff url(../images/home/bottom.png) repeat-x ; }
