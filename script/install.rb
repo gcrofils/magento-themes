@@ -50,7 +50,7 @@ blocksPath = File.expand_path(File.join(themePath, 'blocks'))
 def execSql(sql)
  cmd = "mysql -u#{MYSQL_USER} -p#{MYSQL_PASSWORD} -e \"connect #{MYSQL_DATABASE}; #{sql.gsub('"','\"')}; \""
  system "#{cmd}" 
- puts "#{cmd}" 
+ #puts "#{cmd}" 
 end
 
 FileUtils.cp_r File.join(themePath, appPath), targetPath
