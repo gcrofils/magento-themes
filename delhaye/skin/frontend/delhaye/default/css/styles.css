@@ -115,6 +115,7 @@ ul,ol         { list-style:none; }
 .main-bottom { border:solid 1px red; height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; }
 .main-bottom-right { border:solid 1px blue; width:172px; height:122px; background: url(../images/home/bottom-right-corner.png); float:right; margin-right:-1px; margin-top:139px; }
 
+
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
 
@@ -494,10 +495,14 @@ tr.summary-details-excluded { font-style:italic; }
 .demo-notice { margin:0; padding:6px 10px; background:#d75f07; font-size:12px; line-height:1.15; text-align:center; color:#fff; }
 /* ======================================================================================= */
 
+/* search form */
+.header .form-search { height:124px; width:263px; background:url(../images/home/search-decoration.png) 0 0 no-repeat; padding:1px 0 0 16px; }
+.header .form-search button.button span { border:0; height:21px; background:url(../images/icon/btn_submit-arrow.png) 0 0 no-repeat; padding:0 0 0 3px; font:bold 11px/21px Tahoma, Verdana, Arial, sans-serif; }
+
+
 
 /* Header ================================================================================ */
 .logo { float:left; }
-/*.header-container { border-top:5px solid #0d2131; border-bottom:1px solid #415966; background:url(../images/bkg_header.jpg) 50% 0 repeat; }*/
 .header-container { border:0px; padding:0px; background:url(../images/home/header-right.png) repeat-y right; }
 .header { }
 .header .header-right { width:226px; padding-top:80px; background:url(../images/home/header-right-decoration.png) no-repeat; float:right; }
