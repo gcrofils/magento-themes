@@ -108,7 +108,7 @@ ul,ol         { list-style:none; }
 .home-layout { float:none; width:90%; min-width:954px;}
 .main-left { }
 .main-right { }
-.main-top { min-height:69px; background:url(../images/home/top.png) repeat-x ; }
+.main-top { border:solid 1px green; min-height:69px; background:url(../images/home/top.png) repeat-x ; }
 .main-top-left {  width:175px; height:184px; background: url(../images/home/top-left-corner.png); float:left; margin-left:-13px; margin-top:-1px;}
 .main-top-right { width:226px; height:69px; background: url(../images/home/right.png); float:right; margin-right:0px;}
 .main-content { border:solid 1px green; min-height:300px;  }
