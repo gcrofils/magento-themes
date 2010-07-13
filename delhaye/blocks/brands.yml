@@ -1,7 +1,10 @@
 title: brands
 is_active: 1
 content: 
-  <img src="{{skin url="logo/gucci.jpg"}}" alt="Gucci" />
-  <img src="{{skin url="logo/breitling.jpg"}}" alt="Breitling" />
+  <img src="{{skin url="logo/gucci.png"}}" alt="Gucci" />
+  <img src="{{skin url="logo/breitling.png"}}" alt="Breitling" />
+  <img src="{{skin url="logo/poiray.png"}}" alt="Poiray" />
+  <img src="{{skin url="logo/mauboussin.png"}}" alt="Mauboussin" />
+  <img src="{{skin url="logo/chopard.png"}}" alt="Chopard" />
   <br>
   Retrouvez nos marques dans nos boutiques.
