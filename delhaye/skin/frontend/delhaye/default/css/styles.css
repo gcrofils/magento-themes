@@ -497,7 +497,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 /* search form */
 .main-content .form-search {border:solid 1px blue; height:124px; width:263px; background:url(../images/home/search-decoration.png) 0 0 no-repeat; margin:-15px 0 0 15px; padding:0px; }
-.main-content .form-search label { border:solid 1px red; position: relative; width:160px; height:21px; text-align:left; text-transform:uppercase; z-index:99;}
+.main-content .form-search label { border:solid 1px red; position:absolute; width:160px; height:21px; text-align:left; text-transform:uppercase;}
 .main-content .form-search input.input-text { border:solid 1px green; float:left;  width:209px; margin-right:4px; }
 .main-content .form-search button.button { float:left; }
 .main-content .form-search button.button span { border:0; height:39px; background:url(../images/icon/btn_submit-arrow.png) no-repeat; padding:0px; font:bold 11px/21px Tahoma, Verdana, Arial, sans-serif; }
