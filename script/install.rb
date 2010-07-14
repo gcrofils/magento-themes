@@ -82,4 +82,13 @@ paths = {'page' => pagesPath, 'block' => blocksPath}
 
 end
 
+# force design change
+
+queries << "delete from design_change"
+queries << "insert into design_change(store_id, design) values (1, '#{magentoTheme}/default')"
+
+# Remove cache 
+queries << "update core_cache_option set value=0"
+  
+
 queries.each{|q| execSql(q)}
