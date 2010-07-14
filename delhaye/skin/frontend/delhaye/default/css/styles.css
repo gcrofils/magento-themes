@@ -116,9 +116,9 @@ ul,ol         { list-style:none; }
 .main-bottom-brand { width:100%; }
 .main-bottom-right { width:172px; height:122px; background: url(../images/home/bottom-right-corner.png); float:right; margin-right:-1px; v-align:bottom; }
 .main-home { width:100%;  }
-.home-main-right { border:solid 1px red; float:right; width: 226px;   }
+.home-main-right {  float:right; width: 226px;   }
 .home-main-right-top { width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; padding-top:75px; text-align:center; }
-.home-main-right-bottom { border:solid 1px blue; width: 226px; text-align:center; font:15px Arial, Helvetica, sans-serif; }
+.home-main-right-bottom {  width: 226px; text-align:center; font:15px Arial, Helvetica, sans-serif; }
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
