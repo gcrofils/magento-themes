@@ -87,6 +87,8 @@ end
 queries << "delete from design_change"
 queries << "insert into design_change(store_id, design) values (1, '#{magentoTheme}/default')"
 
+queries << "update core_config_data set value='01 02 03 04 05' where scope_id = 'general/store_information/phone'"
+
 # Remove cache 
 queries << "update core_cache_option set value=0"
   

@@ -1,6 +1,5 @@
 title: telephone_info
 is_active: 1
 content: 
- <span style="phone">{{config path="general/store_information/phone"}}</span> 
- <br>
- Actualit&eacute;s Service & Qualit&eacute;
+ <div class="phone">{{config path="general/store_information/phone"}}</div> 
+ <div class="quicklinks">Actualit&eacute;s Service & Qualit&eacute;</div>
