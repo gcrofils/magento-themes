@@ -111,13 +111,14 @@ ul,ol         { list-style:none; }
 .main-top { height:69px; background:url(../images/home/top.png) repeat-x ; }
 .main-top-left {  width:175px; height:184px; background: url(../images/home/top-left-corner.png); float:left; margin-left:-13px; margin-top:-1px;}
 .main-top-right { width:226px; height:69px; background: url(../images/home/right.png); float:right; margin-right:0px;}
-.main-content { border:solid 2px green; min-height:300px; background: url(../images/home/main-right.png) repeat-y right; }
-.main-bottom { border:solid 1px red; height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; }
-.main-bottom-right { border:solid 1px blue; width:172px; height:122px; background: url(../images/home/bottom-right-corner.png); float:right; margin-right:-1px; margin-top:139px; }
+.main-content { min-height:300px; background: url(../images/home/main-right.png) repeat-y right; }
+.main-bottom { height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; }
+.main-bottom-brand { position:absolute; }
+.main-bottom-right { width:172px; height:122px; background: url(../images/home/bottom-right-corner.png); float:right; margin-right:-1px; margin-top:139px; }
 .main-home { }
 .home-main-right { border:solid 1px red; float:right; width: 226px;   }
 .home-main-right-top { width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; padding-top:75px; text-align:center; }
-.home-main-right-bottom { border:solid 1px blue; width: 226px; text-align:center; font:15px Arial, Helvetica, sans-serif; padding:0 25px 0 25px; }
+.home-main-right-bottom { border:solid 1px blue; width: 226px; text-align:center; font:15px Arial, Helvetica, sans-serif; }
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
