@@ -506,7 +506,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* search form */
 .main-content .form-search {height:124px; width:263px; background:url(../images/home/search-decoration.png) 0 0 no-repeat; position:relative; top:-20px; margin:0px 0 0 15px; padding:29px 0 0 80px; z-index:50;}
 .main-content .form-search label { position:relative; width:130px; height:21px; text-align:left; color:#ffffff; font-weight:bold; font-size:14px; font-family:Tahoma, Verdana, Arial, sans-serif; text-transform:uppercase; }
-.main-content .form-search input.input-text { position:relative; left:-110px; top:23px; width:130px; }
+.main-content .form-search input.input-text { position:relative; left:-115px; top:23px; width:130px; }
 .main-content .form-search button.button { position:relative; top:20px; }
 .main-content .form-search button.button span { border:0; height:39px; width:40px; background:url(../images/icon/btn_submit-arrow.png) no-repeat; padding:0px; font:bold 11px/21px Tahoma, Verdana, Arial, sans-serif; }
 .main-content .form-search button.button span span {  }
