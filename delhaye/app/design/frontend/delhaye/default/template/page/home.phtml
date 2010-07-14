@@ -19,10 +19,11 @@
       				<div class="home-main-right-top"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('home_right_top')->toHTML();?></div>
       				<div class="home-main-right-bottom"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('home_right_bottom')->toHTML();?></div>
       			</div>
+      			<?php echo $this->getChildHtml('miniSearch') ?>
       		   <div class="main-home">
       		   <?php echo $this->getChildHtml('content') ?>
       		   </div>
-      		   <?php echo $this->getChildHtml('miniSearch') ?>
+      		   
       		   
       		   <div class="home-main-left"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('home_left')->toHTML();?></div>
       		   
