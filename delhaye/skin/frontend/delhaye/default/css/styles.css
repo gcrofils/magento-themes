@@ -114,10 +114,10 @@ ul,ol         { list-style:none; }
 .main-content { border:solid 5px green; min-height:300px; background: url(../images/home/main-right.png) repeat-y right; }
 .main-bottom { border:solid 1px red; height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; }
 .main-bottom-right { border:solid 1px blue; width:172px; height:122px; background: url(../images/home/bottom-right-corner.png); float:right; margin-right:-1px; margin-top:139px; }
-.main-home { margin: -100px 0 0 -100px;}
+.main-home { margin: -100px 0 0 -100px; z-index:0}
 .home-main-right { border:solid 4px red; float:right; width: 226px;   }
 .home-main-right-top { width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; padding-top:75px; text-align:center; }
-.home-main-right-bottom { width: 226px; text-align:center; font:12px/15px Arial, Helvetica, sans-serif; vertical-align:middle; padding:0 15 0 15; }
+.home-main-right-bottom { width: 226px; text-align:center; font:15px Arial, Helvetica, sans-serif; padding:0 25 0 25; }
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
@@ -499,7 +499,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* ======================================================================================= */
 
 /* search form */
-.main-content .form-search {height:124px; width:263px; background:url(../images/home/search-decoration.png) 0 0 no-repeat; margin:-25px 0 0 15px; padding:29px 0 0 80px; }
+.main-content .form-search {height:124px; width:263px; background:url(../images/home/search-decoration.png) 0 0 no-repeat; margin:-25px 0 0 15px; padding:29px 0 0 80px; z-index:99;}
 .main-content .form-search label { position:absolute; width:160px; height:21px; text-align:left; color:#ffffff; font-weight:bold; font-size:14px; font-family:Tahoma, Verdana, Arial, sans-serif; text-transform:uppercase; }
 .main-content .form-search input.input-text { position:absolute;  width:130px; margin-top:24px;}
 .main-content .form-search button.button {  position:absolute; margin:40px 0 0 108px; }
