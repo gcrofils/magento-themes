@@ -108,8 +108,8 @@ ul,ol         { list-style:none; }
 .home-layout { float:none; width:90%; min-width:954px;}
 .main-left { }
 .main-right { }
-.main-top { height:69px; background:url(../images/home/top.png) repeat-x ; }
-.main-top-left {  width:175px; height:184px; background: url(../images/home/top-left-corner.png); position:relative; left:-13px; top:-1px;}
+.main-top { height:69px; background:url(../images/home/top.png) repeat-x ; padding-right:100px}
+.main-top-left {  width:175px; height:184px; background: url(../images/home/top-left-corner.png); position:relative; left:-13px; top:-50px; z-index:99;}
 .main-top-right { width:226px; height:69px; background: url(../images/home/right.png); float:right; margin-right:0px;}
 .main-content {  width:100%; min-height:300px; background: blue url(../images/home/main-right.png) repeat-y right; }
 .main-bottom { height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; clear:both; }
