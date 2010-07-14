@@ -117,7 +117,7 @@ ul,ol         { list-style:none; }
 .main-bottom-right { width:172px; height:122px; background: url(../images/home/bottom-right-corner.png) no-repeat 100% 100%; float:right; margin-right:-1px; }
 .main-home { width:100%;  }
 .home-main-right {  float:right; width: 226px; border: solid 1px red;   }
-.home-main-right-top { border: solid 1px green; width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; padding-top:75px; text-align:center; }
+.home-main-right-top { border: solid 1px green; width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; text-align:center; }
 .home-main-right-bottom {  width: 100%; border: solid 1px blue; text-align:center; v-align:top; font:15px Arial, Helvetica, sans-serif; }
 
 /* 1 Column Layout */
