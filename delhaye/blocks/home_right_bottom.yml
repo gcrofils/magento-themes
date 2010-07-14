@@ -1,14 +1,9 @@
 title: home_right_bottom
 is_active: 1
 content: 
-  <span style="font-size:20px"><b>Pourquoi faire confiance a notre &eacute;quipe ?</b></span>
-  <br/>
-  <br/>
-  Plus de 45 ans d\'exp&eacute;riences.
-  <br/>
-  Nos conseillers boutiques sont a votre disposition.
-  <br/>
-  Tous les bijoux sont certifi&eacute;s par un organisme ind&eacute;pendant.
-  <br/>
-  Des prix 30% moins cher qu\'en joaillerie classique.
+  <h1>Pourquoi faire confiance a notre &eacute;quipe ?</h1>
+  <p>Plus de 45 ans d\'exp&eacute;riences.</p>
+  <p>Nos conseillers boutiques sont a votre disposition.</p>
+  <p>Tous les bijoux sont certifi&eacute;s par un organisme ind&eacute;pendant.</p>
+  <p>Des prix 30% moins cher qu\'en joaillerie classique.</p>
   

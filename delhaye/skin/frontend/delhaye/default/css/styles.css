@@ -114,11 +114,14 @@ ul,ol         { list-style:none; }
 .main-content {  width:100%; min-height:300px; background: url(../images/home/main-right.png) repeat-y right; }
 .main-bottom { height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; clear:both; }
 .main-bottom-brand { width:100%; height:138px; text-align:center;}
+.main-bottom-brand span { padding:0 40px 0 20p; }
 .main-bottom-right { width:172px; height:122px; background: url(../images/home/bottom-right-corner.png) no-repeat 100% 100%; float:right; margin-right:-1px; }
 .main-home { width:100%;  }
 .home-main-right {  float:right; width: 226px; border: solid 1px red;   }
 .home-main-right-top { border: solid 1px green; width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; text-align:center; }
-.home-main-right-bottom {  width: 100%; border: solid 1px blue; text-align:center; v-align:top; font:15px Arial, Helvetica, sans-serif; }
+.home-main-right-bottom {  width: 100%; border: solid 1px blue; text-align:center; v-align:top; font:16px Arial, Helvetica, sans-serif; }
+.home-main-right-bottom h1 { margin: 0 20px 6px 10px; font-size:20px;  }
+.home-main-right-bottom p { margin: 6px 20px 0px 10px; }
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
