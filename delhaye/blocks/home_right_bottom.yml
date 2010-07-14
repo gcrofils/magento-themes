@@ -1,13 +1,14 @@
 title: home_right_bottom
 is_active: 1
 content: 
-  Pourquoi faire confiance à notre équipe ?
+  <span style="font-size:12px"><b>Pourquoi faire confiance a notre &eacute;quipe ?<b></span>
   <br/>
-  Plus de 45 ans d\'expériences.
   <br/>
-  Nos conseillers boutiques sont à votre disposition.
+  Plus de 45 ans d\'exp&eacute;riences.
   <br/>
-  Tous les bijoux sont certifiés par un organisme indépendant.
+  Nos conseillers boutiques sont a votre disposition.
+  <br/>
+  Tous les bijoux sont certifi&eacute;s par un organisme ind&eacute;pendant.
   <br/>
   Des prix 30% moins cher qu\'en joaillerie classique.
   
