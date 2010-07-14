@@ -1,4 +1,5 @@
 title: home_left
 is_active: 1
 content: 
+  popular
   <div>{{block type="catalog/product_popular" template="catalog/product/popular.phtml" category_id="13"}}</div>  
