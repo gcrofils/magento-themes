@@ -114,7 +114,7 @@ ul,ol         { list-style:none; }
 .main-content { border:solid 1px white; width:100%; min-height:300px; background: url(../images/home/main-right.png) repeat-y right; }
 .main-bottom { height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; clear:both; }
 .main-bottom-brand { width:100%; }
-.main-bottom-right { width:172px; height:122px; background: url(../images/home/bottom-right-corner.png); float:right; margin-right:-1px; v-align:bottom; }
+.main-bottom-right { width:172px; height:122px; background: url(../images/home/bottom-right-corner.png) no-repeat 100% 100%; float:right; margin-right:-1px; }
 .main-home { width:100%;  }
 .home-main-right {  float:right; width: 226px;   }
 .home-main-right-top { width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; padding-top:75px; text-align:center; }
