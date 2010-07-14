@@ -535,8 +535,8 @@ tr.summary-details-excluded { font-style:italic; }
 .header .links a { color:#ebbc58; }
 .header-container .top-container { clear:both; padding:5px 10px 0 12px; text-align:right; }
 .header-container .top-container a { font-size:11px; color:#ebbc58; }
-.main-top-right .phone { margin-top:10px; color:#ffffff; font-size:25px; width:100%; text-align:center;}
-.main-top-right .quicklinks { margin-top:3px; color:#ffffff; font-size:15px; width:100%; text-align:center;}
+.main-top-right .phone { margin:10px 0 0 0; color:#ffffff; font-size:25px; width:100%; text-align:center;}
+.main-top-right .quicklinks { margin:0; color:#ffffff; font-size:15px; width:100%; text-align:center;}
 
 /********** < Navigation */
 .nav-container { padding-top:20px;  }
