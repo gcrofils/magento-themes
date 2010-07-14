@@ -15,8 +15,16 @@
 				<?php echo $this->getChildHtml('topMenu') ?>
       		</div>
       		<div class="main-content">
+      			<div class="home-main-right">
+      				<div class="home-main-right-top"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('home_right_top')->toHTML();?></div>
+      				<div class="home-main-right-bottom"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('home_right_bottom')->toHTML();?></div>
+      			</div>
       		   <?php echo $this->getChildHtml('miniSearch') ?>
+      		   <div class="main-home">
       		   <?php echo $this->getChildHtml('content') ?>
+      		   </div>
+      		   <div class="home-main-left"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('home_left')->toHTML();?></div>
+      		   
       		</div>
       		<div class="main-bottom">
       			<div class="main-bottom-right"></div>

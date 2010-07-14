@@ -114,7 +114,10 @@ ul,ol         { list-style:none; }
 .main-content { border:solid 1px green; min-height:300px;  }
 .main-bottom { border:solid 1px red; height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; }
 .main-bottom-right { border:solid 1px blue; width:172px; height:122px; background: url(../images/home/bottom-right-corner.png); float:right; margin-right:-1px; margin-top:139px; }
-
+.main-home {position: absolute; z-index:0}
+.home-main-right { border:solid 4px red; float:right; width: 226px; height:100%; background: url(../images/home/main-right.png) y-repeat; }
+.home-main-right-top { width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; padding-top:75px; text-align:center; }
+.home-main-right-bottom { width: 226px; text-align:center; font:12px/15px Arial, Helvetica, sans-serif; vertical-align:middle;  }
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
