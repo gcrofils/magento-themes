@@ -1,6 +1,6 @@
 title: telephone_info
 is_active: 1
 content: 
- 01 02 03 04 05
+ <span style="phone">{{config path="general/store_information/phone"}}</span> 
  <br>
- Actualités Service & Qualité
+ Actualit&eacute;s Service & Qualit&eacute;
