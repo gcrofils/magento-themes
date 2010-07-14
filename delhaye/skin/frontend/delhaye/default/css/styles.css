@@ -117,9 +117,10 @@ ul,ol         { list-style:none; }
 .main-bottom-brand span { padding:0 40px 0 20p; }
 .main-bottom-right { width:172px; height:122px; background: url(../images/home/bottom-right-corner.png) no-repeat 100% 100%; float:right; margin-right:-1px; }
 .main-home { width:100%;  }
+.home-main-left {  border:solid 1px blue; position:absolute; width: 226px;   }
 .home-main-right {  float:right; width: 226px;   }
 .home-main-right-top {  width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; text-align:center; }
-.home-main-right-top span { margin: 75px; }
+.home-main-right-top span { margin-top:75px; }
 .home-main-right-bottom {  width: 100%;  text-align:center; v-align:top; font:16px Arial, Helvetica, sans-serif; }
 .home-main-right-bottom h1 { margin: 0 20px 6px 10px; font-size:20px;  }
 .home-main-right-bottom p { margin: 6px 20px 0px 10px; }

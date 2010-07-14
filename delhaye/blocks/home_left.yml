@@ -1,4 +1,4 @@
-title: right_info_block
+title: home_left
 is_active: 1
 content: 
-  <div>{{block type="catalog/product_popular" template="catalog/product/popular.phtml" category_id="PopularProductsCategoryID"}}</div>  
+  <div>{{block type="catalog/product_popular" template="catalog/product/popular.phtml" category_id="13"}}</div>  
