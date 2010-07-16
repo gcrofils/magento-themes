@@ -546,11 +546,11 @@ tr.summary-details-excluded { font-style:italic; }
 .header-container .top-container a { font-size:11px; color:#ebbc58; }
 .main-top-right .phone { margin:10px 0 0 0; color:#ffffff; font-size:28px; width:100%; text-align:center;}
 .main-top-right .quicklinks { margin:-5px 0 0 0; color:#ffffff; font-size:15px; width:100%; text-align:center;}
-.header-right {color: #000000; font:15px Arial, Helvetica, sans-serif;}
-.header-right div {margin:0 20px 0 10px;}
+.header-right {height:100%; color: #000000; font:15px Arial, Helvetica, sans-serif;}
+.header-right div {border:solid 1px red; v-align:bottom; margin:0 20px 0 10px;}
 .header-right h1 {margin-top:5px; font-size:20px;}
 .header-right h2 {margin-top:10px;}
-.header-right p {margin-top:10px; text-align:right; color:#ffffff; font:12px Times, Arial, Helvetica, sans-serif;}
+.header-right p {margin-top:10px; margin-right:5px; text-align:right; color:#ffffff; font:13px Times, Arial, Helvetica, sans-serif;}
 
 /********** < Navigation */
 .nav-container { padding-top:20px;  }
