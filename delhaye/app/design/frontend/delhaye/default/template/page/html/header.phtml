@@ -6,13 +6,10 @@
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
         <?php endif?>
     	<div class="header-right">
-    		VOTRE BIJOUTIER....
-    		<br>
-    		<br>
-    		<br>
-    		<br>
-    		Numéro local
+			<?= $this->getLayout()->createBlock('cms/block')->setBlockId('header_right')->toHTML();?>
     	</div>
-    	Abonnez-vous à la newsletter
+    	<?php echo $this->getChildHtml('store_language') ?>
+    	<?php echo $this->getChildHtml('topContainer'); ?>
+    	<p class="welcome-msg"><?php echo $this->getWelcome()?></p>
     </div>
 </div>

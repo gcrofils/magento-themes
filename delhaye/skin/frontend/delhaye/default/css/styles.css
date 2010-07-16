@@ -121,9 +121,9 @@ ul,ol         { list-style:none; }
 .home-main-right {  float:right; width: 226px;   }
 .home-main-right-top {  width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; text-align:center; }
 .home-main-right-top span { margin-top:75px; }
-.home-main-right-bottom {  width: 100%;  text-align:center; v-align:top; font:16px Arial, Helvetica, sans-serif; background: url(../images/home/main-right.png) repeat-y right;}
+.home-main-right-bottom {  width: 100%;  text-align:center; v-align:top; color:#000000; font:15px Arial, Helvetica, sans-serif; background: url(../images/home/main-right.png) repeat-y right;}
 .home-main-right-bottom h1 { margin: 0 20px 6px 10px; font-size:20px;  }
-.home-main-right-bottom p { margin: 6px 20px 0px 10px; }
+.home-main-right-bottom p { margin: 10px 20px 0px 10px; }
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }

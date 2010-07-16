@@ -1,0 +1,34 @@
+title: about us
+root_template: one_column
+meta_keywords: About Us
+meta_description: Découvrez l'histoire de Delhaye
+content_heading: false
+content:
+  <div class="page-title">
+  <h1>L\'histoire des Bijouteries Delhaye</h1>
+  </div>
+  <h2>Lorem Ipsum Dolor Sit Amet</h2>
+  <p>Nam sit amet quam in sapien tincidunt ornare. Proin dui erat, convallis at consequat vel, suscipit ut nunc. Maecenas tempus justo nec lorem tincidunt lacinia a eget tortor. Fusce sed dolor non eros ultricies venenatis. Mauris elit massa, pharetra quis adipiscing ut, sagittis sed est.</p>
+  <p>Proin sed magna ac nulla tincidunt pharetra. Praesent dapibus risus quis enim tincidunt ultrices. Ut id urna ut sapien rutrum consequat euismod eget diam. Aenean tellus erat, egestas vel mollis in, faucibus dictum tellus. Sed dictum, arcu eget sollicitudin bibendum, nulla magna elementum ante, vitae egestas justo arcu eu leo.</p>
+  <p>Morbi bibendum massa sed ligula adipiscing lobortis rutrum nisi rutrum. Nam nibh leo, pharetra vitae mattis quis, suscipit non dui. Donec egestas ultrices erat eget sollicitudin. Fusce in elit leo. Nunc sodales, turpis sit amet sagittis mattis, massa felis bibendum tellus, eu aliquam sapien turpis sit amet tortor.</p>
+  <p>Sed vulputate semper nisl, et tempor sapien iaculis ac. In ornare ante arcu, in rutrum est. In vitae tortor magna, ac laoreet libero. Donec eu nulla quis eros dapibus imperdiet ut eget libero. Ut ac neque et justo mollis tincidunt.</p>
+  <h2>Consectetuer adipiscing elit</h2>
+  <div class="col3-set">
+  <div class="col-1">
+  <p style="line-height: 1.2em;"><small>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede.</small></p>
+  <p style="color: #888; font: 1.2em/1.4em georgia, serif;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta.</p>
+  </div>
+  <div class="col-2">
+  <p><strong style="color: #de036f;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit.</strong></p>
+  <p>Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc augue. Aenean sed justo non leo vehicula laoreet. Praesent ipsum libero, auctor ac, tempus nec, tempor nec, justo.</p>
+  <p>Maecenas ullamcorper, odio vel tempus egestas, dui orci faucibus orci, sit amet aliquet lectus dolor et quam. Pellentesque consequat luctus purus. Nunc et risus. Etiam a nibh. Phasellus dignissim metus eget nisi. Vestibulum sapien dolor, aliquet nec, porta ac, malesuada a, libero. Praesent feugiat purus eget est. Nulla facilisi. Vestibulum tincidunt sapien eu velit. Mauris purus. Maecenas eget mauris eu orci accumsan feugiat. Pellentesque eget velit. Nunc tincidunt.</p>
+  </div>
+  <div class="col-3">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper</p>
+  <p><strong style="color: #de036f;">Maecenas ullamcorper, odio vel tempus egestas, dui orci faucibus orci, sit amet aliquet lectus dolor et quam. Pellentesque consequat luctus purus.</strong></p>
+  <p>Nunc et risus. Etiam a nibh. Phasellus dignissim metus eget nisi.</p>
+  <p style="line-height: 1.2em;"><strong style="font: italic 2em Georgia, serif;">Norbert Kulich</strong><br /><small>Directeur</small></p>
+  </div>
+  </div>  
+layout_update_xml: 
+is_active: 1
