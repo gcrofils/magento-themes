@@ -112,7 +112,7 @@ ul,ol         { list-style:none; }
 .main-top-left {  width:175px; height:184px; background: url(../images/home/top-left-corner.png); position:relative; left:-263px; top:-111px; z-index:99;}
 .main-top-right { width:226px; height:60px; background:#000000 url(../images/home/right.png); float:right; margin-right:0px;}
 .main-content {  width:100%; min-height:300px; background: url(../images/home/main-right.png) repeat-y right; }
-.main-bottom {width:100%; min-height:120px;}
+.main-bottom {width:100%; min-height:150px;}
 .main-bottom-brand { width:100%; padding:0px; margin:0px; height:138px; text-align:center; background:#ffffff url(../images/home/bottom.png) repeat-x ; clear:both;}
 .main-bottom-brand .logos {width:100%;  padding:0px; padding-top:15px }
 .main-bottom-brand img {  margin:0 5px 0 5px; vertical-align:middle;}
