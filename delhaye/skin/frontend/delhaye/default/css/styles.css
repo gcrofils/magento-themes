@@ -544,10 +544,10 @@ tr.summary-details-excluded { font-style:italic; }
 .header .links a { color:#ebbc58; }
 .header-container .top-container { clear:both; padding:5px 10px 0 12px; text-align:right; }
 .header-container .top-container a { font-size:11px; color:#ebbc58; }
-.main-top-right .phone { margin:10px 0 0 0; color:#ffffff; font-size:28px; width:100%; text-align:center;}
+.main-top-right .phone { margin:2px 0 0 0; color:#ffffff; font-size:28px; width:100%; text-align:center;}
 .main-top-right .quicklinks { margin:-5px 0 0 0; color:#ffffff; font-size:15px; width:100%; text-align:center;}
-.header-right {height:100%; border:solid 1px blue; color: #000000; font:15px Arial, Helvetica, sans-serif;}
-.header-right div {border:solid 1px red; vertical-align:bottom; margin:0 15px 0 10px;}
+.header-right {height:100%; color: #000000; font:15px Arial, Helvetica, sans-serif;}
+.header-right div {background:red; vertical-align:bottom; margin:0 15px 0 10px; padding:0;}
 .header-right h1 {color: #000000; margin-top:5px; font-size:20px;}
 .header-right h2 {color: #000000; margin-top:10px;}
 .header-right p {margin-top:10px; margin-right:5px; text-align:right; color:#ffffff; font:13px Times, Arial, Helvetica, sans-serif;}
