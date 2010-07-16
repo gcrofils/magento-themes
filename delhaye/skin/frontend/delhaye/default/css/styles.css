@@ -96,7 +96,7 @@ ul,ol         { list-style:none; }
 .page-print { background:#fff; padding:25px 30px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
 .page-popup { background:#fff; padding:25px 30px; text-align:left; }
-.main-container { border: solid 1px #000000; background:#fff url(../images/home/main-background.png) 0 0 repeat; }
+.main-container { border: none; background:#fff url(../images/home/main-background.png) 0 0 repeat; }
 .main { width:900px; margin:0 auto; min-height:400px; padding:25px 25px 80px; background:#ffffff; text-align:left; }
 
 /* Base Columns */
