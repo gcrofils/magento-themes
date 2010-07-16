@@ -107,7 +107,7 @@ ul,ol         { list-style:none; }
 /* home layout */
 .home-layout { float:none; width:90%; min-width:954px;}
 .main-left { }
-.main-right { }
+.main-right { border:solid 1px green; }
 .main-top { height:60px; background:url(../images/home/top.png) repeat-x ; padding-left:250px}
 .main-top-left {  width:175px; height:184px; background: url(../images/home/top-left-corner.png); position:relative; left:-263px; top:-111px; z-index:99;}
 .main-top-right { width:226px; height:60px; background:#000000 url(../images/home/right.png); float:right; margin-right:0px;}
