@@ -113,8 +113,8 @@ ul,ol         { list-style:none; }
 .main-top-right { width:226px; height:60px; background:#000000 url(../images/home/right.png); float:right; margin-right:0px;}
 .main-content {  width:100%; min-height:300px; background: blue url(../images/home/main-right.png) repeat-y right; }
 .main-bottom-brand { width:100%; padding:0px; margin:0px; height:138px; text-align:center; background:#ffffff url(../images/home/bottom.png) repeat-x ; clear:both;}
-.main-bottom-brand .logos {width:100%;  padding:0px; padding-top:15px }
-.main-bottom-brand .logos img {  margin:0 5px 0 5px; vertical-align:middle;}
+.main-bottom-brand p.logos {width:100%;  padding:0px; padding-top:15px }
+.main-bottom-brand img {  margin:0 5px 0 5px; vertical-align:middle;}
 .main-bottom-brand p { font-size:18px; margin-top:5px; }
 .main-bottom-right { width:172px; height:122px; background: url(../images/home/bottom-right-corner.png) no-repeat 100% 100%; float:right; margin-right:-1px; }
 .main-bottom-message { width:100%; min-height:120px; border:solid 1px red;}
