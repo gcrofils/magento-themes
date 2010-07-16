@@ -546,7 +546,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header-container .top-container a { font-size:11px; color:#ebbc58; }
 .main-top-right .phone { margin:0; color:#ffffff; font-size:28px; width:100%; text-align:center;}
 .main-top-right .quicklinks { margin:-7px 0 0 0; color:#ffffff; font-size:15px; width:100%; text-align:center;}
-.header-right div {background:red; margin:0 15px -5px 10px; padding:0;}
+.header-right div {background:red; margin:0 15px -10px 10px; padding:0;}
 .header-right h1 {color: #000000; margin-top:5px; font-size:20px;}
 .header-right h2 {color: #000000; margin-top:10px; font-size:15px;}
 .header-right p {margin-top:10px; margin-right:20px; text-align:right; color:#ffffff; font:13px Times, Arial, Helvetica, sans-serif;}
