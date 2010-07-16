@@ -20,7 +20,10 @@
       				<div class="home-main-right-top"><span><?= $this->getLayout()->createBlock('cms/block')->setBlockId('home_right_top')->toHTML();?></span></div>
       				<div class="home-main-right-bottom"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('home_right_bottom')->toHTML();?></div>
       			</div>
-
+      			<?php echo $this->getChildHtml('miniSearch') ?>
+      		   <div class="main-home">
+      		   <?php echo $this->getChildHtml('content') ?>
+      		   </div>
 			</div>
       		<div class="main-bottom-brand"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('brands')->toHTML();?></div>
       		<div class="main-bottom-message"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('bottom-message')->toHTML();?></div>
