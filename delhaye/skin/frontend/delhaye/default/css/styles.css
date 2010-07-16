@@ -117,7 +117,7 @@ ul,ol         { list-style:none; }
 .main-bottom-brand .logos {width:100%;  padding:0px; padding-top:15px }
 .main-bottom-brand img {  margin:0 5px 0 5px; vertical-align:middle;}
 .main-bottom-brand p { font-size:18px; margin-top:5px; }
-.main-bottom-right { width:172px; height:100%; border:solid 1px green; background: url(../images/home/bottom-right-corner.png) no-repeat 100% 100%; float:right;  margin-right:-1px;  }
+.main-bottom-right { width:172px; height:100%; background: url(../images/home/bottom-right-corner.png) no-repeat 100% 100%; float:right;  margin-right:-1px;  }
 .main-bottom-message { width:100%;}
 .main-bottom-message .news { min-height:100%; float:left; width:250px;}
 .main-bottom-message .msg { min-height:100%;  margin-left:270px; font-size:14px; text-align:left;}
