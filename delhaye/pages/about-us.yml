@@ -3,7 +3,7 @@ root_template: one_column
 meta_keywords: About Us
 meta_description: Découvrez l\'histoire de Delhaye
 content_heading: false
-content:
+content: |
   <div class="page-title">
   <h1>L\'histoire des Bijouteries Delhaye</h1>
   </div>
