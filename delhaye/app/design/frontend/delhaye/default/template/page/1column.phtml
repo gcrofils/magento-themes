@@ -48,15 +48,15 @@
 				<div class="main-top-left"></div>
       		</div>
       		<div class="main-content">
-      			<div class="home-main-left"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('home_left')->toHTML();?></div>
-      			<div class="home-main-right">
-      				<div class="home-main-right-top"><span><?= $this->getLayout()->createBlock('cms/block')->setBlockId('home_right_top')->toHTML();?></span></div>
-      				<div class="home-main-right-bottom"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('home_right_bottom')->toHTML();?></div>
-      			</div>
-      			<?php echo $this->getChildHtml('miniSearch') ?>
-      		   <div class="main-home">
-      		   <?php echo $this->getChildHtml('content') ?>
-      		   </div>
+		<div class="main-container col1-layout">
+            <div class="main">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-main">
+                    <?php echo $this->getChildHtml('global_messages') ?>
+                    <?php echo $this->getChildHtml('content') ?>
+                </div>
+            </div>
+        </div>
 			</div>
       		<div class="main-bottom">
       			<div class="main-bottom-brand"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('brands')->toHTML();?></div>
