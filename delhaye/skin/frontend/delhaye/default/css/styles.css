@@ -1620,9 +1620,12 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Footer ================================================================================ */
-.footer-container { background: #8f8086; color:#D0C3C3; }
+.footer-container { background: #8f8086; color:#D0C3C3; font-size:13px; }
+.footer-container .seo {padding-top:15px;}
+.footer-container .seo h1 {color:#D0C3C3; }
+.footer-container .seo ul {text-align:left;}
 .footer { }
-.footer .seo {padding-top:15px;}
+
 .footer .store-switcher { display:inline; margin:0 5px 0 0; color:#fff; }
 .footer .store-switcher label { font-weight:bold; vertical-align:middle; }
 .footer .store-switcher select { padding:0; vertical-align:middle; }
