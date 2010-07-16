@@ -109,7 +109,7 @@ ul,ol         { list-style:none; }
 .main-left { }
 .main-right { }
 .main-top { height:60px; background:url(../images/home/top.png) repeat-x ; padding-left:250px}
-.main-top-left {  width:175px; height:184px; background: url(../images/home/top-left-corner.png); position:relative; left:-263px; top:-110px; z-index:99;}
+.main-top-left {  width:175px; height:184px; background: url(../images/home/top-left-corner.png); position:relative; left:-263px; top:-111px; z-index:99;}
 .main-top-right { width:226px; height:60px; background:#000000 url(../images/home/right.png); float:right; margin-right:0px;}
 .main-content {  width:100%; min-height:300px; background: url(../images/home/main-right.png) repeat-y right; }
 .main-bottom { height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; clear:both; }
@@ -517,7 +517,7 @@ tr.summary-details-excluded { font-style:italic; }
 .logo { float:left; }
 .header-container { border:0px; padding:0px; background:url(../images/home/header-right.png) repeat-y right; }
 .header { }
-.header .header-right { width:226px; padding:80px 0 0 0; margin:0; vertical-align:bottom; background:url(../images/home/header-right-decoration.png) no-repeat; float:right; color: #000000; font:15px Arial, Helvetica, sans-serif;}
+.header .header-right { width:226px; padding:80px 0 0 0; margin:0; vertical-align:bottom; background:#000000 url(../images/home/header-right-decoration.png) no-repeat; float:right; color: #000000; font:15px Arial, Helvetica, sans-serif;}
 .header .logo { float:left; margin:3px 0 10px 12px; text-decoration:none !important; }
 .header .logo strong { position:absolute; top:-999em; left:-999em; width:0; height:0; font-size:0; line-height:0; text-indent:-999em; overflow:hidden; }
 .header h1.logo { margin:0; }
@@ -548,8 +548,8 @@ tr.summary-details-excluded { font-style:italic; }
 .main-top-right .quicklinks { margin:-7px 0 0 0; color:#ffffff; font-size:15px; width:100%; text-align:center;}
 .header-right div {background:red; vertical-align:bottom; margin:0 15px 0 10px; padding:0;}
 .header-right h1 {color: #000000; margin-top:5px; font-size:20px;}
-.header-right h2 {color: #000000; margin-top:10px;}
-.header-right p {margin-top:10px; margin-right:5px; text-align:right; color:#ffffff; font:13px Times, Arial, Helvetica, sans-serif;}
+.header-right h2 {color: #000000; margin-top:10px; font-size:15px;}
+.header-right p {margin-top:10px; margin-right:20px; text-align:right; color:#ffffff; font:13px Times, Arial, Helvetica, sans-serif;}
 
 /********** < Navigation */
 .nav-container { padding-top:8px;  }
