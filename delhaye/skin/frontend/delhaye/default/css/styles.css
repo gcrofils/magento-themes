@@ -109,7 +109,7 @@ ul,ol         { list-style:none; }
 .main-left { }
 .main-right { }
 .main-top { height:60px; background:url(../images/home/top.png) repeat-x ; padding-left:250px}
-.main-top-left {  width:175px; height:184px; background: url(../images/home/top-left-corner.png); position:relative; left:-263px; top:-124px; z-index:99;}
+.main-top-left {  width:175px; height:184px; background: url(../images/home/top-left-corner.png); position:relative; left:-263px; top:-123px; z-index:99;}
 .main-top-right { width:226px; height:60px; background:#000000 url(../images/home/right.png); float:right; margin-right:0px;}
 .main-content {  width:100%; min-height:300px; background: url(../images/home/main-right.png) repeat-y right; }
 .main-bottom { height:260px; background:#ffffff url(../images/home/bottom.png) repeat-x ; clear:both; }
@@ -544,16 +544,16 @@ tr.summary-details-excluded { font-style:italic; }
 .header .links a { color:#ebbc58; }
 .header-container .top-container { clear:both; padding:5px 10px 0 12px; text-align:right; }
 .header-container .top-container a { font-size:11px; color:#ebbc58; }
-.main-top-right .phone { margin:2px 0 0 0; color:#ffffff; font-size:28px; width:100%; text-align:center;}
-.main-top-right .quicklinks { margin:-5px 0 0 0; color:#ffffff; font-size:15px; width:100%; text-align:center;}
-.header-right {height:100%; color: #000000; font:15px Arial, Helvetica, sans-serif;}
+.main-top-right .phone { margin:0; color:#ffffff; font-size:28px; width:100%; text-align:center;}
+.main-top-right .quicklinks { margin:-7px 0 0 0; color:#ffffff; font-size:15px; width:100%; text-align:center;}
+.header-right {background:blue; height:100%; color: #000000; font:15px Arial, Helvetica, sans-serif;}
 .header-right div {background:red; vertical-align:bottom; margin:0 15px 0 10px; padding:0;}
 .header-right h1 {color: #000000; margin-top:5px; font-size:20px;}
 .header-right h2 {color: #000000; margin-top:10px;}
 .header-right p {margin-top:10px; margin-right:5px; text-align:right; color:#ffffff; font:13px Times, Arial, Helvetica, sans-serif;}
 
 /********** < Navigation */
-.nav-container { padding-top:20px;  }
+.nav-container { padding-top:8px;  }
 #nav { margin:5 auto; }
 
 /* All Levels */ /* Style consistent throughout all nav levels */
