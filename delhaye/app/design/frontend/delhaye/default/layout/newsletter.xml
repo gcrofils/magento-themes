@@ -38,10 +38,7 @@ Default layout, loads most of the pages
         <reference name="left">
             <block type="newsletter/subscribe" name="left.newsletter" template="newsletter/subscribe.phtml"/>
         </reference>
-        <!-- Mage_Newsletter -->
-        <reference name="header">
-            <block type="newsletter/subscribe" name="left.newsletter" template="newsletter/subscribe.phtml"/>
-        </reference>
+
 
     </default>
 
