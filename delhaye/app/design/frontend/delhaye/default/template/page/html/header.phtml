@@ -8,10 +8,8 @@
     	<div class="header-right"><div>
 			<?= $this->getLayout()->createBlock('cms/block')->setBlockId('header_right')->toHTML();?>
     	</div></div>
-    	<?php echo $this->getChildHtml('store_language') ?>
-    	<?php echo $this->getChildHtml('topContainer'); ?>
-    	<?php echo $this->getChildHtml('topLinks') ?>
-    	<?= $this->getChildHtml('newsletter.test') ?>
-    	<p class="welcome-msg"><?php echo $this->getWelcome()?></p>
+    	<?= $this->getChildHtml('newsletter.header') ?>
+    	<?= $this->getChildHtml('topLinks') ?>
+
     </div>
 </div>
