@@ -5,10 +5,11 @@
         <?php else:?>
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
         <?php endif?>
+      <?= $this->getChildHtml('newsletter.header') ?>
     	<div class="header-right"><div>
 			<?= $this->getLayout()->createBlock('cms/block')->setBlockId('header_right')->toHTML();?>
     	</div></div>
-    	<?= $this->getChildHtml('newsletter.header') ?>
+    	
     	<?= $this->getChildHtml('topLinks') ?>
 
     </div>
