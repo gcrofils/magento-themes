@@ -1,6 +1,5 @@
 <?php
 
-die ('loaded');
 
 class Mage_Catalog_Block_Product_Popular extends Mage_Catalog_Block_Product_Abstract
 {
