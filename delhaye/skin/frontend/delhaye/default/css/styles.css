@@ -766,11 +766,11 @@ tr.summary-details-excluded { font-style:italic; }
 .block-subscribe .actions { background:none; padding:0; margin:3px 0 0; text-align:left; }
 .block-subscribe .actions button.button { float:none; }
 .block-subscribe .actions button.button span { border-color:#406a83; background:#618499; }
-.header .block-subscribe {width: 280px; text-align:right; background-color:transparent; position:absolute; padding:0px; margin-top:48px; margin-left:450px; z-index:50; font-family:Times, Arial, Helvetica, sans-serif;}
-.header .block-subscribe .block-title strong { background-image:none;color:#000000; font-size:17px; text-transform:none; margin:0; padding:0; width:100%;}
-.header .block-subscribe .block-content { padding:0px;  margin:0px; width:100%; }
+.header .block-subscribe {width: 312px; text-align:right; background-color:#ffffff; border:none; background-image:none; position:absolute; padding:0px; margin-top:48px; margin-left:430px; z-index:50; font-family:Times, Arial, Helvetica, sans-serif;}
+.header .block-subscribe .block-title strong { background-image:none; color:#000000; font-size:17px; text-transform:none; margin:0 0 3px 0; padding:0; width:100%;font-family:Times, Arial, Helvetica, sans-serif;}
+.header .block-subscribe .block-content { padding:0px;  margin:0px; width:100%; background-color:#ffffff; }
 .header .block-subscribe label {width:150px; color:#B83140; font-size:14px;}
-.header .block-subscribe input.input-text { display:block; width:100%; margin:3px 0; }
+.header .block-subscribe input.input-text { display:block; width:290px; margin:3px 0; }
 
 /* Block: Reorder */
 .block-reorder .block-title strong { background-image:url(../images/i_block-list.gif); }
