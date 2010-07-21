@@ -771,6 +771,9 @@ tr.summary-details-excluded { font-style:italic; }
 .header .block-subscribe .block-content { padding:0px;  margin:0px; width:100%; background-color:#ffffff; }
 .header .block-subscribe label {width:150px; color:#B83140; font-size:14px;}
 .header .block-subscribe input.input-text { display:block; width:290px; margin:3px 0; }
+.header .block .actions { background:#dee5e8; background-image:none; padding:6px 9px; text-align:right; }
+.header .block .actions a { float:none; }
+.header .block .actions button.button { float:none; }
 
 /* Block: Reorder */
 .block-reorder .block-title strong { background-image:url(../images/i_block-list.gif); }
