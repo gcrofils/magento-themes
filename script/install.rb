@@ -96,7 +96,7 @@ queries << "update core_cache_option set value=0"
 queries.each{|q| execSql(q)}
 
 # Modules
-designTarget = File.expand_path(File.join(wwwroot, magentoCurrent, 'app', 'design', 'frontend', magentoTheme, 'default'))
+designTarget = File.expand_path(File.join(wwwroot, magentoCurrent, 'app', 'design', 'frontend', magentoTheme))
 puts designTarget
 %w[ AW_Blog-1.0.19 magento_easy_tabs-1.1 ].each do |m|
   src = File.expand_path(File.join(wwwroot, magentoCurrent, 'downloader', 'pearlib', 'download', m, 'frontend', 'default', 'default'))
