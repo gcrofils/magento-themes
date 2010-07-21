@@ -766,8 +766,9 @@ tr.summary-details-excluded { font-style:italic; }
 .block-subscribe .actions { background:none; padding:0; margin:3px 0 0; text-align:left; }
 .block-subscribe .actions button.button { float:none; }
 .block-subscribe .actions button.button span { border-color:#406a83; background:#618499; }
-.header .block-subscribe {width: 300px; background-color:transparent; position:relative; top:0px; left:100px;}
+.header .block-subscribe {width: 300px; background-color:transparent; position:relative; top:0px; left:400px; z-index:50;}
 .header .block-subscribe .block-title strong { background-image:none; color:#000000; font-size:17px; text-transform:none; margin:0; padding:0;}
+.header .block-subscribe label {text-align:right; margin-left:150px; background:green;}
 
 /* Block: Reorder */
 .block-reorder .block-title strong { background-image:url(../images/i_block-list.gif); }
