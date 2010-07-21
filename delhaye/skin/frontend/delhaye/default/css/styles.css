@@ -771,9 +771,12 @@ tr.summary-details-excluded { font-style:italic; }
 .header .block-subscribe .block-content { padding:0px;  margin:0px; width:100%; background-color:#ffffff; }
 .header .block-subscribe label {width:150px; color:#B83140; font-size:14px;}
 .header .block-subscribe input.input-text { display:block; width:290px; margin:3px 0; }
-.header .block .actions { background:#dee5e8; background-image:none; padding:6px 9px; text-align:right; }
+.header .block .actions { background:#ffffff; background-image:none; padding:6px 9px; text-align:right; border:none; height:30px; width:146px;}
 .header .block .actions a { float:none; }
-.header .block .actions button.button { float:none; }
+.header .block .actions button.button { border:none; float:none; background:url(../image/btn/btn-background.png);}
+.header .block .actions button.button span { height:30px; border:none; background:#ffffff url(../image/btn/btn-left-arrow.png); }
+.header .block .actions button.button span span { height:30px; border:none; background:#ffffff url(../image/btn/btn-left-arrow.png) right; }
+
 
 /* Block: Reorder */
 .block-reorder .block-title strong { background-image:url(../images/i_block-list.gif); }
