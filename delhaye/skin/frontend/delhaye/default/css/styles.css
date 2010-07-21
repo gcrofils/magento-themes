@@ -121,7 +121,7 @@ ul,ol         { list-style:none; }
 .main-bottom-message { width:100%;}
 .main-bottom-message .news { min-height:100%; float:left; width:250px;}
 .main-bottom-message .msg { min-height:100%;  margin-left:270px; margin-top:15px; font-size:16px; text-align:left;  color:#D0C3C3;}
-.main-home { width:100%; position:absolute; background:blue; }
+.main-home { position:absolute; background:blue; }
 .std {border: dashed 1px red;}
 .home-main-left {  border:dashed 1px grey; position:absolute; width: 226px; height:500px;   }
 .home-main-right {  float:right; width: 226px;   }
