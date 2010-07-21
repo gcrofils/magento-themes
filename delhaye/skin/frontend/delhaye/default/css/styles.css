@@ -557,7 +557,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header-right p {margin-top:10px; margin-right:20px; text-align:right; color:#ffffff; font:13px Times, Arial, Helvetica, sans-serif;}
 
 /********** < Navigation */
-.nav-container { padding-top:8px;  }
+.nav-container { padding-top:11px;  }
 #nav { margin:5 auto; }
 
 /* All Levels */ /* Style consistent throughout all nav levels */
@@ -573,7 +573,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* 0 Level */
 #nav li { float:left; }
 #nav li.active a { color:#d96708; }
-#nav a { float:left; padding:5px 30px 60px 8px; color:#ffffff;  font-size:22px;}
+#nav a { float:left; padding:5px 60px 60px 8px; color:#ffffff;  font-size:22px;}
 #nav li.over a,
 #nav a:hover { color:#eebc5c; }
 
