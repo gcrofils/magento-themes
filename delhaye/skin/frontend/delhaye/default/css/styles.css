@@ -773,9 +773,9 @@ tr.summary-details-excluded { font-style:italic; }
 .header .block-subscribe input.input-text { display:block; width:290px; margin:3px 0; }
 .header .block .actions { background:#ffffff; background-image:none; padding:6px 9px; text-align:right; border:solid 1px green; height:30px; width:250px;}
 .header .block .actions a { float:none; }
-.header .block .actions button.button { border:none; float:none; background:url(../images/btn/btn-background.png);}
-.header .block .actions button.button span { height:30px; border:none; background:#B83140 url(../images/btn/btn-left-arrow.png) no-repeat; }
-.header .block .actions button.button span span { height:30px; border:none; background:#B83140 url(../images/btn/btn-left-arrow.png) right no-repeat; }
+.header .block .actions button.button { width:100%; border:none; float:none; background:url(../images/btn/btn-background.png);}
+.header .block .actions button.button span { width:100%; height:30px; border:none; background:#B83140 url(../images/btn/btn-left-arrow.png) no-repeat; }
+.header .block .actions button.button span span { width:100%; height:30px; border:none; background:#B83140 url(../images/btn/btn-right.png) right no-repeat; }
 
 
 /* Block: Reorder */
