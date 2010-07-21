@@ -775,7 +775,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header .block .actions a { float:none; }
 .header .block .actions button.button {padding:0px; margin:0px; width:100%; border:none; float:none; background:transparent url(../images/btn/btn-left-arrow.png) no-repeat;}
 .header .block .actions button.button span { padding:0px; margin:0px;width:100%; height:30px; border:none; background:transparent url(../images/btn/btn-right.png) right no-repeat; }
-.header .block .actions button.button span span {padding:0px; margin:5px 12px 0 0;text-align:right; width:100%; height:30px;  border:none; font-family:Times, Arial, Helvetica, sans-serif; font-size:15px;}
+.header .block .actions button.button span span {padding:5px 12px 0 0; margin:0;text-align:right; width:100%; height:30px;  border:none; font-family:Times, Arial, Helvetica, sans-serif; font-size:15px;}
 
 
 /* Block: Reorder */
