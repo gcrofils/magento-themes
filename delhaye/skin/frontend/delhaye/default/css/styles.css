@@ -774,8 +774,8 @@ tr.summary-details-excluded { font-style:italic; }
 .header .block .actions { background:#ffffff; background-image:none; padding:6px 9px; text-align:right; border:none; height:30px; width:146px;}
 .header .block .actions a { float:none; }
 .header .block .actions button.button { border:none; float:none; background:url(../image/btn/btn-background.png);}
-.header .block .actions button.button span { height:30px; border:none; background:#ffffff url(../image/btn/btn-left-arrow.png); }
-.header .block .actions button.button span span { height:30px; border:none; background:#ffffff url(../image/btn/btn-left-arrow.png) right; }
+.header .block .actions button.button span { height:30px; border:none; background:grey url(../image/btn/btn-left-arrow.png); }
+.header .block .actions button.button span span { height:30px; border:none; background:green url(../image/btn/btn-left-arrow.png) right; }
 
 
 /* Block: Reorder */
