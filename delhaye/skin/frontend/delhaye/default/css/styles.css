@@ -766,10 +766,11 @@ tr.summary-details-excluded { font-style:italic; }
 .block-subscribe .actions { background:none; padding:0; margin:3px 0 0; text-align:left; }
 .block-subscribe .actions button.button { float:none; }
 .block-subscribe .actions button.button span { border-color:#406a83; background:#618499; }
-.header .block-subscribe {width: 300px; background-color:transparent; border:dashed red 1px; position:absolute; margin-top:0px; margin-left:400px; z-index:50;}
+.header .block-subscribe {width: 300px; text-align:right; background-color:transparent; border:dashed red 1px; position:absolute; margin-top:0px; margin-left:400px; z-index:50; font-family:Times, Arial, Helvetica, sans-serif;}
 .header .block-subscribe .block-title strong { background-image:none; border:solid green 1px;color:#000000; font-size:17px; text-transform:none; margin:0; padding:0; width:100%;}
 .header .block-subscribe .block-content { background-color:grey; padding:0px;  margin:0px; width:100%; }
-.header .block-subscribe label {text-align:right; width:100px;}
+.header .block-subscribe label {width:150px; color:#B83140; font-size:14px;}
+.header .block-subscribe input.input-text { display:block; width:100%; margin:3px 0; }
 
 /* Block: Reorder */
 .block-reorder .block-title strong { background-image:url(../images/i_block-list.gif); }
