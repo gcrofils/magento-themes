@@ -97,9 +97,7 @@ queries.each{|q| execSql(q)}
 
 # Modules
 designTarget = File.expand_path(File.join(wwwroot, magentoCurrent, 'app', 'design', 'frontend', magentoTheme))
-puts designTarget
 %w[ AW_Blog-1.0.19 magento_easy_tabs-1.1 ].each do |m|
   src = File.expand_path(File.join(wwwroot, magentoCurrent, 'downloader', 'pearlib', 'download', m, 'frontend', 'default', 'default'))
-  puts src
   FileUtils.cp_r(src, designTarget)
 end
