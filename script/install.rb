@@ -96,5 +96,10 @@ queries << "update core_cache_option set value=0"
 queries.each{|q| execSql(q)}
 
 # Modules
-FileUtils.cp_r('/home/www/magento/downloader/pearlib/download/AW_Blog-1.0.19/frontend/default/default/*', '/home/www/magento/app/design/frontend/delhaye/default/')
-FileUtils.cp_r('/home/www/magento/downloader/pearlib/download/magento_easy_tabs-1.1/frontend/default/default/*', '/home/www/magento/app/design/frontend/delhaye/default/')
+designTarget = File.expand_path(File.join(wwwroot, magentoCurrent, 'app', 'design', 'frontend', magentoTheme, 'default'))
+puts designTarget
+%w[ AW_Blog-1.0.19 magento_easy_tabs-1.1].each do |module|
+  src = File.expand_path(File.join(wwwroot, magentoCurrent, 'downloader', 'pearlib', 'download', module, 'frontend', 'default', 'default'))
+  puts src
+  FileUtils.cp_r(src, designTarget)
+end
