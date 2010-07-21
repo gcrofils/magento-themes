@@ -766,6 +766,7 @@ tr.summary-details-excluded { font-style:italic; }
 .block-subscribe .actions { background:none; padding:0; margin:3px 0 0; text-align:left; }
 .block-subscribe .actions button.button { float:none; }
 .block-subscribe .actions button.button span { border-color:#406a83; background:#618499; }
+.header .block-subscribe {width: 300px; background:none;}
 .header .block-subscribe .block-title strong { background:blue ;}
 
 /* Block: Reorder */
