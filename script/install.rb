@@ -96,5 +96,5 @@ queries << "update core_cache_option set value=0"
 queries.each{|q| execSql(q)}
 
 # Modules
- cp -r /home/www/magento/downloader/pearlib/download/AW_Blog-1.0.19/frontend/default/default/* /home/www/magento/app/design/frontend/delhaye/default/
- cp -r /home/www/magento/downloader/pearlib/download/magento_easy_tabs-1.1/frontend/default/default/* /home/www/magento/app/design/frontend/delhaye/default/
+FileUtils.cp_r('/home/www/magento/downloader/pearlib/download/AW_Blog-1.0.19/frontend/default/default/*', '/home/www/magento/app/design/frontend/delhaye/default/')
+FileUtils.cp_r('/home/www/magento/downloader/pearlib/download/magento_easy_tabs-1.1/frontend/default/default/*', '/home/www/magento/app/design/frontend/delhaye/default/')
