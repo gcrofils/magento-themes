@@ -1,5 +1,7 @@
 <?php
 
+die ('loaded');
+
 class Mage_Catalog_Block_Product_Popular extends Mage_Catalog_Block_Product_Abstract
 {
     protected $_productCollection;
@@ -14,7 +16,6 @@ class Mage_Catalog_Block_Product_Popular extends Mage_Catalog_Block_Product_Abst
 
 
             $category = Mage::getModel('catalog/category')->load($categoryID ? $categoryID : 17);
-            die ($category);
                 if ($category->getId()) {
                     $origCategory = $layer->getCurrentCategory();
                     $layer->setCurrentCategory($category);
