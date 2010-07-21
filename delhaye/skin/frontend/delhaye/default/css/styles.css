@@ -768,10 +768,10 @@ tr.summary-details-excluded { font-style:italic; }
 .block-subscribe .actions button.button span { border-color:#406a83; background:#618499; }
 .header .block-subscribe {width: 312px; text-align:right; background-color:#ffffff; border:none; background-image:none; position:absolute; padding:0px; margin-top:48px; margin-left:430px; z-index:50; font-family:Times, Arial, Helvetica, sans-serif;}
 .header .block-subscribe .block-title { background:none; border:none; padding:0px; }
-.header .block-subscribe .block-title strong { background-image:none; color:#000000; font-size:17px; text-transform:none; margin:0 0 3px 0; padding:0; width:100%;font-family:Times, Arial, Helvetica, sans-serif;}
+.header .block-subscribe .block-title strong { background-image:none; color:#000000; font-size:21px; text-transform:none; margin:0 0 3px 0; padding:0; width:100%;font-family:Times, Arial, Helvetica, sans-serif;}
 .header .block-subscribe .block-content { padding:0px;  margin:0px; width:100%; background-color:#ffffff; text-align:right; }
 .header .block-subscribe label {width:150px; color:#B83140; font-size:14px;}
-.header .block-subscribe input.input-text { float:none; display:block; width:290px; margin:0px; }
+.header .block-subscribe input.input-text { float:none; display:block; width:150px; margin:0px; }
 .header .block .actions {  float:none; background:transparent url(../images/btn/btn-left-arrow.png) no-repeat; padding:0px 0px 0px 32px; margin:0px; text-align:right; height:30px; width:110px;}
 .header .block .actions a { float:none; }
 .header .block .actions button.button {padding:0px; margin:0px; width:100%; border:none; float:none; background:url(../images/btn/btn-background.png);}
