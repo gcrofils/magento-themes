@@ -4,6 +4,6 @@ meta_keywords: home
 meta_description: home
 content_heading: false
 content:
-  <h1><img src="{{media url="/sample_image_du_mois-600x400.jpg"}}" alt="" /></h1>     
+  <h1><img src="{{media url="/sample-image-du-mois-740x500.jpg"}}" alt="" /></h1>   
 layout_update_xml: 
 is_active: 1
