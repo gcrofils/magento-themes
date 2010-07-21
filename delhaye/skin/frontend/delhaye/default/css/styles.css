@@ -771,11 +771,11 @@ tr.summary-details-excluded { font-style:italic; }
 .header .block-subscribe .block-content { padding:0px;  margin:0px; width:100%; background-color:#ffffff; }
 .header .block-subscribe label {width:150px; color:#B83140; font-size:14px;}
 .header .block-subscribe input.input-text { display:block; width:290px; margin:3px 0; }
-.header .block .actions { background:#ffffff; background-image:none; padding:6px 9px; text-align:right; border:none; height:30px; width:146px;}
+.header .block .actions { background:#ffffff; background-image:none; padding:6px 9px; text-align:right; border:solid 1px green; height:30px; width:250px;}
 .header .block .actions a { float:none; }
 .header .block .actions button.button { border:none; float:none; background:url(../images/btn/btn-background.png);}
-.header .block .actions button.button span { height:30px; border:none; background:#B83140 url(../images/btn/btn-left-arrow.png); }
-.header .block .actions button.button span span { height:30px; border:none; background:#B83140 url(../images/btn/btn-left-arrow.png) right; }
+.header .block .actions button.button span { height:30px; border:none; background:#B83140 url(../images/btn/btn-left-arrow.png) no-repeat; }
+.header .block .actions button.button span span { height:30px; border:none; background:#B83140 url(../images/btn/btn-left-arrow.png) right no-repeat; }
 
 
 /* Block: Reorder */
