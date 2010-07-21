@@ -772,11 +772,11 @@ tr.summary-details-excluded { font-style:italic; }
 .header .block-subscribe .block-content { padding:0px;  margin:0px; width:100%; background-color:#ffffff; text-align:right; }
 .header .block-subscribe label {width:150px; color:#B83140; font-size:14px;}
 .header .block-subscribe input.input-text { display:block; width:290px; margin:0px; }
-.header .block .actions { background:url(../images/btn/btn-background.png); padding:0px; margin:0px; text-align:right; height:30px; width:120px;}
+.header .block .actions { background:url(../images/btn/btn-background.png); padding:0px 0px 0px 30px; margin:0px; text-align:right; height:30px; width:150px;}
 .header .block .actions a { float:none; }
 .header .block .actions button.button {padding:0px; margin:0px; width:100%; border:none; float:none; background:transparent url(../images/btn/btn-left-arrow.png) no-repeat;}
 .header .block .actions button.button span { padding:0px; margin:0px;width:100%; height:30px; border:none; background:transparent url(../images/btn/btn-right.png) right no-repeat; }
-.header .block .actions button.button span span {background-image:none; padding:5px 0 0 0;text-align:center; width:100%; height:30px; font-family:Times, Arial, Helvetica, sans-serif; font-size:15px;}
+.header .block .actions button.button span span {background-image:none; padding:5px 0 0 0;text-align:left; width:100%; height:30px; font-family:Times, Arial, Helvetica, sans-serif; font-size:15px;}
 
 
 /* Block: Reorder */
