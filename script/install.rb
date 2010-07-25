@@ -123,8 +123,8 @@ Dir["#{emailsPath}/*"].select { |file| /(template\.yml)$/ =~ file }.each do |fil
   
   queries << "delete from core_email_template where template_code='#{params['template_code']}'"
   queries << "insert into core_email_template (#{keys.join(',')}, orig_template_code, orig_template_variables) values (#{values.join(',')}, '', '')"
-  sSQL = 'Select template_id from core_email_template where template_code = '#{params['template_code']}'
-  queries << "insert into core_config_data(scope, scope_id, path, value) select 'default', 0, '#{params['core_config_data_path']}', template_id from core_email_template where template_code = '#{params['template_code']}' on duplicate key update value = #{sSQL}"
+  sSQL = "Select template_id from core_email_template where template_code = '#{params['template_code']}'"
+  queries << "insert into core_config_data(scope, scope_id, path, value) select 'default', 0, '#{params['core_config_data_path']}', template_id from core_email_template where template_code = '#{params['template_code']}' on duplicate key update value = (#{sSQL})"
 
 end
 
