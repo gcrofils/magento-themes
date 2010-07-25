@@ -1,11 +1,8 @@
 core_config_data_path: customer/create_account/email_template
 template_code:          
 template_text:
-  toto est dans le pré
 template_styles:
-  p.monstyle = {font-size15px}
-  p.tonstyle = {font-size3px;}
-template_type: 2
-template_subject: Bienvenue, {{var customer.name}}!
+template_type: 
+template_subject:
 template_sender_name:
 template_sender_email:
