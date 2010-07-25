@@ -46,11 +46,12 @@ themePath = File.expand_path(File.join(File.dirname(File.join(Dir.getwd, __FILE_
 targetPath = File.expand_path(File.join(wwwroot, magentoCurrent))
 pagesPath = File.expand_path(File.join(themePath, 'pages'))
 blocksPath = File.expand_path(File.join(themePath, 'blocks'))
+emailsPath = File.expand_path(File.join(themePath, 'emails'))
 
 def execSql(sql)
  cmd = "mysql -u#{MYSQL_USER} -p#{MYSQL_PASSWORD} -e \"connect #{MYSQL_DATABASE}; #{sql.gsub('"','\"')}; \""
  system "#{cmd}" 
- #puts "#{cmd}" 
+ puts "#{cmd}" 
 end
 
 FileUtils.cp_r File.join(themePath, appPath), targetPath
@@ -91,12 +92,51 @@ queries << "insert into core_config_data(scope, scope_id, path, value) values ('
 
 # Remove cache 
 queries << "update core_cache_option set value=0"
+
+# emails
+# Load Commons vars
+emailVars = YAML.load_file(File.join(emailsPath, 'common.yml'))
+emailVarsPattern = "/(<<#{params.values.strip.join('|')}>>)/" 
+Dir["#{emailsPath}/*"].select { |file| /(template\.yml)$/ =~ file }.each do |file|
+  identifier = File.basename(file, "_template.yml")
+  params = YAML.load_file( file )
+  params['template_code'] = identifier if params['template_code'].nil?
+  
+  values = Array.new
+  keys = Array.new
+  
+  %w[ template_code template_text template_styles template_type template_subject template_sender_name template_sender_email ].each do |var|
+    if params[var].is_a?(String)
+      values << "'#{params[var].gsub(emailVarsPattern){|match| emailVars[$1]}}'"
+    else
+      values << params[var].is_a?(String) ? "'#{params[var]}'" : (params[var].nil? ? 'NULL' : params[var])
+    end
+    keys << var
+  end
+  
+  values << 'now()'
+  values << 'now()'
+  keys << 'added_at'
+  keys << 'modified_at'
+  
+  queries << "delete from core_email_template where template_code='#{params['template_code']}'"
+  queries << "insert into core_email_template (#{keys.join(',')}, orig_template_code, orig_template_variables) values (#{values.join(',')}, '', '')"
+  sSQL = 'Select template_id from core_email_template where template_code = '#{params['template_code']}'
+  queries << "insert into core_config_data(scope, scope_id, path, value) select 'default', 0, '#{params['core_config_data_path']}', template_id from core_email_template where template_code = '#{params['template_code']}' on duplicate key update value = #{sSQL}"
+
+end
+
   
 
 queries.each{|q| execSql(q)}
 
 # Modules
 designTarget = File.expand_path(File.join(wwwroot, magentoCurrent, 'app', 'design', 'frontend', magentoTheme))
+####
+#### ATTENTION ######
+#### 
+#### Patch : version des modules en dur !
+#### 
 %w[ AW_Blog-1.0.19 magento_easy_tabs-1.1 ].each do |m|
   src = File.expand_path(File.join(wwwroot, magentoCurrent, 'downloader', 'pearlib', 'download', m, 'frontend', 'default', 'default'))
   FileUtils.cp_r(src, designTarget)

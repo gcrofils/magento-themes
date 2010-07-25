@@ -1,0 +1,16 @@
+core_config_data_path: customer/create_account/email_template
+template_code:          
+template_text:  
+  au début
+  <<header>>
+  et puis plus loin
+  <<footer>>
+  wouala.
+  cliquez ici : {{config path="web/unsecure/base_url"}}
+template_styles:
+  p.monstyle = {font-size:15px}
+  p.tonstyle = {font-size:3px;}
+template_type: 2
+template_subject: Bienvenue, {{var customer.name}}!
+template_sender_name:
+template_sender_email:
