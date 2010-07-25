@@ -14,7 +14,7 @@ header: |
             <tr>
               <td valign="top">
 footer: |
-  <table cellspacing="0" cellpadding="0" border="0" width="650" style="background:url({{skin url="images/email/background.png" _area='frontend'}}) no-repeat;">
+  <table cellspacing="0" cellpadding="0" border="0" width="650" style="background:url({{skin url="images/email/background.png" _area='frontend'}});">
     <tr style="height:64px">
       <td colspan="5" align="center" style="background:url({{skin url="images/email/footer_left_top.png" _area='frontend'}}) no-repeat;"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="{{var store.getFrontendName()}}"  style="margin-bottom:10px;" border="0"/></a></td>
     </tr>
