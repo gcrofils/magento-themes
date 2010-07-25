@@ -1,5 +1,5 @@
 core_config_data_path: customer/create_account/email_template
-template_code:          
+template_code: account_new       
 template_text:  
   au début
   <<header>>
@@ -12,5 +12,5 @@ template_styles:
   p.tonstyle = {font-size:3px;}
 template_type: 2
 template_subject: Bienvenue, {{var customer.name}}
-template_sender_name: titi
-template_sender_email: tutu
+template_sender_name: 
+template_sender_email: 

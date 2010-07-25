@@ -1,6 +1,25 @@
-header: ceci est mon header
-footer: 
-  ceci est un footer
-  en plusieurs lignes
+header: |
+  <div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+      <tr>
+        <td align="center" valign="top">
+          <table cellspacing="0" cellpadding="0" border="0" width="650">
+            <tr>
+              <td valign="top">
+                <a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="{{var store.getFrontendName()}}"  style="margin-bottom:10px;" border="0"/></a>
+              </td>
+            </tr>
+          </table>
+          <table cellspacing="0" cellpadding="0" border="0" width="650">
+            <tr>
+              <td valign="top">
+footer: |
+  </td>
+  </tr>
+  </table>
+  </td>
+  </tr>
+  </table>
+  </div>
 style: 
   p.laclass {font-weight:gras;}
