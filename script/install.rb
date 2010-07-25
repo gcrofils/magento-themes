@@ -51,7 +51,7 @@ emailsPath = File.expand_path(File.join(themePath, 'emails'))
 def execSql(sql)
  cmd = "mysql -u#{MYSQL_USER} -p#{MYSQL_PASSWORD} -e \"connect #{MYSQL_DATABASE}; #{sql.gsub('"','\"')}; \""
  system "#{cmd}" 
- #puts "#{cmd}" 
+ puts "#{cmd}" 
 end
 
 FileUtils.cp_r File.join(themePath, appPath), targetPath
@@ -97,7 +97,6 @@ queries << "update core_cache_option set value=0"
 # Load Commons vars
 emailVars = YAML.load_file(File.join(emailsPath, 'common.yml'))
 emailVarsPattern = /(<<(#{emailVars.keys.join('|')})>>)/ 
-puts emailVarsPattern.inspect
 Dir["#{emailsPath}/*"].select { |file| /(template\.yml)$/ =~ file }.each do |file|
   identifier = File.basename(file, "_template.yml")
   puts file.inspect
