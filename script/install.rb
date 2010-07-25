@@ -128,6 +128,10 @@ Dir["#{emailsPath}/*"].select { |file| /(template\.yml)$/ =~ file }.each do |fil
 
 end
 
+## Activer les logs
+queries << "insert into core_config_data(scope, scope_id, path, value) values ('default', 0, 'dev/log/active', '1') on duplicate key update value = '1'"
+
+
   
 
 queries.each{|q| execSql(q)}
