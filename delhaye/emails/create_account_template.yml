@@ -2,14 +2,14 @@ core_config_data_path: customer/create_account/email_template
 template_code: (delhaye) new account       
 template_text: |
   <<header>>
-  <p><strong>Madame/Monsieur {{htmlescape var=$customer.name}}</strong>,
+  <p><strong>Madame/Monsieur {{htmlescape var=\$customer.name}}</strong>,
   <br/>Nous vous remercions de l’intérêt que vous portez à nos boutiques et à nos bijoux.
   <br/>Nous avons le plaisir de vous confirmer la création de votre compte et l’ouverture de votre espace personnel.
   <br/>Pour vous connecter lors de vos visites sur notre boutique, cliquez sur <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">Connexion</a> ou <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">Mon compte</a> en haut de toutes les pages, puis saisissez votre email et votre mot de passe.</p>
   <p style="border:1px solid #BEBCB7; padding:13px 18px; background:#F8F7F5; ">
   Utilisez les données suivantes dans l'écran de connexion :<br/>
   Email : {{var customer.email}}<br/>
-  Mot de passe : {{htmlescape var=$customer.password}}<p>
+  Mot de passe : {{htmlescape var=\$customer.password}}<p>
   <p>En vous connectant à votre espace personnel, vous pourrez :</p>
   <ul>
   <li>Ccommander vos bijoux.</li>
