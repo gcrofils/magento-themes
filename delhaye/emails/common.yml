@@ -1,3 +1,6 @@
-header:ceci est mon header
-footer:
-style:
+header: ceci est mon header
+footer: 
+  ceci est un footer
+  en plusieurs lignes
+style: 
+  p.laclass {font-weight:gras;}
