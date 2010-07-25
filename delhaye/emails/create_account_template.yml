@@ -1,12 +1,7 @@
 core_config_data_path: customer/create_account/email_template
 template_code:          
-template_text:  
-  au début
-  <<header>>
-  et puis plus loin
-  <<footer>>
-  wouala.
-  cliquez ici  {{config path="web/unsecure/base_url"}}
+template_text:
+  toto est dans le pré
 template_styles:
   p.monstyle = {font-size15px}
   p.tonstyle = {font-size3px;}
