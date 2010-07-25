@@ -96,8 +96,8 @@ queries << "update core_cache_option set value=0"
 # emails
 # Load Commons vars
 emailVars = YAML.load_file(File.join(emailsPath, 'common.yml'))
-emailVa
-emailVarsPattern = "/(<<#{emailVars.values.strip.join('|')}>>)/" 
+puts emailVars.inspect
+emailVarsPattern = "/(<<#{emailVars.keys.join('|')}>>)/" 
 Dir["#{emailsPath}/*"].select { |file| /(template\.yml)$/ =~ file }.each do |file|
   identifier = File.basename(file, "_template.yml")
   params = YAML.load_file( file )
