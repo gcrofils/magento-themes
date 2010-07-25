@@ -1,0 +1,19 @@
+core_config_data_path: customer/newsletter/confirm_template
+template_code: (delhaye) subscribe newsletter       
+template_text: |
+  <<header>>
+  <p><strong>Cher {{htmlescape var=$customer.name}},</strong>,<br/>
+  Nous vous remercions de votre inscription à notre newsletter.</p>
+  <p style="border:1px solid #BEBCB7; padding:13px 18px; background:#F8F7F5; ">
+  Pour commencer à recevoir la newsletter, vous devez d'abord confirmer votre inscription en cliquant sur le lien suivant :<br />
+  <a href="{{var subscriber.getConfirmationLink()}}" style="color:#1E7EC8;">{{var subscriber.getConfirmationLink()}}</a><p>
+  <p>Merci,<br/>
+  <strong>{{var store.getFrontendName()}}</strong></p>
+  <<footer>
+template_styles:
+  p.monstyle = {font-size:15px}
+  p.tonstyle = {font-size:3px;}
+template_type: 2
+template_subject: Confirmation d'inscription à la newsletter
+template_sender_name: 
+template_sender_email:

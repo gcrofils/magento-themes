@@ -1,5 +1,5 @@
 core_config_data_path: customer/create_account/email_template
-template_code: account_new       
+template_code: (delhaye) new account       
 template_text: |
   <<header>>
   <p><strong>Cher {{htmlescape var=$customer.name}}</strong>,
