@@ -14,12 +14,12 @@ header: |
             <tr>
               <td valign="top">
 footer: |
-  <table cellspacing="0" cellpadding="0" border="0" width="650" style="background:url({{skin url="images/email/background.png" _area='frontend'}})">
+  <table cellspacing="0" cellpadding="0" border="0" width="650" style="background:url({{skin url="images/email/background.png" _area='frontend'}}) no-repeat;">
     <tr style="height:64px">
-      <td colspan="5" align="center" style="background:url({{skin url="images/email/footer_left_top.png" _area='frontend'}})"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="{{var store.getFrontendName()}}"  style="margin-bottom:10px;" border="0"/></a></td>
+      <td colspan="5" align="center" style="background:url({{skin url="images/email/footer_left_top.png" _area='frontend'}}) no-repeat;"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="{{var store.getFrontendName()}}"  style="margin-bottom:10px;" border="0"/></a></td>
     </tr>
     <tr style="height:62px">
-      <td style="background:url({{skin url="images/email/footer_left_bottom.png" _area='frontend'}})">header1</td>
+      <td style="background:url({{skin url="images/email/footer_left_bottom.png" _area='frontend'}}) no-repeat;">header1</td>
       <td><img src="{{skin url="images/email/separator.png" _area='frontend'}}" alt="|" border="0"/></td>
       <td>header2</td>
       <td><img src="{{skin url="images/email/separator.png" _area='frontend'}}" alt="|" border="0"/></td>
