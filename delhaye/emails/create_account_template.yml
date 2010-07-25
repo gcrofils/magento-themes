@@ -6,10 +6,10 @@ template_text:
   et puis plus loin
   <<footer>>
   wouala.
-  cliquez ici : {{config path="web/unsecure/base_url"}}
+  cliquez ici  {{config path="web/unsecure/base_url"}}
 template_styles:
-  p.monstyle = {font-size:15px}
-  p.tonstyle = {font-size:3px;}
+  p.monstyle = {font-size15px}
+  p.tonstyle = {font-size3px;}
 template_type: 2
 template_subject: Bienvenue, {{var customer.name}}!
 template_sender_name:
