@@ -69,7 +69,7 @@ paths = {'page' => pagesPath, 'block' => blocksPath}
     params = YAML.load_file( file )
     params['identifier'] = identifier
   
-    values = params.values.map{|v| v.is_a?(String) ? "'#{v}'" : (v.nil? ? 'NULL' : v)}
+    values = params.values.map{|v| v.is_a?(String) ? "'#{v.gsub("'", "''")}'" : (v.nil? ? 'NULL' : v)}
     values << 'now()'
     values << 'now()'
   
@@ -111,7 +111,7 @@ Dir["#{emailsPath}/*"].select { |file| /(template\.yml)$/ =~ file }.each do |fil
     if params[var].is_a?(String)
       values << "'#{params[var].gsub(emailVarsPattern){|match| emailVars[$2]}}'"
     else
-      values << params[var].is_a?(String) ? "'#{params[var]}'" : (params[var].nil? ? 'NULL' : params[var])
+      values << params[var].is_a?(String) ? "'#{params[var].gsub("'", "''")}'" : (params[var].nil? ? 'NULL' : params[var])
     end
     keys << var
   end

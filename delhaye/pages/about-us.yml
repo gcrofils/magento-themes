@@ -1,11 +1,11 @@
 title: about us
 root_template: one_column
 meta_keywords: About Us
-meta_description: Découvrez l\'histoire de Delhaye
+meta_description: Découvrez l'histoire de Delhaye
 content_heading: false
 content: |
   <div class="page-title">
-  <h1>L\'histoire des Bijouteries Delhaye</h1>
+  <h1>L'histoire des Bijouteries Delhaye</h1>
   </div>
   <h2>Lorem Ipsum Dolor Sit Amet</h2>
   <p>Nam sit amet quam in sapien tincidunt ornare. Proin dui erat, convallis at consequat vel, suscipit ut nunc. Maecenas tempus justo nec lorem tincidunt lacinia a eget tortor. Fusce sed dolor non eros ultricies venenatis. Mauris elit massa, pharetra quis adipiscing ut, sagittis sed est.</p>
