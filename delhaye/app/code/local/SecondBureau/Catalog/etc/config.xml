@@ -6,9 +6,9 @@
     </modules>
     <global>
         <blocks>
-                <catalog>
+                <secondbureau_catalog>
                     <class>SecondBureau_Catalog_Block</class>
-                </catalog>
+                </secondbureau_catalog>
         </blocks>
     </global>
 </config>
