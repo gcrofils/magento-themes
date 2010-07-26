@@ -14,9 +14,11 @@ if($_productCollection->count()): ?>
     </div>
     <div class="block-content">
                 
-<?php $_iterator = 1; ?>
+<?php $_iterator = 0;
+$i = 0; ?>
         <ol class="mini-products-list" id="block-popular">
         <?php foreach($_productCollection as $_item): ?>
+        <?php if ($i++ > $number_of_products) break; ?>
             <li class="item">
                 <div class="product">
                     <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize(50) ?>" width="50" height="50" alt="<?php echo $this->htmlEscape($_item->getName()) ?>" /></a>
