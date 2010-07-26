@@ -2,4 +2,4 @@ title: telephone_info
 is_active: 1
 content: 
  <div class="phone">{{config path="general/store_information/phone"}}</div> 
- <div class="quicklinks">Actualit&eacute;s&nbsp;&nbsp;&nbsp;Service & Qualit&eacute;</div>
+ <div class="quicklinks"><a href="{{store direct_url="blog"}}">Actualit&eacute;s</a>&nbsp;&nbsp;&nbsp;<a href="{{store direct_url="customer-service"}}">Service & Qualit&eacute;</a></div>

@@ -1,11 +1,11 @@
-title: about us
-root_template: three_columns
+title: customer Services
+root_template: one_column
 meta_keywords: services, qualite
 meta_description: Les services offerts par les bijouteries Delhaye
 content_heading: false
 content:
   <div class="page-title">
-  <h1>Services et Qualité</h1>
+  <h1>Services et Qualit&eacute;</h1>
   </div>
   <ul class="disc">
   <li><a href="#answer1">Transport &amp; Livraison</a></li>

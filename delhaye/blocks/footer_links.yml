@@ -1,10 +1,10 @@
 title: footer-links
 is_active: 1
 content: |
-  <ul class="footer-links">
-  <li><a>Plan du site</a> -</li>
-  <li><a href="{{store direct_url="about-us"}}">Qui sommes nous ?</a> -</li> 
-  <li><a href="{{store direct_url="shops"}}">Trouver un magasin</a> -</li>
+  <ul class="links">
+  <li><a>Plan du site</a></li>
+  <li><a href="{{store direct_url="about-us"}}">Qui sommes nous ?</a></li> 
+  <li><a href="{{store direct_url="shops"}}">Trouver un magasin</a></li>
   <li><a href="{{store direct_url="contacts"}}">Contactez-nous</a></li>
   </div>
   
