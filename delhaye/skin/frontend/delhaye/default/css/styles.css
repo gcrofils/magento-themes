@@ -560,7 +560,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header-right p {margin-top:10px; margin-right:20px; text-align:right; color:#ffffff; font:13px Times, Arial, Helvetica, sans-serif;}
 
 .header-container .toplinks {position:relative; top:-20px;}
-.header-container .toplinks a {color:#B83140; font-size:15px;}
+.header-container .toplinks a {color:#B83140; font-weight:bold;}
 
 /********** < Navigation */
 .nav-container { padding-top:11px;  }
