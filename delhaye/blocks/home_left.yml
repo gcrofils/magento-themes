@@ -1,4 +1,4 @@
 title: home_left
 is_active: 1
 content: 
-  <div>{{block type="secondbureau_catalog/product_popular" template="catalog/product/popular.phtml" category_id="21"}}</div>  
+  <div>{{block type="secondbureau_catalog/product_popular" template="catalog/product/popular.phtml" category_id="21" num_products="3"}}</div>  
