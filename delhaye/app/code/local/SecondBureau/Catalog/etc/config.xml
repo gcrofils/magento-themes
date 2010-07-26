@@ -6,9 +6,9 @@
     </modules>
     <global>
         <blocks>
-                <catalog>
+                <product_popular>
                     <class>SecondBureau_Product_Popular_Block</class>
-                </catalog>
+                </product_popular>
         </blocks>
     </global>
 </config>
