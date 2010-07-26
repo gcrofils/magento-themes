@@ -19,7 +19,7 @@ class SecondBureau_Catalog_Block_Product_Popular extends Mage_Catalog_Block_Prod
                     $layer->setCurrentCategory($category);
                 }
             $this->_productCollection = $layer->getProductCollection();
-            Mage::log(print_r($this->_productCollection));
+            
 
             $this->prepareSortableFieldsByCategory($layer->getCurrentCategory());
 

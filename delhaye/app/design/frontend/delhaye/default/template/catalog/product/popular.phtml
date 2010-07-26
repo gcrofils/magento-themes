@@ -1,6 +1,7 @@
 <?php 
 
-$_productCollection=array_slice(shuffle($this->getLoadedProductCollection()), 0,1);
+$_productCollection=$this->getLoadedProductCollection();
+Mage::log(print_r($this->_productCollection));
 
 ?>
 <?php 
