@@ -1,13 +1,8 @@
 <?php 
 
-$_productCollection=$this->getLoadedProductCollection();
+$productCollection=$this->getLoadedProductCollection();
 
-$displayed_products = array();
-foreach ($_productCollection as $_product) {
-$displayed_products[] = $_product;
-} 
-shuffle($displayed_products)
-$displayed_products = array_slice($displayed_products,0,3);
+
 
 ?>
 <?php 
@@ -20,7 +15,7 @@ if($_productCollection->count()): ?>
                 
 <?php $_iterator = 0; ?>
         <ol class="mini-products-list" id="block-popular">
-        <?php foreach($displayed_products as $_item): ?>
+        <?php foreach($productCollection as $_item): ?>
             <li class="item">
                 <div class="product">
                     <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize(50) ?>" width="50" height="50" alt="<?php echo $this->htmlEscape($_item->getName()) ?>" /></a>
