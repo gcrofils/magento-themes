@@ -1646,7 +1646,7 @@ tr.summary-details-excluded { font-style:italic; }
 
 
 /* Footer ================================================================================ */
-.footer-container { background: #8f8086; color:#D0C3C3; font-size:14px; }
+.footer-container { background: #8f8086; color:#D0C3C3; font-size:14px; margin-bottom: 50px; }
 .footer-container .seo {padding-top:15px;}
 .footer-container .seo h1 {color:#D0C3C3; text-align:left; margin-left:30px; font-weight:bold;}
 .footer-container .seo ul {text-align:left; margin-left:30px; margin-top:20px;}
