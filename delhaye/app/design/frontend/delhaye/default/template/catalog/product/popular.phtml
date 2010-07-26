@@ -1,7 +1,6 @@
-<h1>OK</h1><h1>OK</h1><h1>OK</h1><h1>OK</h1><h1>OK</h1><h1>OK</h1><h1>OK</h1><h1>OK</h1><h1>OK</h1><h1>OK</h1><h1>OK</h1><h1>OK</h1><h1>OK</h1>
 <?php 
 
-$_productCollection=$this->getLoadedProductCollection() 
+$_productCollection=array_slice(shuffle($this->getLoadedProductCollection()), 0,1);
 
 ?>
 <?php 
