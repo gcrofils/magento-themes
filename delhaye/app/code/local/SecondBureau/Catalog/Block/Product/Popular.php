@@ -1,7 +1,6 @@
 <?php
 
-
-class Mage_Catalog_Block_Product_Popular extends Mage_Catalog_Block_Product_Abstract
+class SecondBureau_Catalog_Block_Product_Popular extends Mage_Catalog_Block_Product_Abstract
 {
     protected $_productCollection;
 

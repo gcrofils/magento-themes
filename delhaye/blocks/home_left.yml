@@ -3,4 +3,3 @@ is_active: 1
 content: 
   <h1>Lorem ipsum dui id morbi per tortor suspendisse, convallis semper libero tempus nisi ultricies lacus, dapibus torquent per lacus diam. ut dapibus venenatis dapibus sagittis molestie senectus, faucibus nunc eu habitasse. </h1>
   <div>{{block type="catalog/product_popular" template="catalog/product/popular.phtml" category_id="21"}}</div>  
-  <div>{{block type="catalog/product_popular" template="catalog/product/popular.phtml" category_id="21"}}</div>
