@@ -5,6 +5,11 @@
         </SecondBureau_Catalog>
     </modules>
     <global>
+        <blocks>
+                <mycatalog>
+                    <class>SecondBureau_Catalog_Block</class>
+                </mycatalog>
+        </blocks>
     </global>
 </config>
 

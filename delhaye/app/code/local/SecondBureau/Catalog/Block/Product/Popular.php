@@ -1,6 +1,6 @@
 <?php
 
-une grosse connerie
+getGroupedClassName
 
 class SecondBureau_Catalog_Block_Productpopular extends Mage_Catalog_Block_Product_Abstract
 {
