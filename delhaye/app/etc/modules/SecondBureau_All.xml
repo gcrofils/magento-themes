@@ -31,5 +31,9 @@
             <active>true</active>
             <codePool>local</codePool>
         </SecondBureau_Page>
+        <SecondBureau_Catalog>
+            <active>true</active>
+            <codePool>local</codePool>
+        </SecondBureau_Catalog>
     </modules>
 </config>
