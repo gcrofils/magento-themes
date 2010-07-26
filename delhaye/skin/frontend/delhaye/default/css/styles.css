@@ -30,7 +30,7 @@ body          { background:#496778 url(../images/home/background.png) 0 0 repeat
 
 img           { border:0; vertical-align:top; }
 
-a             { color:#1e7ec8; text-decoration:underline; }
+a             { color:#000000; text-decoration:underline; }
 a:hover       { text-decoration:none; }
 :focus        { outline:0; }
 
@@ -116,7 +116,7 @@ ul,ol         { list-style:none; }
 .main-bottom-brand { width:100%; padding:0px; margin:0px; height:138px; text-align:center; background:#ffffff url(../images/home/bottom.png) repeat-x ; clear:both;}
 .main-bottom-brand .logos {width:100%;  padding:0px; padding-top:15px }
 .main-bottom-brand img {  margin:0 5px 0 5px; vertical-align:middle;}
-.main-bottom-brand p { font-size:18px; margin-top:5px; color:#8F8086; }
+.main-bottom-brand p,.main-bottom-brand a { font-size:18px; margin-top:5px; color:#8F8086; }
 .main-bottom-right { width:172px; height:100%; background: url(../images/home/bottom-right-corner.png) no-repeat 100% 100%; float:right; margin-top:12px; margin-right:-2px;  }
 .main-bottom-message { width:100%;}
 .main-bottom-message .news { min-height:100%; float:left; width:250px;}
@@ -551,7 +551,9 @@ tr.summary-details-excluded { font-style:italic; }
 .header-container .top-container { clear:both; padding:5px 10px 0 12px; text-align:right; }
 .header-container .top-container a { font-size:11px; color:#ebbc58; }
 .main-top-right .phone { margin:0; color:#ffffff; font-size:28px; width:100%; text-align:center;}
-.main-top-right .quicklinks { margin:-7px 0 0 0; color:#ffffff; font-size:15px; width:100%; text-align:center;}
+.main-top-right .quicklinks,
+.main-top-right .quicklinks a { margin:-7px 0 0 0; color:#ffffff; font-size:15px; width:100%; text-align:center;}
+
 .header-right div {margin:0 15px -10px 10px; padding:0;}
 .header-right h1 {color: #000000; margin-top:5px; font-size:20px; font-weight:bold;}
 .header-right h2 {color: #000000; margin-top:10px; font-size:17px;}
@@ -1651,7 +1653,8 @@ tr.summary-details-excluded { font-style:italic; }
 .footer-container .seo h1 {color:#D0C3C3; text-align:left; margin-left:30px; font-weight:bold;}
 .footer-container .seo ul {text-align:left; margin-left:30px; margin-top:20px;}
 .footer {text-align:center; }
-.footer .links {color:#D0C3C3; text-align:center; font-size:18px; font-weight:bold;}
+.footer ul.links { display:block; text-align:center;}
+.footer ul.links li a {color:#D0C3C3; font-size:18px; font-weight:bold;}
 
 .footer .store-switcher { display:inline; margin:0 5px 0 0; color:#fff; }
 .footer .store-switcher label { font-weight:bold; vertical-align:middle; }
