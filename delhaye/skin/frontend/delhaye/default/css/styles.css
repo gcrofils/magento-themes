@@ -800,11 +800,11 @@ tr.summary-details-excluded { font-style:italic; }
 .block-login .actions button.button span { border-color:#406a83; background:#618499; }
 
 /* home Block: Popular */
-.home-main-left .block-popular .product {background: white; -moz-border-radius:15px; -webkit-border-radius:15px;}
-.home-main-left .block-popular .block-content {background:transparent; border:none;}
+.home-main-left .block-popular .product {background: red; -moz-border-radius:15px; -webkit-border-radius:15px; padding:20px;}
+.home-main-left .block-popular .block-content2 {background:transparent; border:none;}
 .home-main-left .block-popular .block-title,
 .home-main-left .block-popular .product-details {display:none;}
-.home-main-left .block-popular .btn .arrow {position:relative; left:-10px; top:-5px;}
+.home-main-left .block-popular .btn .arrow {position:relative; left:10px; top:5px;}
 
 
 /* Paypal */

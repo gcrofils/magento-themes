@@ -12,7 +12,7 @@ if($_productCollection->count()): ?>
         <div class="block-title">
         <strong><span><?php echo $this->__('Most Popular')?></span></strong>
     </div>
-    <div class="block-content">
+    <div class="block-content2">
                 
 <?php $_iterator = 0;
 $i = 0; ?>
@@ -28,7 +28,7 @@ $i = 0; ?>
                         <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="product-info"><?php echo $this->__('info')?></a>
                     </div>
                 </div>
-                <div class="btn arrow"><a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="btn arrow"><img src="{{skin url="images/logo/gucci.png"}}" width="40" height="39" alt="<?php echo $this->htmlEscape($_item->getName()) ?>" /></a></div>
+                <div class="btn arrow"><a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="btn arrow"><img src="<?php echo $this->getSkinUrl('images/icon/btn_submit-arrow.png')?>" width="40" height="39" alt="<?php echo $this->htmlEscape($_item->getName()) ?>" /></a></div>
             </li>
         <?php endforeach ?>
         </ol>
