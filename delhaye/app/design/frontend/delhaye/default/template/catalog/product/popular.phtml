@@ -1,7 +1,13 @@
 <?php 
 
 $_productCollection=$this->getLoadedProductCollection();
-Mage::log(print_r($_productCollection));
+
+$displayed_products = array();
+foreach ($_productCollection as $_product) {
+$displayed_products[] = $_product;
+} 
+
+shuffle($displayed_products);
 
 ?>
 <?php 
