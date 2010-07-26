@@ -559,6 +559,8 @@ tr.summary-details-excluded { font-style:italic; }
 .header-right h2 {color: #000000; margin-top:10px; font-size:17px;}
 .header-right p {margin-top:10px; margin-right:20px; text-align:right; color:#ffffff; font:13px Times, Arial, Helvetica, sans-serif;}
 
+.header-container .toplinks {position:absolute;}
+
 /********** < Navigation */
 .nav-container { padding-top:11px;  }
 #nav { margin:5 auto; }
