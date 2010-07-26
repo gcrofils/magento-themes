@@ -122,13 +122,14 @@ ul,ol         { list-style:none; }
 .main-bottom-message .news { min-height:100%; float:left; width:250px;}
 .main-bottom-message .msg { min-height:100%;  margin-left:270px; margin-top:15px; font-size:16px; text-align:left;  color:#D0C3C3;}
 .main-home { position:absolute; }
-.home-main-left {  border:dashed 1px grey; position:absolute; width: 226px; height:500px;   }
+.home-main-left { position:absolute; width: 226px; height:500px; padding-top:150px ; z-index:100;  }
 .home-main-right {  float:right; width: 226px;   }
 .home-main-right-top {  width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; text-align:center; }
 .home-main-right-top span { margin-top:75px; }
 .home-main-right-bottom {  width: 100%;  text-align:center; v-align:top; color:#000000; font:15px Arial, Helvetica, sans-serif; background: url(../images/home/main-right.png) repeat-y right;}
 .home-main-right-bottom h1 { margin: 0 20px 6px 10px; font-size:20px;  }
 .home-main-right-bottom p { margin: 10px 20px 0px 10px; }
+
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
@@ -641,6 +642,7 @@ tr.summary-details-excluded { font-style:italic; }
 .block-compared,
 .block-related,
 .block-tags,
+.block-popular,
 .block-login { font-size:11px; line-height:1.25; }
 .block-cart .block-title strong,
 .block-wishlist .block-title strong,
@@ -796,6 +798,9 @@ tr.summary-details-excluded { font-style:italic; }
 .block-login input.input-text { display:block; width:167px; margin:3px 0; }
 .block-login .actions { background:none; padding:0; margin:3px 0 0; }
 .block-login .actions button.button span { border-color:#406a83; background:#618499; }
+
+/* home Block: Popular */
+.home-main-left .block-popular .product {background: red;}
 
 /* Paypal */
 .sidebar .paypal-logo { display:block; margin:10px 0; text-align:center; }
