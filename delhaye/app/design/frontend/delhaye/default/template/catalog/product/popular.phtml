@@ -7,7 +7,7 @@ foreach ($_productCollection as $_product) {
 $displayed_products[] = $_product;
 } 
 
-shuffle($displayed_products);
+$_productCollection = array_slice(shuffle($displayed_products),0,3);
 
 ?>
 <?php 
