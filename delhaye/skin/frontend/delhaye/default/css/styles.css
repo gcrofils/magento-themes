@@ -105,7 +105,7 @@ ul,ol         { list-style:none; }
 .col-right { float:right; width:195px; padding:0 0 1px; }
 
 /* home layout */
-.home-layout { float:none; width:90%; min-width:954px;}
+.home-layout { float:none; width:90%; min-width:1000px;}
 .main-left { }
 .main-right {  }
 .main-top { height:60px; background:url(../images/home/top.png) repeat-x ; padding-left:250px}

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <default>
+    <reference name="root">
+      <reference name="top.links">
+        <!-- Add custom links. Pretty self-explanatory.
+        Dig into app/code/core/Mage/Page/Block/Template/Links.php for more info -->
+        <action method="addLink" translate="label title">
+          <label>About Us</label>
+          <url>about</url>  <!-- can use full url also -->
+          <title>About Us</title>
+          <prepare>true</prepare> <!-- set true if adding base url param -->
+          <urlParams helper="core/url/getHomeUrl"/> <!-- base url - thanks @Russ! -->
+          <position>1</position>
+          <liParams/>
+          <aParams>'class="top-link-about-us"'</aParams>
+          <beforeText></beforeText>
+          <afterText></afterText>
+        </action>
+        <!-- Removes 'My Account' link - Default position: 10 -->
+        <action method="removeLinkByUrl"><url helper="customer/getAccountUrl"/></action>
+        <!-- Removes 'Wishlist' link - Default position: 20 -->
+        <!-- for Magento 1.3.x -->
+        <action method="removeLinkByUrl"><url helper="wishlist/"/></action>
+        <!-- for Magento 1.4.x -->
+        <remove name="wishlist_link"/>
+        <!-- Removes 'My Cart' AND 'Checkout' links
+        Default position: 40 and 50 respectively -->
+        <remove name="checkout_cart_link"/>
+        <!-- To re-add 'My Cart' or 'Checkout' after removing both -->
+        <block type="checkout/links" name="checkout_cart_link_custom">
+          <action method="addCartLink"></action>
+          <action method="addCheckoutLink"></action>
+        </block>
+      </reference>
+    </reference>
+  </default>
+  <customer_logged_out>
+    <!-- Removes 'Log In' link - Default position: 60 -->
+    <reference name="top.links">
+      <action method="removeLinkByUrl"><url helper="customer/getLoginUrl"/></action>
+    </reference>
+  </customer_logged_out>
+  <customer_logged_in>
+    <!-- Removes 'Log Out' link - Default position: 60 -->
+    <reference name="top.links">
+      <action method="removeLinkByUrl"><url helper="customer/getLogoutUrl"/></action>
+    </reference>
+  </customer_logged_in>
+</layout>
+
+
