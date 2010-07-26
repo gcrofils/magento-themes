@@ -9,7 +9,7 @@ template_text: |
   <a href="{{var subscriber.getConfirmationLink()}}" style="color:#1E7EC8;">{{var subscriber.getConfirmationLink()}}</a><p>
   <p>Merci,<br/>
   <strong>{{var store.getFrontendName()}}</strong></p>
-  <<footer>
+  <<footer>>
 template_styles:
   p.monstyle = {font-size:15px}
   p.tonstyle = {font-size:3px;}

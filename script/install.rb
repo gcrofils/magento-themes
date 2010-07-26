@@ -110,7 +110,7 @@ Dir["#{emailsPath}/*"].select { |file| /(template\.yml)$/ =~ file }.each do |fil
     if params[var].is_a?(String)
       values << "'#{params[var].gsub(emailVarsPattern){|match| emailVars[$2]}.gsub("'", "''")}'"
     else
-      values <<  params[var].nil? ? 'NULL' : params[var]
+      values <<  (params[var].nil? ? 'NULL' : params[var])
     end
     keys << var
   end
