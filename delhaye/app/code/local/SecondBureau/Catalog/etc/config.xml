@@ -1,0 +1,15 @@
+<config>
+    <modules>
+        <SecondBureau_Catalog>
+            <version>0.0.1</version>
+        </SecondBureau_Catalog>
+    </modules>
+    <global>
+        <blocks>
+                <catalog>
+                    <class>SecondBureau_Product_Popular_Block</class>
+                </catalog>
+        </blocks>
+    </global>
+</config>
+
