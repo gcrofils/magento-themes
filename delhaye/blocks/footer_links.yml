@@ -1,0 +1,9 @@
+title: footer-links
+is_active: 1
+content: |
+  <div class="footer-links">
+  Plan du site -
+  Qui sommes nous ? - 
+  Trouver un magasin - 
+  Contactez-nous
+  </div>

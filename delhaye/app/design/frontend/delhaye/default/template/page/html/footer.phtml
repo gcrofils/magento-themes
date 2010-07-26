@@ -1,9 +1,5 @@
 
 <div class="footer-container">
 	<div class="seo"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('seo')->toHTML();?></div>
-    <div class="footer">
-        <?php echo $this->getChildHtml() ?>
-        <address><?php echo $this->getCopyright() ?></address>
-        <div class="design-by"><a href="http://secondbureau.com">Magento Themes</a></div>
-    </div>
+  <div class="footer"><?= $this->getLayout()->createBlock('cms/block')->setBlockId('footer_links')->toHTML();?></div>
 </div>

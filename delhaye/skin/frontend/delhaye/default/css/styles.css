@@ -1651,6 +1651,7 @@ tr.summary-details-excluded { font-style:italic; }
 .footer-container .seo h1 {color:#D0C3C3; text-align:left; margin-left:30px; font-weight:bold;}
 .footer-container .seo ul {text-align:left; margin-left:30px; margin-top:20px;}
 .footer {text-align:center; }
+.footer-links {color:#D0C3C3; text-align:center; font-size:18px; font-weight:bold;}
 
 .footer .store-switcher { display:inline; margin:0 5px 0 0; color:#fff; }
 .footer .store-switcher label { font-weight:bold; vertical-align:middle; }
