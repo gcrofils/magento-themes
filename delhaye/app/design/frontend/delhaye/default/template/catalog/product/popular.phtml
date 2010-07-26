@@ -22,11 +22,7 @@ $i = 0; ?>
             <li class="item">
                 <div class="product">
                     <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize(100) ?>" width="100" height="100" alt="<?php echo $this->htmlEscape($_item->getName()) ?>" /></a>
-                    <div class="product-details">
-                        <p class="product-name"><a href="<?php echo $_item->getProductUrl() ?>"><?php echo $this->htmlEscape($_item->getName()) ?></a></p>
-                        <?php echo $this->getPriceHtml($_item, true, '-related') ?>
-                        <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="product-info"><?php echo $this->__('info')?></a>
-                    </div>
+
                 </div>
                 <div class="btn arrow"><a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="btn arrow"><img src="<?php echo $this->getSkinUrl('images/icon/btn_submit-arrow.png')?>" width="40" height="39" alt="<?php echo $this->htmlEscape($_item->getName()) ?>" /></a></div>
             </li>
