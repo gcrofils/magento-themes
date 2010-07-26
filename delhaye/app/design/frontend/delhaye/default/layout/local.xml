@@ -7,9 +7,9 @@
         <!-- Add custom links. Pretty self-explanatory.
         Dig into app/code/core/Mage/Page/Block/Template/Links.php for more info -->
         <action method="addLink" translate="label title">
-          <label>Nos boutiques</label>
+          <label>shops</label>
           <url>shops</url>  <!-- can use full url also -->
-          <title>Nos Boutiques</title>
+          <title>shops</title>
           <prepare>true</prepare> <!-- set true if adding base url param -->
           <urlParams helper="core/url/getHomeUrl"/> <!-- base url - thanks @Russ! -->
           <position>1</position>
