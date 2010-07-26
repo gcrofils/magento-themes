@@ -21,10 +21,10 @@
       </reference>
     </reference>
     <reference name="left">
-      <action method="removeLinkByUrl"><url helper="checkout/cart"/></action>
+      <remove name="left.permanent.callout" />
     </reference>
     <reference name="right">
-      <action method="removeItem"><name>right.permanent.callout</name></action>
+      <remove name="right.permanent.callout" />
     </reference>
   </default>
   <customer_logged_out>
