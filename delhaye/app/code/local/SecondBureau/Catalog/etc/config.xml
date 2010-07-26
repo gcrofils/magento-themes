@@ -5,11 +5,6 @@
         </SecondBureau_Catalog>
     </modules>
     <global>
-        <blocks>
-                <product_popular>
-                    <class>SecondBureau_Product_Popular_Block</class>
-                </product_popular>
-        </blocks>
     </global>
 </config>
 
