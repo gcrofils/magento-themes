@@ -20,6 +20,12 @@
         </action>
       </reference>
     </reference>
+    <reference name="left">
+      <action method="removeLinkByUrl"><url helper="checkout/cart"/></action>
+    </reference>
+    <reference name="right">
+      <action method="removeItem"><name>right.permanent.callout</name></action>
+    </reference>
   </default>
   <customer_logged_out>
     <!-- Removes 'Log In' link - Default position: 60 -->
