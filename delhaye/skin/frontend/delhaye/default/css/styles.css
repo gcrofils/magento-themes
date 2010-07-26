@@ -122,7 +122,7 @@ ul,ol         { list-style:none; }
 .main-bottom-message .news { min-height:100%; float:left; width:250px;}
 .main-bottom-message .msg { min-height:100%;  margin-left:270px; margin-top:15px; font-size:16px; text-align:left;  color:#D0C3C3;}
 .main-home { position:absolute; }
-.home-main-left { position:absolute; width: 226px; height:500px; padding-top:100px ; z-index:100;  }
+.home-main-left { position:absolute; width: 226px; height:500px; padding-top:90px ; z-index:100;  }
 .home-main-right {  float:right; width: 226px;   }
 .home-main-right-top {  width: 226px; height:235px; background: url(../images/home/main-right-decoration.png) no-repeat; text-align:center; }
 .home-main-right-top span { margin-top:75px; }
@@ -802,7 +802,7 @@ tr.summary-details-excluded { font-style:italic; }
 /* home Block: Popular */
 .home-main-left .block {border:none;}
 .home-main-left .block .block-popular {border:none;}
-.home-main-left .block-popular .product {background: white; -moz-border-radius:15px; -webkit-border-radius:15px; padding:0px;}
+.home-main-left .block-popular .product {background: red; -moz-border-radius:15px; -webkit-border-radius:15px; padding:0px; width:100px;}
 .home-main-left .block-popular .block-content {background:transparent; border:none;}
 .home-main-left .block-popular .btn .arrow {position:relative; left:50px; top:-15px;}
 .home-main-left .block-popular .mini-products-list .product-image { background:white; float:none; width:100px; border:none; -moz-border-radius:15px; -webkit-border-radius:15px; }
