@@ -802,11 +802,11 @@ tr.summary-details-excluded { font-style:italic; }
 /* home Block: Popular */
 .home-main-left .block {border:none;}
 .home-main-left .block .block-popular {border:none;}
-.home-main-left .block-popular .product {background: transparent; -moz-border-radius:15px; -webkit-border-radius:15px; padding:0px;}
+.home-main-left .block-popular .product {background: red; -moz-border-radius:15px; -webkit-border-radius:15px; padding:10px;}
 .home-main-left .block-popular .block-content {background:transparent; border:none;}
-.home-main-left .block-popular .block-title,
 .home-main-left .block-popular .btn .arrow {position:relative; left:10px; top:5px;}
-.home-main-left .block-popular .mini-products-list .product-image { background:white; float:none; width:100px; border:1px solid #a9a9a9; -moz-border-radius:15px; -webkit-border-radius:15px; }
+.home-main-left .block-popular .mini-products-list .product-image { background:blue; float:none; width:100px; border:none; -moz-border-radius:15px; -webkit-border-radius:15px; }
+.home-main-left .block-popular .block-title,
 .home-main-left .block-popular .mini-products-list .product-details { display:none; }
 
 
