@@ -804,7 +804,7 @@ tr.summary-details-excluded { font-style:italic; }
 .home-main-left .block .block-popular {border:none;}
 .home-main-left .block-popular .product {background:red; margin:0px; -moz-border-radius:15px; -webkit-border-radius:15px; padding:10px; width:120px;}
 .home-main-left .block-popular .block-content {background:transparent; border:none;}
-.home-main-left .block-popular .block-content li {background:blue; border:none; margin:0 0 0 20px; padding:0; text-align:right;}
+.home-main-left .block-popular .block-content li {background:blue; border:none; margin:0 0 0 50px; padding:0;}
 .home-main-left .block-popular .btn .arrow {position:relative; left:10px; top:-15px;}
 .home-main-left .block-popular .mini-products-list .product-image { background:white; float:none; width:100px; border:none; -moz-border-radius:15px; -webkit-border-radius:15px; }
 .home-main-left .block-popular .block-title,
