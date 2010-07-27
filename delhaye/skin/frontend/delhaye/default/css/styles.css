@@ -97,7 +97,7 @@ ul,ol         { list-style:none; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
 .page-popup { background:#fff; padding:25px 30px; text-align:left; }
 .main-container { border: none; background:#fff url(../images/home/main-background.png) 0 0 repeat; }
-.main { width:900px; margin:0 auto; min-height:400px; padding:25px 25px 80px; background:#ffffff; text-align:left; }
+.main { width:100%; margin:0 auto; min-height:400px; padding:25px 25px 80px; background:#ffffff; text-align:left; }
 
 /* Base Columns */
 .col-left { float:left; width:195px; padding:0 0 1px; }
@@ -531,7 +531,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header .welcome-msg { margin:0; color:#fff; text-align:right; }
 .header .form-search { position:absolute; top:0; right:29px; width:315px; height:30px; background:url(../images/bkg_form-search.gif) 0 0 no-repeat; padding:1px 0 0 16px; }
 .header .form-search label { float:left; width:24px; height:21px; text-align:left; text-indent:-999em; overflow:hidden; }
-.header .form-search input.input-text { float:left; border-color:#5c7989; width:209px; margin-right:4px; }
+.header .form-search input.input-text { border-color:#5c7989; width:209px; margin-right:4px; }
 .header .form-search button.button { float:left; }
 .header .form-search button.button span { border:0; height:21px; background:url(../images/btn_search.gif) 0 0 no-repeat; padding:0 0 0 3px; font:bold 11px/21px Tahoma, Verdana, Arial, sans-serif; }
 .header .form-search button.button span span { background-position:100% 0; padding:0 6px 0 3px; }
@@ -776,7 +776,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header .block-subscribe {width: 312px; text-align:right; background-color:#ffffff; border:none; background-image:none; position:absolute; padding:0px; margin-top:48px; margin-left:430px; z-index:50; font-family:Times, Arial, Helvetica, sans-serif;}
 .header .block-subscribe .block-title { background:none; border:none; padding:0px; }
 .header .block-subscribe .block-title strong { background-image:none; color:#000000; font-size:21px; text-transform:none; margin:0 0 3px 0; padding:0; width:100%;font-family:Times, Arial, Helvetica, sans-serif;}
-.header .block-subscribe .block-content { padding:0px;  margin:0px; width:100%; text-align:right; }
+.header .block-subscribe .block-content { padding:0px;  margin:0px; width:100%; text-align:right; background:none; }
 .header .block-subscribe label {width:150px; color:#B83140; font-size:14px;}
 .header .block-subscribe input.input-text { float:none; display:block; width:290px; margin:0px; }
 .header .block .actions {  float:none; background:transparent url(../images/btn/btn-left-arrow.png) no-repeat; padding:0px 0px 0px 32px; margin:0px; text-align:right; height:30px; width:110px;}
