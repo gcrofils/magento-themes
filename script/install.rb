@@ -47,6 +47,7 @@ targetPath = File.expand_path(File.join(wwwroot, magentoCurrent))
 pagesPath = File.expand_path(File.join(themePath, 'pages'))
 blocksPath = File.expand_path(File.join(themePath, 'blocks'))
 emailsPath = File.expand_path(File.join(themePath, 'emails'))
+configPath = File.expand_path(File.join(themePath, 'config'))
 
 def execSql(sql)
  cmd = "mysql -u#{MYSQL_USER} -p#{MYSQL_PASSWORD} -e \"connect #{MYSQL_DATABASE}; #{sql.gsub('"','\"')}; \""
@@ -88,7 +89,6 @@ end
 queries << "delete from design_change"
 queries << "insert into design_change(store_id, design) values (1, '#{magentoTheme}/default')"
 
-queries << "insert into core_config_data(scope, scope_id, path, value) values ('default', 0, 'general/store_information/phone', '01 02 03 04 05') on duplicate key update value = '01 02 03 04 05'"
 
 # Remove cache 
 queries << "update core_cache_option set value=0"
@@ -127,8 +127,32 @@ Dir["#{emailsPath}/*"].select { |file| /(template\.yml)$/ =~ file }.each do |fil
 
 end
 
-## Activer les logs
-queries << "insert into core_config_data(scope, scope_id, path, value) values ('default', 0, 'dev/log/active', '1') on duplicate key update value = '1'"
+## General params
+configFile = File.join(configPath, 'core_config_data.yml')
+
+@stack = []
+@params = {}
+
+def dfs(n)
+  case n
+  when Hash
+    n.each do |k,v|
+      @stack.push k
+      dfs(v)
+      @stack.pop
+    end
+   else
+      @params[@stack.join('/')] = n
+   end
+end
+
+file = "./delhaye/config/core_config_data.yml"
+dfs(YAML.load_file(file))
+
+@params.each do |path, value|
+  value = '' if value.nil?
+  queries << "insert into core_config_data(scope, scope_id, path, value) values ('default', 0, '#{path}', '#{value}') on duplicate key update value = '#{value}'"
+end
 
 
   

@@ -1,0 +1,154 @@
+advanced:
+  modules_disable_output:
+    AW_All: 0
+    AW_Blog: 0
+    Desitex_Checkoutnewsletter: 0
+    Mage_Admin: 0
+    Mage_AdminNotification: 0
+    Mage_Api: 0
+    Mage_Atos: 0
+    Mage_Backup: 0
+    Mage_Bundle: 0
+    Mage_Catalog: 0
+    Mage_CatalogIndex: 0
+    Mage_CatalogInventory: 0
+    Mage_CatalogRule: 0
+    Mage_CatalogSearch: 0
+    Mage_Centinel: 0
+    Mage_Checkout: 0
+    Mage_Cms: 0
+    Mage_Compiler: 0
+    Mage_Contacts: 0
+    Mage_Core: 0
+    Mage_Cron: 0
+    Mage_Customer: 0
+    Mage_Dataflow: 0
+    Mage_Directory: 0
+    Mage_Downloadable: 0
+    Mage_Eav: 0
+    Mage_GiftMessage: 0
+    Mage_GoogleAnalytics: 0
+    Mage_GoogleBase: 0
+    Mage_GoogleCheckout: 0
+    Mage_GoogleOptimizer: 0
+    Mage_Index: 0
+    Mage_Install: 0
+    Mage_Log: 0
+    Mage_Media: 0
+    Mage_Newsletter: 0
+    Mage_Page: 0
+    Mage_Paygate: 0
+    Mage_Payment: 0
+    Mage_Paypal: 0
+    Mage_PaypalUk: 0
+    Mage_Poll: 0
+    Mage_ProductAlert: 0
+    Mage_Rating: 0
+    Mage_Reports: 0
+    Mage_Review: 1
+    Mage_Rss: 0
+    Mage_Rule: 0
+    Mage_Sales: 0
+    Mage_SalesRule: 0
+    Mage_Sendfriend: 0
+    Mage_Shipping: 0
+    Mage_Sitemap: 0
+    Mage_Tag: 0
+    Mage_Tax: 0
+    Mage_Usa: 0
+    Mage_Weee: 0
+    Mage_Widget: 0
+    Mage_Wishlist: 0
+    Owebia_Shipping_2: 0
+    Phoenix_Moneybookers: 0
+    Raptor_Explodedmenu: 0
+    SecondBureau_Catalog: 0
+    SecondBureau_Page: 0
+    TBT_Enhancedgrid: 0
+    TM_EasyTabs: 0
+    Velite_Teaserbox: 0
+    WIO_Gmap: 0
+awall:
+  install:
+    run: 1280223519
+catalog:
+  category:
+    root_id: 2
+  custom_options:
+    date_fields_order: m,d,y
+    time_format: 12h
+    use_calendar: 0
+  downloadable:
+    content_disposition: inline
+    disable_guest_checkout: 1
+    downloads_number: 0
+    links_target_new_window: 1
+    links_title: Links
+    order_item_status: 9
+    samples_title: Samples
+    shareable: 0
+  frontend:
+    default_sort_by: position
+    flat_catalog_category: 0
+    flat_catalog_product: 0
+    grid_per_page: 9
+    grid_per_page_values: 9,15,30
+    list_allow_all: 0
+    list_mode: grid-list
+    list_per_page: 10
+    list_per_page_values: 5,10,15,20,25
+    parse_url_directives: 1
+  navigation:
+    max_depth: 0
+  price:
+  scope: 0
+  recently_products:
+    compared_count: 5
+    scope: website
+    viewed_count: 5
+  review:
+    allow_guest: 0
+  search:
+    max_query_length: 128
+    max_query_words: 10
+    min_query_length: 1
+    search_type: 1
+    use_layered_navigation_count: 2000
+  seo:
+    category_canonical_tag: 0
+    category_url_suffix: .html
+    product_canonical_tag: 0
+    product_url_suffix: .html
+    product_use_categories: 1
+    save_rewrites_history: 1
+    search_terms: 1
+    site_map: 1
+    title_separator: -
+  sitemap:
+  lines_perpage: 30
+  tree_mode: 1
+currency:
+  options:
+    allow: EUR
+    base: EUR
+    default: EUR
+dev:
+  log:
+    active: 1
+general:
+  country:
+    allow: BE,FR,CH
+    default: FR
+    optional_zip_countries:
+  locale:
+    code: fr_FR
+    firstday: 1
+    timezone: Europe/Paris
+    weekend: 0,6
+  store_information:
+    address: 
+      47 rue du Pr�sident Wilson
+      92300 Levallois
+    name: Bijouterie Delhaye
+    phone: 01 02 03 04 05
+ 
