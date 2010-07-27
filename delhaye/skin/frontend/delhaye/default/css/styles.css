@@ -345,12 +345,12 @@ p.required { font-size:11px; text-align:right; color:#EB340A; }
 .notice-msg { border-color:#fcd344; background-color:#fafaec; background-image:url(../images/i_msg-note.gif); color:#3d6611; }
 
 /* BreadCrumbs */
-.breadcrumbs { font-size:11px; line-height:1.25; margin:0 0 13px; }
+.breadcrumbs { font-size:11px; line-height:1.25; margin:0 0 13px; background:red; }
 .breadcrumbs li { display:inline; }
 .breadcrumbs li strong { font-weight:bold; }
 
 /* Page Heading */
-.page-title { width:100%; overflow:hidden; border-bottom:1px solid #ccc; margin:0 0 25px; }
+.page-title { width:100%; overflow:hidden; border-bottom:1px solid #ccc; margin:0 0 25px;background:red; }
 .page-title h1,
 .page-title h2 { margin:0; font-size:20px; color:#0a263c; }
 .page-title .separator { margin:0 3px; }
