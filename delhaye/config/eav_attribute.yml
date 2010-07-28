@@ -13,7 +13,7 @@ main_stone_type:
   is_user_defined: 1
   default_value: 
   is_unique: 0
-  note:
+  note: type de la pierre principale
   options:
     - Saphir/Diamant
     - Diamant
@@ -29,6 +29,7 @@ main_stone_weight:
   is_required: 0
   is_user_defined: 1
   is_unique: 0
+  note: poids de la pierre principale
   group: jewelry
   
 main_stone_color:
@@ -41,6 +42,7 @@ main_stone_color:
   is_user_defined: 1
   default_value: 
   is_unique: 0
+  note: couleur de la pierre principale
   options:
     - H
     - G
@@ -57,6 +59,7 @@ main_stone_purete:
   is_user_defined: 1
   default_value: 
   is_unique: 0
+  note: pureté de la pierre principale
   options:
     - SI
     - VS
