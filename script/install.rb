@@ -193,7 +193,7 @@ attributes.each do |attribute_code, params|
     values << (params[key].is_a?(String) ? "'#{params[key]}'" : (params[key].nil? ? (key[0..1].eql?('is') ? 0 : 'NULL') : params[key]))
   end
   
-  queries << "insert into catalog_eav_attribute(attribute_id , #{keys2.join(',')}) select attribute_id, #{values.join(',') from eav_attribute where attribute_code = '#{attribute_code}'"
+  queries << "insert into catalog_eav_attribute(attribute_id , #{keys2.join(',')}) select attribute_id, #{values.join(',')} from eav_attribute where attribute_code = '#{attribute_code}'"
   puts queries.last
  
 end
