@@ -6,7 +6,7 @@ main_stone_type:
   backend_table:
   frontend_model:
   frontend_input: select
-  frontend_label: Main Stone Type
+  frontend_label: Main stone type
   frontend_class:
   source_model: eav/entity_attribute_source_table
   is_required: 0
@@ -43,7 +43,7 @@ main_stone_weight:
   entity_type_id: 4
   backend_type: varchar
   frontend_input: text
-  frontend_label: Main Stone Weight
+  frontend_label: Main stone weight
   is_required: 0
   is_user_defined: 1
   is_unique: 0
@@ -52,14 +52,10 @@ main_stone_weight:
   frontend_input_renderer:
   is_global: 1
   is_visible: 1
-  is_searchable: 1
-  is_filterable: 1
   is_comparable: 1
   is_visible_on_front: 1
   is_html_allowed_on_front: 1
-  is_used_for_price_rules: 0
   is_filterable_in_search: 1
-  used_in_product_listing: 0
   used_for_sort_by: 0
   is_configurable: 0
   apply_to:
@@ -72,7 +68,7 @@ main_stone_color:
   entity_type_id: 4
   backend_type: int
   frontend_input: select
-  frontend_label: Main Stone Color
+  frontend_label: Main stone color
   source_model: eav/entity_attribute_source_table
   is_required: 0
   is_user_defined: 1
@@ -103,11 +99,11 @@ main_stone_color:
   is_wysiwyg_enabled: 1
   is_used_for_promo_rules: 0
   
-main_stone_purete:
+purity:
   entity_type_id: 4
   backend_type: int
   frontend_input: select
-  frontend_label: Main Stone purete
+  frontend_label: Purity
   source_model: eav/entity_attribute_source_table
   is_required: 0
   is_user_defined: 1
@@ -137,3 +133,199 @@ main_stone_purete:
   position: 0
   is_wysiwyg_enabled: 1
   is_used_for_promo_rules: 0
+  
+second_stone_weight:
+  entity_type_id: 4
+  backend_type: varchar
+  frontend_input: text
+  frontend_label: Second stone weight
+  is_required: 0
+  is_user_defined: 1
+  default_value: 
+  is_unique: 0
+  note: Poids en carats de la pierre d'accompagnement
+  group: jewelry
+  frontend_input_renderer:
+  is_global: 1
+  is_visible: 1
+  is_searchable: 0
+  is_filterable: 0
+  is_comparable: 1
+  is_visible_on_front: 1
+  is_html_allowed_on_front: 1
+  apply_to:
+  position: 0
+  is_wysiwyg_enabled: 1
+  
+number_of_stones:
+  entity_type_id: 4
+  backend_type: varchar
+  frontend_input: text
+  frontend_label: Number of stones
+  is_required: 0
+  is_user_defined: 1
+  default_value: 
+  is_unique: 0
+  note: Nombre de pierres
+  group: jewelry
+  frontend_input_renderer:
+  is_global: 1
+  is_visible: 1
+  is_searchable: 0
+  is_filterable: 0
+  is_comparable: 1
+  is_visible_on_front: 1
+  is_html_allowed_on_front: 1
+  apply_to:
+  position: 0
+  is_wysiwyg_enabled: 1
+
+total_stone_weight:
+  entity_type_id: 4
+  backend_type: varchar
+  frontend_input: text
+  frontend_label: Total stone weight
+  is_required: 0
+  is_user_defined: 1
+  default_value: 
+  is_unique: 0
+  note: Poids total des pierres
+  group: jewelry
+  frontend_input_renderer:
+  is_global: 1
+  is_visible: 1
+  is_searchable: 0
+  is_filterable: 0
+  is_comparable: 1
+  is_visible_on_front: 1
+  is_html_allowed_on_front: 1
+  apply_to:
+  position: 0
+  is_wysiwyg_enabled: 1
+  
+main_stone_shape:
+  entity_type_id: 4
+  backend_type: int
+  frontend_input: select
+  frontend_label: Main stone shape
+  source_model: eav/entity_attribute_source_table
+  is_required: 0
+  is_user_defined: 1
+  default_value: 
+  is_unique: 0
+  note: Forme de la pierre principale
+  options:
+    - brillant
+    - baguette et brillant 
+    - brillant et ovale
+    - brillant baguette princesse
+  group: jewelry
+  frontend_input_renderer:
+  is_global: 1
+  is_visible: 1
+  is_searchable: 1
+  is_filterable: 1
+  is_comparable: 1
+  is_visible_on_front: 1
+  is_html_allowed_on_front: 1
+  is_used_for_price_rules: 0
+  is_filterable_in_search: 1
+  used_in_product_listing: 0
+  used_for_sort_by: 0
+  is_configurable: 0
+  apply_to:
+  is_visible_in_advanced_search: 0
+  position: 0
+  is_wysiwyg_enabled: 1
+  is_used_for_promo_rules: 0
+  
+metal:
+  entity_type_id: 4
+  backend_type: int
+  frontend_input: select
+  frontend_label: Metal
+  source_model: eav/entity_attribute_source_table
+  is_required: 0
+  is_user_defined: 1
+  default_value: 
+  is_unique: 0
+  note: Métal
+  options:
+    - or blanc
+    - or jaune 
+  group: jewelry
+  frontend_input_renderer:
+  is_global: 1
+  is_visible: 1
+  is_searchable: 1
+  is_filterable: 1
+  is_comparable: 1
+  is_visible_on_front: 1
+  is_html_allowed_on_front: 1
+  is_used_for_price_rules: 0
+  is_filterable_in_search: 1
+  used_in_product_listing: 0
+  used_for_sort_by: 0
+  is_configurable: 0
+  apply_to:
+  is_visible_in_advanced_search: 0
+  position: 0
+  is_wysiwyg_enabled: 1
+  is_used_for_promo_rules: 0
+  
+gold_quality:
+  entity_type_id: 4
+  backend_type: int
+  frontend_input: select
+  frontend_label: Gold quality
+  source_model: eav/entity_attribute_source_table
+  is_required: 0
+  is_user_defined: 1
+  default_value: 
+  is_unique: 0
+  note: Métal
+  options:
+    - 750/000
+    - 750/00
+  group: jewelry
+  frontend_input_renderer:
+  is_global: 1
+  is_visible: 1
+  is_searchable: 1
+  is_filterable: 1
+  is_comparable: 1
+  is_visible_on_front: 1
+  is_html_allowed_on_front: 1
+  is_used_for_price_rules: 0
+  is_filterable_in_search: 1
+  used_in_product_listing: 0
+  used_for_sort_by: 0
+  is_configurable: 0
+  apply_to:
+  is_visible_in_advanced_search: 0
+  position: 0
+  is_wysiwyg_enabled: 1
+  is_used_for_promo_rules: 0
+  
+total_weight:
+  entity_type_id: 4
+  backend_type: varchar
+  frontend_input: text
+  frontend_label: Total weight
+  is_required: 0
+  is_user_defined: 1
+  default_value: 
+  is_unique: 0
+  note: Poids total des pierres
+  group: jewelry
+  frontend_input_renderer:
+  is_global: 1
+  is_visible: 1
+  is_searchable: 0
+  is_filterable: 0
+  is_comparable: 1
+  is_visible_on_front: 1
+  is_html_allowed_on_front: 1
+  apply_to:
+  position: 0
+  is_wysiwyg_enabled: 1

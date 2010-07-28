@@ -194,7 +194,6 @@ attributes.each do |attribute_code, params|
   end
   
   queries << "insert into catalog_eav_attribute(attribute_id , #{keys2.join(',')}) select attribute_id, #{values.join(',')} from eav_attribute where attribute_code = '#{attribute_code}'"
-  puts queries.last
  
 end
 
