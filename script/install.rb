@@ -169,6 +169,8 @@ end
 file = File.join(configPath, 'eav_attribute.yml')
 attributes = YAML.load_file( file )
 keys = %w[ entity_type_id attribute_model backend_model backend_type backend_table frontend_model frontend_input frontend_label frontend_class source_model is_required is_user_defined default_value is_unique note ]
+keys2 = %w[ frontend_input_renderer is_global is_visible is_searchable is_filterable is_comparable is_visible_on_front is_html_allowed_on_front is_used_for_price_rules is_filterable_in_search used_in_product_listing used_for_sort_by is_configurable apply_to is_visible_in_advanced_search position is_wysiwyg_enabled is_used_for_promo_rules ]
+
 attributes.each do |attribute_code, params|
   queries << "delete from eav_attribute where attribute_code = '#{attribute_code}'";  #TODO Delete Cascade...
   values = Array.new
@@ -176,7 +178,6 @@ attributes.each do |attribute_code, params|
     values << (params[key].is_a?(String) ? "'#{params[key]}'" : (params[key].nil? ? 'NULL' : params[key]))
   end
   queries << "insert into eav_attribute (attribute_code, #{keys.join(',')}) values ('#{attribute_code}', #{values.join(',')})"
-  puts queries.last
   unless params['options'].nil? 
     params['options'].each do |option|
       queries << "delete from eav_attribute_option where option_id = (select option_id from eav_attribute_option_value where value = '#{option}')"
@@ -186,6 +187,15 @@ attributes.each do |attribute_code, params|
   end
   
   queries << "insert into eav_entity_attribute(entity_type_id, attribute_set_id, attribute_group_id, attribute_id, sort_order) select 4, 4, (select attribute_group_id from eav_attribute_group where attribute_group_name = '#{params['group']}'), attribute_id, 0 from eav_attribute where attribute_code = '#{attribute_code}' on duplicate key update entity_type_id = 4"
+  
+  values = Array.new
+  keys2.each do |key|
+    values << (params[key].is_a?(String) ? "'#{params[key]}'" : (params[key].nil? ? (key[0..1].eql?('is') ? 0 : 'NULL') : params[key]))
+  end
+  
+  queries << "insert into catalog_eav_attribute(attribute_id , #{keys2.join(',')}) select attribute_id, #{values.join(',') from eav_attribute where attribute_code = '#{attribute_code}'"
+  puts queries.last
+ 
 end
 
 
