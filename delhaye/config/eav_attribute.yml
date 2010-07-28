@@ -283,7 +283,7 @@ gold_quality:
   is_user_defined: 1
   default_value: 
   is_unique: 0
-  note: Métal
+  note: Qualité de l'or
   options:
     - 750/000
     - 750/00
