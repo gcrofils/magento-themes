@@ -176,15 +176,15 @@ attributes.each do |attribute_code, params|
     values << (params[key].is_a?(String) ? "'#{params[key]}'" : (params[key].nil? ? 'NULL' : params[key]))
   end
   queries << "insert into eav_attribute (attribute_code, #{keys.join(',')}) values (#{attribute_code}, #{values.join(',')})"
-  unless params['options'].nil?
+  unless params['options'].nil? 
     params['options'].each do |option|
-    queries << "delete from eav_attribute_option where option_id = (select option_id from eav_attribute_option_value where value = '#{option}')"
-    queries << "insert into eav_attribute_option (attribute_id, sort_order) select attribute_id, 0 from eav_attribute where attribute_code = '#{attribute_code}'"
-    queries << "insert into eav_attribute_option_value (option_id, store_id, value) select max(option_id), 0, '#{option}' from eav_attribute_option"
+      queries << "delete from eav_attribute_option where option_id = (select option_id from eav_attribute_option_value where value = '#{option}')"
+      queries << "insert into eav_attribute_option (attribute_id, sort_order) select attribute_id, 0 from eav_attribute where attribute_code = '#{attribute_code}'"
+      queries << "insert into eav_attribute_option_value (option_id, store_id, value) select max(option_id), 0, '#{option}' from eav_attribute_option"
     end
   end
   
-  queries << "insert into eav_entity_attribute(entity_type_id, attribute_set_id, attribute_group_id, attribute_id, sort_order) select 4, 4, (select attribute_group_id from eav_attribute_group where attribute_group_name = '#{params['group']}'), attribute_id, 0 from eav_attribute where attribute_code = '#{attribute_code}' on duplicate key update entity_type_id = 4;
+  queries << "insert into eav_entity_attribute(entity_type_id, attribute_set_id, attribute_group_id, attribute_id, sort_order) select 4, 4, (select attribute_group_id from eav_attribute_group where attribute_group_name = '#{params['group']}'), attribute_id, 0 from eav_attribute where attribute_code = '#{attribute_code}' on duplicate key update entity_type_id = 4"
 end
 
 
