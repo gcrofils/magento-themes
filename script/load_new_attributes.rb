@@ -33,11 +33,12 @@ def loadDatas(uri)
 end
 
 firstrow = true
-loadDatas(uri_roles).each do |row|
+loadDatas(uri_attributes).each do |row|
   if firstrow
     attributes = row 
     firstrow = false
   else
+    puts row.inspect
   end
 end
   
