@@ -1,12 +1,12 @@
 #!/usr/bin/ruby
 
 spreadsheet_key = "0Ai-hiZBisabCdGhlSkk4UTRoNlAzcjIxbldDVk8xZ2c"
-uri_attributes = "http://spreadsheets.google.com/pub?key=#{spreadsheet_key}&hl=fr&single=true&gid=1&output=csv"
+uri_attributes = "http://spreadsheets.google.com/pub?key=#{spreadsheet_key}&hl=fr&single=true&gid=2&output=csv"
 
 require 'rubygems'
 require 'active_record'
 require 'open-uri'
-require 'faster_csv'
+require 'csv'
 
 
 ActiveRecord::Base.establish_connection(
@@ -24,21 +24,22 @@ class EavAttribute < ActiveRecord::Base
 	set_primary_key "attribute_id" 
 end
 
-####
-rows = Array.new
-open(uri_attributes) do |f|
-  firstline = true
-  f.each_line do |line|
-    FasterCSV.parse(line) do |row|
-      headers = row if firstline
-      rows << row unless firstline
-      firstline = false
-    end
-  end
+def loadDatas(uri)
+ begin
+  CSV.parse(open(uri).read)
+ rescue
+  Array.new
+ end
 end
 
-rows.each do |row|
-  puts row.inspect
+firstrow = true
+loadDatas(uri_roles).each do |row|
+  if firstrow
+    attributes = row 
+    firstrow = false
+  else
+  end
 end
+  
 
 EavAttribute.find_by_attribute_code('total_weight').inspect

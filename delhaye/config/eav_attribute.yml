@@ -306,7 +306,7 @@ gold_quality:
   position: 0
   is_wysiwyg_enabled: 1
   is_used_for_promo_rules: 0
-  
+
 total_weight:
   entity_type_id: 4
   backend_type: varchar
