@@ -175,7 +175,7 @@ attributes.each do |attribute_code, params|
   queries << "delete from eav_attribute where attribute_code = '#{attribute_code}'";  #TODO Delete Cascade...
   values = Array.new
   keys.each do |key|
-    values << (params[key].is_a?(String) ? "'#{params[key]}'" : (params[key].nil? ? 'NULL' : params[key]))
+    values << (params[key].is_a?(String) ? "'#{params[key].gsub("'", "''")}'" : (params[key].nil? ? 'NULL' : params[key]))
   end
   queries << "insert into eav_attribute (attribute_code, #{keys.join(',')}) values ('#{attribute_code}', #{values.join(',')})"
   unless params['options'].nil? 
