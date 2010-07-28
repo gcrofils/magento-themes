@@ -18,6 +18,24 @@ main_stone_type:
     - Saphir/Diamant
     - Diamant
     - Emeraude/Diamant
+    - emeraude et diamant
+    - saphir et diamant
+    - rubis et diamant
+    - tahiti et diamant
+    - eau douce
+    - perle de tahiti diamant
+    - perle akoya diamant
+    - perle eau douce
+    - perle tahiti diamant
+    - perle tahiti
+    - perle eau douce diamant
+    - perle tahiti
+    - perle de tahiti
+    - perle d eau douce
+    - perle d eau douce diamant
+    - perle akoya
+    - perle de tahiti et d eau douce
+    - perle de tahiti et diamant
   group: jewelry
   frontend_input_renderer:
   is_global: 1
@@ -79,6 +97,7 @@ main_stone_color:
     - H
     - G
     - H/G
+    - GH
   group: jewelry
   frontend_input_renderer:
   is_global: 1
@@ -114,6 +133,7 @@ purity:
     - SI
     - VS
     - VS1
+    - VS2
   group: jewelry
   frontend_input_renderer:
   is_global: 1
@@ -219,6 +239,14 @@ main_stone_shape:
     - baguette et brillant 
     - brillant et ovale
     - brillant baguette princesse
+    - princesse
+    - baguette
+    - brillant et baguette
+    - brillant et princesse
+    - coussin et brillant
+    - poire et brillant
+    - ovale brillant baguette
+    - ovale et brillant
   group: jewelry
   frontend_input_renderer:
   is_global: 1
