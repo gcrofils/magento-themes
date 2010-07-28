@@ -20,27 +20,25 @@ ActiveRecord::Base.logger = Logger.new(File.open('/home/ubuntu/database.log', 'a
 
 ActiveRecord::Base.pluralize_table_names = false
 
-
-
 class EavAttribute < ActiveRecord::Base
-	#set_table_name "FooBar" 
 	set_primary_key "attribute_id" 
 end
 
-puts EavAttribute.count
-
-
 ####
 rows = Array.new
-open(url) do |f|
+open(uri_attributes) do |f|
   firstline = true
   f.each_line do |line|
     FasterCSV.parse(line) do |row|
       headers = row if firstline
+      rows << row unless firstline
       firstline = false
-      rows << row
     end
   end
 end
 
-puts rows.inspect
+rows.each do |row|
+  puts row.inspect
+end
+
+EavAttribute.find_by_attribute_code('total_weight').inspect
