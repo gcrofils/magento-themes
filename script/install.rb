@@ -176,6 +176,7 @@ attributes.each do |attribute_code, params|
     values << (params[key].is_a?(String) ? "'#{params[key]}'" : (params[key].nil? ? 'NULL' : params[key]))
   end
   queries << "insert into eav_attribute (attribute_code, #{keys.join(',')}) values ('#{attribute_code}', #{values.join(',')})"
+  puts queries.last
   unless params['options'].nil? 
     params['options'].each do |option|
       queries << "delete from eav_attribute_option where option_id = (select option_id from eav_attribute_option_value where value = '#{option}')"
