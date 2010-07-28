@@ -151,4 +151,13 @@ general:
       92300 Levallois
     name: Bijouterie Delhaye
     phone: 01 02 03 04 05
+easy_tabs:
+  general:
+    enabled: 1
+    descriptiontabbed: 1    
+    additionaltabbed: 1 
+    upsellproductstabbed: 1
+    relatedtabbed: 1 
+    tagstabbed: 1
+    reviewtabbed: 0     
  

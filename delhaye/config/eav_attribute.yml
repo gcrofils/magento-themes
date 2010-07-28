@@ -1,0 +1,64 @@
+main_stone_type:
+  entity_type_id: 4
+  attribute_model:
+  backend_model:
+  backend_type: int
+  backend_table:
+  frontend_model:
+  frontend_input: select
+  frontend_label: Main Stone Type
+  frontend_class:
+  source_model: eav/entity_attribute_source_table
+  is_required: 0
+  is_user_defined: 1
+  default_value: 
+  is_unique: 0
+  note:
+  options:
+    - Saphir/Diamant
+    - Diamant
+    - Emeraude/Diamant
+  group: jewelry
+  
+main_stone_weight:
+  entity_type_id: 4
+  backend_type: varchar
+  frontend_input: text
+  frontend_label: Main Stone Weight
+  source_model: eav/entity_attribute_source_table
+  is_required: 0
+  is_user_defined: 1
+  is_unique: 0
+  group: jewelry
+  
+main_stone_color:
+  entity_type_id: 4
+  backend_type: int
+  frontend_input: select
+  frontend_label: Main Stone Color
+  source_model: eav/entity_attribute_source_table
+  is_required: 0
+  is_user_defined: 1
+  default_value: 
+  is_unique: 0
+  options:
+    - H
+    - G
+    - H/G
+  group: jewelry
+  
+main_stone_purete:
+  entity_type_id: 4
+  backend_type: int
+  frontend_input: select
+  frontend_label: Main Stone purete
+  source_model: eav/entity_attribute_source_table
+  is_required: 0
+  is_user_defined: 1
+  default_value: 
+  is_unique: 0
+  options:
+    - SI
+    - VS
+    - VS1
+  group: jewelry

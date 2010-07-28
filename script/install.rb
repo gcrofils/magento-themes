@@ -146,8 +146,7 @@ def dfs(n)
    end
 end
 
-file = "./delhaye/config/core_config_data.yml"
-dfs(YAML.load_file(file))
+dfs(YAML.load_file(configFile))
 
 @params.each do |path, value|
   value = '' if value.nil?
@@ -155,7 +154,39 @@ dfs(YAML.load_file(file))
 end
 
 
+####################
+## Attributs supplémentaires
+
+# Créer les groupes d'attributs
+file = File.join(configPath, 'eav_attribute_group.yml')
+groups = YAML.load_file( file )
+groups.each do |attribute_group_name, params|
+  queries << "delete from eav_attribute_group where attribute_group_name = '#{attribute_group_name}'";
+  queries << "insert into eav_attribute_group (attribute_set_id, attribute_group_name, sort_order, default_id) values (#{params['attribute_set_id']}, '#{attribute_group_name}', #{params['sort_order']}, #{params['default_id']})"
+end
+
+# Créer les attributs
+file = File.join(configPath, 'eav_attribute.yml'
+attributes = YAML.load_file( file )
+keys = %w[ entity_type_id attribute_model backend_model backend_type backend_table frontend_model frontend_input frontend_label frontend_class source_model is_required is_user_defined default_value is_unique note ]
+attributes.each do |attribute_code, params|
+  queries << "delete from eav_attribute where attribute_code = '#{attribute_code}'";  #TODO Delete Cascade...
+  values = Array.new
+  keys.each do |key|
+    values << (params[key].is_a?(String) ? "'#{params[key]}'" : (params[key].nil? ? 'NULL' : params[key]))
+  end
+  queries << "insert into eav_attribute (attribute_code, #{keys.join(',')}) values (#{attribute_code}, #{values.join(',')})"
+  unless params['options'].nil?
+    params['options'].each do |option|
+    queries << "delete from eav_attribute_option where option_id = (select option_id from eav_attribute_option_value where value = '#{option}')"
+    queries << "insert into eav_attribute_option (attribute_id, sort_order) select attribute_id, 0 from eav_attribute where attribute_code = '#{attribute_code}'"
+    queries << "insert into eav_attribute_option_value (option_id, store_id, value) select max(option_id), 0, '#{option}' from eav_attribute_option"
+    end
+  end
   
+  queries << "insert into eav_entity_attribute(entity_type_id, attribute_set_id, attribute_group_id, attribute_id, sort_order) select 4, 4, (select attribute_group_id from eav_attribute_group where attribute_group_name = '#{params['group']}'), attribute_id, 0 from eav_attribute where attribute_code = '#{attribute_code}' on duplicate key update entity_type_id = 4;
+end
+
 
 queries.each{|q| execSql(q)}
 
