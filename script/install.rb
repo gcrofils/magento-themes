@@ -166,7 +166,7 @@ groups.each do |attribute_group_name, params|
 end
 
 # Créer les attributs
-file = File.join(configPath, 'eav_attribute.yml'
+file = File.join(configPath, 'eav_attribute.yml')
 attributes = YAML.load_file( file )
 keys = %w[ entity_type_id attribute_model backend_model backend_type backend_table frontend_model frontend_input frontend_label frontend_class source_model is_required is_user_defined default_value is_unique note ]
 attributes.each do |attribute_code, params|
