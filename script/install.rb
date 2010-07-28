@@ -52,7 +52,7 @@ configPath = File.expand_path(File.join(themePath, 'config'))
 def execSql(sql)
  cmd = "mysql -u#{MYSQL_USER} -p#{MYSQL_PASSWORD} -e \"connect #{MYSQL_DATABASE}; #{sql.gsub('"','\"')}; \""
  system "#{cmd}" 
- puts "#{cmd}" 
+# puts "#{cmd}" 
 end
 
 FileUtils.cp_r File.join(themePath, appPath), targetPath
@@ -175,7 +175,7 @@ attributes.each do |attribute_code, params|
   keys.each do |key|
     values << (params[key].is_a?(String) ? "'#{params[key]}'" : (params[key].nil? ? 'NULL' : params[key]))
   end
-  queries << "insert into eav_attribute (attribute_code, #{keys.join(',')}) values (#{attribute_code}, #{values.join(',')})"
+  queries << "insert into eav_attribute (attribute_code, #{keys.join(',')}) values ('#{attribute_code}', #{values.join(',')})"
   unless params['options'].nil? 
     params['options'].each do |option|
       queries << "delete from eav_attribute_option where option_id = (select option_id from eav_attribute_option_value where value = '#{option}')"
