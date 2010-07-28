@@ -49,8 +49,8 @@ loadDatas(uri_attributes).each do |row|
     product = CatalogProductEntity.find_by_sku(sku)
     unless product.nil?
       (1..row.size).each do |i|
-        row[i] = row[i].strip
-	unless row[i].nil?		
+        unless row[i].nil?
+          row[i] = row[i].strip		
           eavAttribute = EavAttribute.find_by_attribute_code(attributes[i])
           unless eavAttribute.nil? 
             case eavAttribute.backend_type
@@ -64,20 +64,20 @@ loadDatas(uri_attributes).each do |row|
                 option = EavAttributeOptionValue.find_by_value(row[i])
                 if option.nil?
                   puts "WARNING : option #{row[i]} inconnue pour l'attribut #{attributes[i]}"
-		  unknown_options[attributes[i]] = Array.new if unknown_options[attributes[i]].nil? 
+		              unknown_options[attributes[i]] = Array.new if unknown_options[attributes[i]].nil? 
                   unknown_options[attributes[i]] << row[i]	
                 else
                   begin
                     CatalogProductEntityInt.create(:entity_type_id => 4, :attribute_id => eavAttribute.id, :store_id => 0, :entity_id => product.entity_id, :value => option.id)
-		  rescue Exception => e
+		              rescue Exception => e
                     puts "WARNING : #{e.message}"
                   end
                 end
-	      else
+	            else
                 puts "WARNING : type inconnu #{eavAttribute.backend_type}"
               end
           else
-	    puts "WARNING : >#{attributes[i]}< not found"
+	          puts "WARNING : >#{attributes[i]}< not found"
           end
         end
       end
