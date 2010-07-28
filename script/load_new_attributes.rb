@@ -85,3 +85,7 @@ loadDatas(uri_attributes).each do |row|
   end
 end
 
+puts "**** WARNING ****"
+unknown_options.each{|key, options| puts "#{key} => #{options.uniq.join(',')}"}
+
+
