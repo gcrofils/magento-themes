@@ -1,6 +1,0 @@
-title: right_info_block
-is_active: 1
-content: 
-  <div>{{block type="catalog/productpopular" template="catalog/product/popular.phtml" category_id="PopularProductsCategoryID"}}</div>  
-  
-  
