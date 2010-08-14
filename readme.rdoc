@@ -1,7 +1,7 @@
 Magethemes
 ==========
 
-Introduction goes here.
+Install Magento Themes.
 
 
 Example
