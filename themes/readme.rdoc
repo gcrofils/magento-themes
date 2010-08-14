@@ -1,0 +1,15 @@
+= Themes sources
+
+ - Client
+ |- themeName
+   |- blocks
+   |- pages
+   |- config
+   |- skin
+     |- css
+     |- images
+     |- favicon.ico
+     
+== skin
+
+copy full folder to skin/frontend/+default+/themeName

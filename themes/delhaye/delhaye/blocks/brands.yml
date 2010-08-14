@@ -1,0 +1,11 @@
+title: brands
+is_active: 1
+content:
+  <div class="logos"> 
+  <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/logo/gucci.png"}}" alt="Gucci" /></a>
+  <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/logo/breitling.png"}}" alt="Breitling" /></a>
+  <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/logo/poiray.png"}}" alt="Poiray" /></a>
+  <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/logo/mauboussin.png"}}" alt="Mauboussin" /></a>
+  <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/logo/chopard.png"}}" alt="Chopard" /></a>
+  </div>
+  <p><a href="{{store direct_url="shops"}}">Retrouvez nos marques dans nos boutiques.</a></p>
