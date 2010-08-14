@@ -1,2 +1,0 @@
-Themes pour Magento
-- delhaye
