@@ -14,6 +14,12 @@ module MageTheme
         :update_time => Time.now,
         :creation_time => cmsblock.creation_time || Time.now
       )
+      
+      cmsblockstore = CmsBlockStore.find(:first, :conditions => {:store_id => 1, :block_id => cmsblock.id})
+      if cmsblockstore.nil?
+        CmsBlockStore.create(:store_id => 1, :block_id => cmsblock.id)
+      end
+
     end
   end
 end
