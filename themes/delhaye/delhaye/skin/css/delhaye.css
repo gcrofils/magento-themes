@@ -1,3 +1,7 @@
 body {
 	background: grey;
 }
+
+.wrapper {
+	border: solid 5px red;
+	}
