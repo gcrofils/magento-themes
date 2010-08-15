@@ -15,7 +15,7 @@
 	
 	<reference name="footer">
 		<!-- add a decoration div -->
-		<block type="cms/block" name="cms_header_right" before="-">
+		<block type="cms/block" name="cms_header_right">
       <action method="setBlockId"><block_id>header_right</block_id></action>
     </block>
 	</reference>
