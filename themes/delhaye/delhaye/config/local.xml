@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layout>
-<default>
+<delhaye>
   <!-- Remove callouts and rarely used stuff -->
   <!-- <remove name="right.poll"/> -->
   <remove name="right.permanent.callout"/> <!-- remove back to scholl banner in right panel -->
@@ -11,5 +11,5 @@
   <reference name="head">
     <action method="addCss"><stylesheet>css/delhaye.css</stylesheet></action>
   </reference>
-</default>
+</delhaye>
 </layout>

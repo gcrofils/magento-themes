@@ -3,5 +3,5 @@ body {
 }
 
 .wrapper {
-	border: solid 5px red;
+	border: solid 5px red !important;
 	}
