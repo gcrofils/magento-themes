@@ -10,17 +10,16 @@ module MageTheme
   
   class Base
     
-    attr_accessor :client, :theme, :store_code, :theme_path, :magento_root, :magento_app, :magento_skin
+    cattr_accessor :client, :theme, :store_code, :theme_path, :magento_root, :magento_app, :magento_skin
     
     def initialize(options = {})
-      @client = options[:client]
-      @theme  = options[:theme]
-      @store_code = 'default'
-      puts "#{MAGE_THEMES} > #{@client} > #{@theme}"
-      @theme_path = File.join(MAGE_THEMES,  @client, @theme)
-      @magento_root = '/home/www/magento'
-      @magento_app = File.join(@magento_root, 'app', 'design', 'frontend', 'default', @theme)
-      @magento_skin = File.join(@magento_root, 'skin', 'frontend', 'default', @theme)
+      @@client = options[:client] unless options[:client].nil?
+      @@theme  = options[:theme] unless options[:theme].nil?
+      @@store_code = 'default'
+      @@theme_path = File.join(MAGE_THEMES,  @@client, @@theme)
+      @@magento_root = '/home/www/magento'
+      @@magento_app = File.join(@@magento_root, 'app', 'design', 'frontend', 'default', @@theme)
+      @@magento_skin = File.join(@@magento_root, 'skin', 'frontend', 'default', @@theme)
     end
     
     def store_id
