@@ -1,4 +1,4 @@
-body { background-image:none; background-color:grey; }
+body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 
 /* Layout ================================================================================ */
 .main-container { background:black url(../images/bkg_main90.gif) 50% 0 no-repeat; }
@@ -10,7 +10,7 @@ body { background-image:none; background-color:grey; }
 
 /* Navigation ================================================================================ */
 .nav-container { height:60px; font-size:50px; padding:0px 0 0 100px;  background:red url(../images/bkg-navigation.png) repeat; overflow:hidden; }
-#anav {font-size:20px;}
+#anav {font-size:25px; word-spacing:130px;}
 
 
 
