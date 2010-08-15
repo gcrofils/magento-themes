@@ -9,9 +9,10 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 .header-container { border-top:5px solid #0d2131; border-bottom:1px solid #415966; background: red url(../images/bkg_header8.jpg) 50% 0 repeat; }
 
 /* Navigation ================================================================================ */
-.nav-container { height:60px; font-size:50px; padding:0px 0 0 200px;  background:red url(../images/bkg-navigation.png) repeat; }
-#anav {font-size:25px;}
+.nav-container { height:60px; font-size:50px; padding:10px 0 0 200px;  background:red url(../images/bkg-navigation.png) repeat; }
+#anav {font-size:25px; color:#ffffff}
 #anav ul {font-size:15px;}
+#anav ul li span {margin-left:50px}
 
 
 
