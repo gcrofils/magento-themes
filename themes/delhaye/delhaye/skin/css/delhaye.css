@@ -1,14 +1,14 @@
 body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 
 /* Layout ================================================================================ */
-.wrapper { width:940px; background:black; margin:0 auto;}
+.wrapper { width:950px; background:black; margin:0 auto;}
 .page {}
 .main-container { }
 .main { width:900px; margin:0 auto; min-height:400px; padding:25px 25px 80px; background:blue; text-align:left; }
 
 /* Header ================================================================================ */
-.header-container { border-top:5px solid #0d2131; border-bottom:10px solid #415966; background: red; }
-.header { width:930px; height:187px; margin:0 auto; padding:0; text-align:right; position:relative; z-index:10; }
+.header-container { border:none; background: white; }
+.header { width:930px; height:187px; margin:0 auto; padding:0; text-align:left; position:relative; z-index:10; }
 .header .logo { float:none; position:absolute; margin:3px 0 10px 12px; text-decoration:none !important; }
 /* form search */
 .header .quick-access {  position:absolute; border:solid blue 3px;}
