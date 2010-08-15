@@ -10,9 +10,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 
 /* Navigation ================================================================================ */
 .nav-container { height:60px; font-size:50px; padding:10px 0 0 200px;  background:red url(../images/bkg-navigation.png) repeat; }
-#anav {font-size:25px; color:#ffffff}
-#anav ul {font-size:15px;}
-#anav ul li span {margin-left:50px}
+#anav li.top_level span {font-size:25px; margin-left:50px; color:#ffffff}
 
 
 
