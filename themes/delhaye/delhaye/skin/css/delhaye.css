@@ -23,6 +23,6 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 /* level 2 */
 #anav ul li a:hover { color:green !important; }
 /* level 3+ */
-#anav ul li a { color: red !important; font-size: 12px; }
-#anav ul ul li a { color: blue !important; font-size: 14px; }
-#anav ul ul ul li a { color: orange !important; font-size: 16px; }
+#anav ul li a { color: red !important; font-size: 22px; }
+#anav ul ul li a { color: blue !important; font-size: 24px; }
+#anav ul ul ul li a { color: orange !important; font-size: 26px; }
