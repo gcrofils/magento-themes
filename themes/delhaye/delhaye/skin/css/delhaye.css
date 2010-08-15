@@ -1,2 +1,6 @@
-body { background-image:none
-}
+body { background-image:none }
+
+/* Layout ================================================================================ */
+.main-container { background-image:none; }
+.main { background-image:none; }
+
