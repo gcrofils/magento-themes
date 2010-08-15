@@ -11,7 +11,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 .header-container { border-top:5px solid #0d2131; border-bottom:1px solid #415966; background: red url(../images/bkg_header8.jpg) 50% 0 repeat; }
 
 /* form search */
-.header .form-search { position:absolute; top:0; left:0px; width:315px; height:30px; background:url(../images/bkg_form-search.gif) 0 0 no-repeat; padding:1px 0 0 16px; }
+.header .form-search { position:relative; border:solid red 1px; }
 
 
 /* Navigation ================================================================================ */
