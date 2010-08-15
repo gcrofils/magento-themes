@@ -1,4 +1,4 @@
-body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:black; }
+body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 
 /* Layout ================================================================================ */
 .wrapper { width:90px; background:black; margin:10px auto; padding:0}
@@ -12,7 +12,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:black; }
 .header .logo { float:none; position:absolute; margin:0; text-decoration:none !important; }
 /* form search */
 .header .quick-access {  position:absolute; border:solid blue 3px;}
-.header .form-search { position:absolute; border:solid green 1px; }
+.header .form-search { position:absolute; left:-50px; border:solid green 1px; }
 /* links */
 .header .links { position:absolute; clear:both; margin:0 0 6px; }
 
