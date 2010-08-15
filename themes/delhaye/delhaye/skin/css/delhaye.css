@@ -9,7 +9,7 @@ body { background-image:none }
 .header-container { border-top:5px solid #0d2131; border-bottom:1px solid #415966; background: red url(../images/bkg_header8.jpg) 50% 0 repeat; }
 
 /* Navigation ================================================================================ */
-.nav-container { background:#0 url(../images/bkg-navigation.png) repeat-y; }
+.nav-container { background-image:none; }
 
 
 
