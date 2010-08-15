@@ -4,4 +4,9 @@ body { background-image:none }
 .main-container { background:black url(../images/bkg_main90.gif) 50% 0 no-repeat; }
 .main { width:900px; margin:0 auto; min-height:400px; padding:25px 25px 80px; background:blue url(../images/bkg_main9.gif) 0 0 no-repeat; text-align:left; }
 
+/* Header ================================================================================ */
+.logo { float:left; }
+.header-container { border-top:5px solid #0d2131; border-bottom:1px solid #415966; background: red url(../images/bkg_header8.jpg) 50% 0 repeat; }
+
+
 
