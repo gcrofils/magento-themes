@@ -16,6 +16,7 @@ module MageTheme
       @client = options[:client]
       @theme  = options[:theme]
       @store_code = 'default'
+      puts "#{MAGE_THEMES} #{@client}, #{@theme}}"
       @theme_path = File.join(MAGE_THEMES,  @client, @theme)
       @magento_root = '/home/www/magento'
       @magento_app = File.join(@magento_root, 'app', 'design', 'frontend', 'default', @theme)
