@@ -14,13 +14,12 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 /* boxes */
 #anav ul { border:5px solid #899ba5; background-color: #0A263D;}
 /* top level */
-#anav li.active a { color:blue; }
 #anav a { color:#ffffff; padding:5px 12px 6px 8px; }
-#anav li.over a, #anav a:hover { color:red; }
+#anav li.active a, #anav li.over a, #anav a:hover { color:red; }
 /* level 1 */
 #anav ul a,
 #anav ul a:hover { float:none; padding:0; background:none; }
-#anav ul li a { color:purple; font-weight:normal !important; }
+#anav ul li a { color:blue; font-weight:normal !important; }
 /* level 2 */
 #anav ul li a { color:grey !important; }
 #anav ul li a:hover { color:green !important; }
