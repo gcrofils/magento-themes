@@ -14,7 +14,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 .header .quick-access {  position:absolute; border:solid blue 3px;}
 .header .form-search { position:absolute; border:solid green 1px; }
 /* links */
-.header .links { clear:both; margin:0 0 6px; }
+.header .links { position:absolute; clear:both; margin:0 0 6px; }
 
 /* Navigation ================================================================================ */
 .nav-container { height:50px; font-size:50px; padding:10px 0 0 200px;  background:#000000 url(../images/bkg-navigation.png) repeat; }
