@@ -13,7 +13,7 @@
   </reference>
 	
 	
-	<reference name="header">
+	<reference name="footer">
 		<!-- add a decoration div -->
 		<block type="cms/block" name="cms_header_right" before="-">
       <action method="setBlockId"><block_id>header_right</block_id></action>
