@@ -10,7 +10,7 @@ module MageTheme
   
   class Base
     
-    attr_accessor :client, :theme, :store_code, :magento_root, :magento_app
+    attr_accessor :client, :theme, :store_code, :theme_path, :magento_root, :magento_app, :magento_skin
     
     def initialize(options = {})
       @client = options[:client]
