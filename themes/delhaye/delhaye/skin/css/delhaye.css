@@ -13,17 +13,15 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 #anav { font-size:20px; color:#ffffff}
 /* boxes */
 #anav ul { border:5px solid #899ba5; background-color: #0A263D;}
-/* top level */
+/* level 1 */
 #anav a { color:#ffffff; padding:5px 12px 6px 8px; }
 #anav li.active a, #anav li.over a, #anav a:hover { color:orange; }
-/* level 1 */
-#anav ul a,
-#anav ul a:hover { float:none; padding:0; background:none; }
-#anav ul li a { color:#ffffff; font-weight:normal !important; }
 /* level 2 */
+#anav ul ul li a { color: blue !important; }
 #anav ul li a:hover { color:grey !important; }
-/* level 3+ */
-#anav ul li a { color: red !important; font-size: 22px; }
-#anav ul ul li a { color: blue !important; font-size: 24px; }
-#anav ul ul ul li a { color: green !important; font-size: 26px; }
-#anav ul ul ul ul li a { color: black !important; font-size: 30px; }
+/* level 3 */
+#anav ul ul ul li a { color: green !important;  }
+#anav ul li a:hover { color:blue !important; }
+/* level 4 */
+#anav ul ul ul ul li a { color: black !important; }
+#anav ul li a:hover { color:orange !important; }
