@@ -13,13 +13,8 @@ module MageTheme
         :content => content,
         :update_time => Time.now,
         :creation_time => cmsblock.creation_time || Time.now,
-        :store_ids => 1
+        :core_store_ids => [CoreStore.find_by_code('default').id]
       )
-      
-      #cmsblockstore = CmsBlockStore.find(:first, :conditions => {:store_id => 1, :block_id => cmsblock.id})
-      #if cmsblockstore.nil?
-      #  CmsBlockStore.create(:store_id => 1, :block_id => cmsblock.id)
-      #end
 
     end
   end

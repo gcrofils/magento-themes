@@ -18,13 +18,8 @@ module MageTheme
         :is_active => is_active,
         :update_time => Time.now,
         :creation_time => cmspage.creation_time || Time.now,
-        :store_ids => [1]
+        :core_store_ids => [CoreStore.find_by_code('default').id]
       )
-      
-      #cmspagestore = CmsPageStore.find(:first, :conditions => {:store_id => 1, :page_id => cmspage.id})
-      #if cmspagestore.nil?
-      #  CmsPageStore.create(:store_id => 1, :page_id => cmspage.id)
-      #end
 
     end
   end

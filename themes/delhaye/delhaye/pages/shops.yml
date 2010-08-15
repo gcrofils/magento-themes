@@ -1,0 +1,9 @@
+title: shops
+root_template: one_column
+meta_keywords: boutiques
+meta_description: retrouvez nos boutiques à Clichy et Levallois
+content_heading: false
+content:
+  <h1>Nos magasins</h1>   
+layout_update_xml: 
+is_active: 1
