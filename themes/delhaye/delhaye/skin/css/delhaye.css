@@ -7,8 +7,8 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 .main { width:900px; margin:0 auto; min-height:400px; padding:25px 25px 80px; background:blue; text-align:left; }
 
 /* Header ================================================================================ */
-.header-container { border-top:5px solid #0d2131; border-bottom:1px solid #415966; background: red url(../images/bkg_header8.jpg) 50% 0 repeat; }
-.header { width:930px; margin:0 auto; padding:10px; text-align:right; position:relative; z-index:10; }
+.header-container { border-top:5px solid #0d2131; border-bottom:10px solid #415966; background: red; }
+.header { width:930px; height:187px; margin:0 auto; padding:0; text-align:right; position:relative; z-index:10; }
 .header .logo { float:none; position:absolute; margin:3px 0 10px 12px; text-decoration:none !important; }
 /* form search */
 .header .quick-access {  position:absolute; border:solid blue 3px;}
