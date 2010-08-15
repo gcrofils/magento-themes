@@ -17,13 +17,14 @@ module MageTheme
         :layout_update_xml => layout_update_xml,
         :is_active => is_active,
         :update_time => Time.now,
-        :creation_time => cmspage.creation_time || Time.now
+        :creation_time => cmspage.creation_time || Time.now,
+        :store_ids => [1]
       )
       
-      cmspagestore = CmsPageStore.find(:first, :conditions => {:store_id => 1, :page_id => cmspage.id})
-      if cmspagestore.nil?
-        CmsPageStore.create(:store_id => 1, :page_id => cmspage.id)
-      end
+      #cmspagestore = CmsPageStore.find(:first, :conditions => {:store_id => 1, :page_id => cmspage.id})
+      #if cmspagestore.nil?
+      #  CmsPageStore.create(:store_id => 1, :page_id => cmspage.id)
+      #end
 
     end
   end
