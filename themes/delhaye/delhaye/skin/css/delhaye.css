@@ -12,16 +12,15 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 .nav-container { height:50px; font-size:50px; padding:10px 0 0 200px;  background:red url(../images/bkg-navigation.png) repeat; }
 #anav { font-size:20px; color:#ffffff}
 /* boxes */
-#anav ul { border:5px solid #899ba5; background-color: #0A263D;}
+#anav ul { border:1px solid #b83140; background-color: #d58a92;}
 /* level 1 */
-#anav a { color:#ffffff; padding:5px 12px 6px 8px; }
-#anav li.active a, #anav li.over a, #anav a:hover { color:orange; }
+#anav a { color:#ffffff; padding:5px 50px 6px 8px; }
+#anav li.active a, #anav li.over a, #anav a:hover { color:#b83140; }
 /* level 2 */
-#anav ul ul li a { color: blue !important; }
-#anav ul li a:hover { color:grey; }
+#anav ul ul li a { color:#2c2828 !important; }
 /* level 3 */
-#anav ul ul ul li a { color: green !important;  }
-#anav ul li a:hover { color:blue; }
+#anav ul ul ul li a { color:#443C40 !important;  }
 /* level 4 */
-#anav ul ul ul ul li a { color: black !important; }
-#anav ul li a:hover { color:red; }
+#anav ul ul ul ul li a { color:#8F8086 !important; }
+/* levels 2-4 over */
+#anav ul li a:hover { color:#B83140; }
