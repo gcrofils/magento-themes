@@ -21,5 +21,4 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 #anav ul a:hover { float:none; padding:0; background:none; }
 #anav ul li a { color:blue; font-weight:normal !important; }
 /* level 2 */
-#anav ul li a { color:grey !important; }
 #anav ul li a:hover { color:green !important; }
