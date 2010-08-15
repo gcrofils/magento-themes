@@ -1,7 +1,7 @@
 body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 
 /* Layout ================================================================================ */
-.wrapper { width:950px; background:black; margin:0 auto;}
+.wrapper { width:1000px; background:black; margin:0 auto;}
 .page {}
 .main-container { }
 .main { width:900px; margin:0 auto; min-height:400px; padding:25px 25px 80px; background:blue; text-align:left; }
