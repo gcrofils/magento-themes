@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+<default>
+  <!-- Remove callouts and rarely used stuff -->
+  <!-- <remove name="right.poll"/> -->
+  <remove name="right.permanent.callout"/> <!-- remove back to scholl banner in right panel -->
+  <remove name="catalog.compare.sidebar"/> <!-- remove compare block in right panel -->
+  <!-- <remove name="left.permanent.callout"/> -->
+ 
+  <!-- add the local stylesheet -->
+  <reference name="head">
+    <action method="addCss"><stylesheet>css/delhaye.css</stylesheet></action>
+  </reference>
+</default>
+</layout>

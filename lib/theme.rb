@@ -1,3 +1,5 @@
+require 'fileutils'
+
 module MageTheme
   
   class NoClientDefined < StandardError #:nodoc:
@@ -7,6 +9,23 @@ module MageTheme
   end
   
   class Base
+    
+    attr_accessor :client, :theme, :store_code, :magento_root, :magento_app
+    
+    def initialize(options = {})
+      @client = options[:client]
+      @theme  = options[:theme]
+      @store_code = 'default'
+      @theme_path = File.join(MAGE_THEMES,  @client, @theme)
+      @magento_root = '/home/www/magento'
+      @magento_app = File.join(@magento_root, 'app', 'design', 'frontend', 'default', @theme)
+      @magento_skin = File.join(@magento_root, 'skin', 'frontend', 'default', @theme)
+    end
+    
+    def store_id
+      @store ||= CoreStore.find_by_code(store_code)
+      @store.id
+    end
     
     def load_yaml(file)
       YAML.load_file(file).each  do |key, value|
@@ -18,24 +37,18 @@ module MageTheme
   
   class Theme < MageTheme::Base
     
-    attr_accessor :client, :theme, :store_id
-    
-    def initialize(options = {})
-      @client = options[:client]
-      @theme  = options[:theme]
-      @store_id = 1
-    end
-    
     def install
       raise NoClientDefined if client.nil?
       raise NoThemeDefined if theme.nil?
+      update_local_xml
       upsert_cms(:type => :blocks)
       upsert_cms(:type => :pages)
+      copy_skin
       force_design_change
     end
     
     def upsert_cms(options = {})
-      path = File.join(MAGE_THEMES, client, theme, options[:type].to_s)
+      path = File.join(theme_path, options[:type].to_s)
       Dir["#{path}/*"].select { |file| /(yml)$/ =~ file }.each do |file|
         "MageTheme::#{ActiveSupport::Inflector.singularize(options[:type]).capitalize}".constantize.new.install(file)
       end
@@ -46,5 +59,14 @@ module MageTheme
       DesignChange.create(:store_id => store_id, :design => "default/#{theme}")
     end
     
+    def update_local_xml
+      FileUtils.makedirs File.join(magento_app, 'layout')
+      FileUtils.cp File.join(theme_path, 'config', 'local.xml'), File.join(magento_app, 'layout')
+    end
+    
+    def copy_skin
+      FileUtils.makedirs magento_skin
+      FileUtils.cp_r File.join(theme_path, 'skin'), magento_skin
+    end
   end
 end

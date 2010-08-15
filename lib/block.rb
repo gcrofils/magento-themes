@@ -13,7 +13,7 @@ module MageTheme
         :content => content,
         :update_time => Time.now,
         :creation_time => cmsblock.creation_time || Time.now,
-        :core_store_ids => [CoreStore.find_by_code('default').id]
+        :core_store_ids => [store_id]
       )
 
     end
