@@ -8,8 +8,8 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 
 /* Header ================================================================================ */
 .header-container { border:none; background: white; }
-.header { width:930px; height:187px; margin:0 auto; padding:0; text-align:left; position:relative; z-index:10; }
-.header .logo { float:none; position:absolute; margin:3px 0 10px 12px; text-decoration:none !important; }
+.header { background: red; width:930px; height:187px; margin:0 auto; padding:0; text-align:left; position:relative; z-index:10; }
+.header .logo { float:none; position:absolute; margin:0; text-decoration:none !important; }
 /* form search */
 .header .quick-access {  position:absolute; border:solid blue 3px;}
 .header .form-search { position:absolute; border:solid green 1px; }
