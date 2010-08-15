@@ -11,5 +11,13 @@
   <reference name="head">
     <action method="addCss"><stylesheet>css/delhaye.css</stylesheet></action>
   </reference>
+	
+	
+	<reference name="header">
+		<!-- add a decoration div -->
+		<block type="cms/block" name="header_right">
+      <action method="setBlockId"><block_id>header_right</block_id></action>
+    </block>
+	</reference>
 </default>
 </layout>
