@@ -1,6 +1,7 @@
 body { background-image:none }
 
 /* Layout ================================================================================ */
-.main-container { background-image:none; }
-.main { background-image:none; }
+.main-container { background:black url(../images/bkg_main90.gif) 50% 0 no-repeat; }
+.main { width:900px; margin:0 auto; min-height:400px; padding:25px 25px 80px; background:blue url(../images/bkg_main9.gif) 0 0 no-repeat; text-align:left; }
+
 
