@@ -10,7 +10,7 @@ body { background-image:none; background-color:grey; }
 
 /* Navigation ================================================================================ */
 .nav-container { height:60px; font-size:50px; padding:0px 0 0 100px;  background:red url(../images/bkg-navigation.png) repeat; overflow:hidden; }
-#anav {font-size:55px;}
+#anav {font-size:20px;}
 
 
 
