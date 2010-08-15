@@ -62,6 +62,7 @@ module MageTheme
     def update_local_xml
       FileUtils.makedirs File.join(magento_app, 'layout')
       FileUtils.cp File.join(theme_path, 'config', 'local.xml'), File.join(magento_app, 'layout')
+      logger.debug "MageTheme::Theme.update_local_xml copy #{File.join(theme_path, 'config', 'local.xml')} to #{File.join(magento_app, 'layout')}"
     end
     
     def copy_skin
