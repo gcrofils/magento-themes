@@ -8,7 +8,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 
 /* Header ================================================================================ */
 .header-container { border:none; background: white; padding:0; margin:0 }
-.header { border:none; background: red; width:950px; height:187px; margin:0 auto; padding:0; text-align:left; position:relative; z-index:10; }
+.header { border:none; background: red; width:980px; height:187px; margin:0 auto; padding:0; text-align:left; position:relative; z-index:10; }
 .header .logo { float:none; position:absolute; margin:0; text-decoration:none !important; }
 /* form search */
 .header .quick-access {  position:absolute; border:solid blue 3px;}
