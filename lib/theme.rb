@@ -68,7 +68,7 @@ module MageTheme
     
     def copy_skin
       FileUtils.makedirs magento_skin
-      FileUtils.cp_r File.join(theme_path, 'skin'), magento_skin
+      FileUtils.cp_r File.join(theme_path, 'skin', '.'), magento_skin
     end
   end
 end
