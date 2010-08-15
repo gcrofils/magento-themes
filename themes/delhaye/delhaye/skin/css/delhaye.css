@@ -1,8 +1,8 @@
 body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 
 /* Layout ================================================================================ */
-.main-container { background:black url(../images/bkg_main90.gif) 50% 0 no-repeat; }
-.main { width:900px; margin:0 auto; min-height:400px; padding:25px 25px 80px; background:blue url(../images/bkg_main9.gif) 0 0 no-repeat; text-align:left; }
+.main-container { background:black; width:900px; }
+.main { width:900px; margin:0 auto; min-height:400px; padding:25px 25px 80px; background:blue; text-align:left; }
 
 /* Header ================================================================================ */
 .logo { float:left; }
