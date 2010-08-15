@@ -18,10 +18,10 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif;}
 #anav li.active a, #anav li.over a, #anav a:hover { color:orange; }
 /* level 2 */
 #anav ul ul li a { color: blue !important; }
-#anav ul li a:hover { color:grey !important; }
+#anav ul li a:hover { color:grey; }
 /* level 3 */
 #anav ul ul ul li a { color: green !important;  }
-#anav ul li a:hover { color:blue !important; }
+#anav ul li a:hover { color:blue; }
 /* level 4 */
 #anav ul ul ul ul li a { color: black !important; }
-#anav ul li a:hover { color:orange !important; }
+#anav ul li a:hover { color:red; }
