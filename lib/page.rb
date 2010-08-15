@@ -9,7 +9,7 @@ module MageTheme
       load_yaml(file)
       cmspage.update_attributes(
         :title => title,
-        :root_template => is_active,
+        :root_template => root_template,
         :meta_keywords => meta_keywords,
         :meta_description => meta_description,
         :content_heading => content_heading,
