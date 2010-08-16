@@ -12,7 +12,7 @@
     <action method="addCss"><stylesheet>css/delhaye.css</stylesheet></action>
   </reference>
 	
-	<reference name="footer">
+	<reference name="header">
 		<block type="core/template" name="mytest" as="mytest" template="page/html/wrapper.phtml">
     <action method="setId"><id>some-custom-identificator</id></action>
  

@@ -7,7 +7,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 .main { width:950px; margin:0 auto; min-height:400px; padding:0; background:blue; text-align:left; }
 
 /* Header ================================================================================ */
-.header-container { border-bottom:10px solid black; border-top:1px solid #b83140; background: white; padding:0; margin:0 }
+.header-container { border-bottom:10px solid green; border-top:1px solid #b83140; background: white; padding:0; margin:0 }
 .header { border:none important!; width:950px; height:187px; margin:0 auto; padding:0; text-align:left; position:relative; z-index:10; }
 .header .logo { float:none; position:absolute; margin:0; text-decoration:none !important; }
 /* form search */
