@@ -21,6 +21,10 @@
      <action method="setParams"><params>class="custom-class"</params></action>
   </block>
  </reference>
+ 
+ <reference name="header">
+<action method="unsetChild"><alias>topLinks</alias></action>
+</reference>
 	
    <!-- add a decoration div -->	
 	 <reference name="top.menu">
