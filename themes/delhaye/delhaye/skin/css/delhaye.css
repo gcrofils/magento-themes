@@ -20,6 +20,8 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 
 /* Navigation ================================================================================ */
 .nav-container { height:50px; font-size:50px; padding:10px 0 0 200px;  background:#000000 url(../images/bkg-navigation.png) repeat; }
+/* decoration */
+.nav-container .nav-decoration {position:relative; width: 179px; height: 172px; top:0px; left:-50px; background: url(../images/spt-norepeat.png) no-repeat;}
 #anav { font-size:20px; color:#ffffff}
 /* boxes */
 #anav ul { border:1px solid #b83140; background-color: #d58a92;}
@@ -34,5 +36,4 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 #anav ul ul ul ul li a { color:#8F8086 !important; }
 /* levels 2-4 over */
 #anav ul li a:hover { color:#b83140 !important;}
-/* decoration */
-.top_menu_decoration {position:relative; width: 120px; height: 60px; top:0px; left:-50px;}
+
