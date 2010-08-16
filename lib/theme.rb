@@ -75,9 +75,6 @@ module MageTheme
       Dir["#{template_path}/*"].select { |file| /(phtml)$/ =~ file }.each do |file|
         basename = File.basename(file)
         tarpath = File.join(magento_template, File.dirname(filename_to_path(basename)))
-        puts file
-        puts tarpath
-        puts File.join(tarpath, File.basename(filename_to_path(basename)))
         FileUtils.makedirs tarpath
         FileUtils.cp file, File.join(tarpath, File.basename(filename_to_path(basename)))
       end
