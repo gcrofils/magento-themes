@@ -94,7 +94,7 @@ module MageTheme
     end
     
     def filename_to_path(filename)
-      file.gsub('_', File::Separator)
+      filename.gsub('_', File::Separator)
     end
   end
 end
