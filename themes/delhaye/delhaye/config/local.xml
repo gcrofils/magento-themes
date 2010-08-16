@@ -12,7 +12,7 @@
     <action method="addCss"><stylesheet>css/delhaye.css</stylesheet></action>
   </reference>
 	
-	<reference name="header">
+	<reference name="footer">
 		<block type="core/template" template="page/html/wrapper.phtml">
     <action method="setId"><id>some-custom-identificator</id></action>
  
@@ -21,6 +21,9 @@
      <action method="setParams"><params>class="custom-class"</params></action>
  
      <!-- insert wrapped blocks here -->
+		     <block type="cms/block" name="cms_top_menu_decoration" before="-">
+      <action method="setBlockId"><block_id>top_menu_decoration</block_id></action>
+    </block>
   </block>
  </reference>
 	

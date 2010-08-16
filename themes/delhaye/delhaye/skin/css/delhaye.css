@@ -35,4 +35,4 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 /* levels 2-4 over */
 #anav ul li a:hover { color:#b83140 !important;}
 /* decoration */
-.top_menu_decoration {position: absolute; width: 120px; height: 60px; top:0px; left:-50px;}
+.top_menu_decoration {width: 120px; height: 60px; top:0px; left:-50px;}
