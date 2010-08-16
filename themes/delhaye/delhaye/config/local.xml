@@ -11,20 +11,19 @@
   <reference name="head">
     <action method="addCss"><stylesheet>css/delhaye.css</stylesheet></action>
   </reference>
-	
- 
- <reference name="header">
-<action method="unsetChild"><alias>topLinks</alias></action>
-</reference>
-            
 
-	
-   <!-- add a decoration div -->	
-	 <reference name="header">
+            
+   <!-- add a decoration div -->  
+   <reference name="header">
+   	<action method="unsetChild"><alias>topSearch</alias></action>
     <block type="cms/block" name="cms_test_block" before="-">
       <action method="setBlockId"><block_id>test_block</block_id></action>
     </block>
   </reference>
+  
+        <reference name="content">
+            <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
+        </reference>
 	
 
 	
