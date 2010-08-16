@@ -45,6 +45,7 @@ module MageTheme
       upsert_cms(:type => :blocks)
       upsert_cms(:type => :pages)
       copy_skin
+      copy_templates
       force_design_change
     end
     
@@ -62,13 +63,38 @@ module MageTheme
     
     def update_local_xml
       FileUtils.makedirs File.join(magento_app, 'layout')
-      FileUtils.cp File.join(theme_path, 'config', 'local.xml'), File.join(magento_app, 'layout')
-      logger.debug "MageTheme::Theme.update_local_xml copy #{File.join(theme_path, 'config', 'local.xml')} to #{File.join(magento_app, 'layout')}"
+      FileUtils.cp File.join(theme_path, 'config', 'local.xml'), magento_layout
     end
     
     def copy_skin
       FileUtils.makedirs magento_skin
       FileUtils.cp_r File.join(theme_path, 'skin', '.'), magento_skin
+    end
+    
+    def copy_templates
+      Dir["#{template_path}/*"].select { |file| /(phtml)$/ =~ file }.each do |file|
+        tarpath = File.join(template_path, File.Dirname(filename_to_path(file)))
+        FileUtils.makedirs tarpath
+        FileUtils.cp File.join(template_path, file), File.join(tarpath, File.Basename(filename_to_path(file)))
+      end
+    end
+    
+    private
+    
+    def template_path
+      File.join(theme_path, 'templates')
+    end
+    
+    def magento_template
+      File.join(magento_app, 'template')
+    end
+    
+    def magento_layout
+      File.join(magento_app, 'layout')
+    end
+    
+    def filename_to_path(filename)
+      file.gsub('_', File::Separator)
     end
   end
 end

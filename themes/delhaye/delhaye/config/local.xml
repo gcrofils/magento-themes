@@ -15,17 +15,14 @@
  
  <reference name="header">
 <action method="unsetChild"><alias>topLinks</alias></action>
-    <block type="cms/block" name="cms_top_menu_decoration" before="-">
-      <action method="setBlockId"><block_id>header_right</block_id></action>
-    </block>
 </reference>
             
 
 	
    <!-- add a decoration div -->	
-	 <reference name="top.menu">
-    <block type="cms/block" name="cms_top_menu_decoration" before="-">
-      <action method="setBlockId"><block_id>top_menu_decoration</block_id></action>
+	 <reference name="header">
+    <block type="cms/block" name="cms_test_block" before="-">
+      <action method="setBlockId"><block_id>test_block</block_id></action>
     </block>
   </reference>
 	
