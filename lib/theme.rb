@@ -73,9 +73,13 @@ module MageTheme
     
     def copy_templates
       Dir["#{template_path}/*"].select { |file| /(phtml)$/ =~ file }.each do |file|
+        puts file
         tarpath = File.join(template_path, File.dirname(filename_to_path(file)))
-        FileUtils.makedirs tarpath
-        FileUtils.cp File.join(template_path, file), File.join(tarpath, File.basename(filename_to_path(file)))
+        puts tarpath
+        puts File.basename(filename_to_path(file))
+        puts filename_to_path(file)
+        #FileUtils.makedirs tarpath
+        #FileUtils.cp File.join(template_path, file), File.join(tarpath, File.basename(filename_to_path(file)))
       end
     end
     
