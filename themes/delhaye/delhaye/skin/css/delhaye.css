@@ -19,7 +19,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 .header .right { background: blue; }
 
 /* Navigation ================================================================================ */
-.nav-container { position:relative; height:50px; font-size:50px; padding:10px 0 0 200px;  background:#000000 url(../images/bkg-navigation.png) repeat; }
+.nav-container { position:relative; height:50px; font-size:50px; padding:10px 0 0 200px;  background:#000000 url(../images/bkg-navigation.png) repeat; z-index:600 important! }
 /* decoration */
 .nav-container .nav-decoration {position:absolute; width: 172px; height: 179px; top:-10px; left:-14px; background: url(../images/spt-norepeat.png) no-repeat; z-index:600 important!}
 #anav { font-size:20px; color:#ffffff}
@@ -38,4 +38,4 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 #anav ul li a:hover { color:#b83140 !important;}
 
 /* Search Form ================================================================================ */
-.form-search {position:absolute; width: 251px; height: 118px; top:-10px; left:-14px; background: url(../images/spt-norepeat.png) -175px 0px no-repeat;}
+.form-search {position:absolute; width: 251px; height: 118px; top:-10px; left:-14px; background: url(../images/spt-norepeat.png) -175px 0px no-repeat; z-index:1 important!}
