@@ -12,10 +12,6 @@
     <action method="addCss"><stylesheet>css/delhaye.css</stylesheet></action>
   </reference>
 	
-	<reference name="header">
-		<action method="addJs"><script>mage/cookies.js</script></action>
-	</reference>
-	
    <!-- add a decoration div -->	
 	 <reference name="top.menu">
     <block type="cms/block" name="cms_top_menu_decoration">
