@@ -40,3 +40,6 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 /* Search Form ================================================================================ */
 .form-search-decoration {position:absolute; width: 251px; height: 118px; top:0px; left:0px; background: url(../images/spt-norepeat.png) -175px 0px no-repeat; z-index:600 important!}
 .form-search {position:absolute; top:20px; left:50px;}
+.form-search label { float:left; width:24px; height:21px; text-align:left; text-indent:-999em; overflow:hidden; }
+.form-search input.input-text { float:left; border-color:#5c7989; width:209px; margin-right:4px; }
+.form-search button.button { float:left; width:40px; height:40px; background: url(../images/spt-norepeat.png) -425px 0px no-repeat; }
