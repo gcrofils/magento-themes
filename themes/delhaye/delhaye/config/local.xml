@@ -19,11 +19,6 @@
      <!-- optional -->
      <action method="setTag"><tag>span</tag></action> <!-- div is used if not specified -->
      <action method="setParams"><params>class="custom-class"</params></action>
- 
-     <!-- insert wrapped blocks here -->
-		     <block type="cms/block" name="cms_top_menu_decoration2" before="-">
-      <action method="setBlockId"><block_id>top_menu_decoration</block_id></action>
-    </block>
   </block>
  </reference>
 	
