@@ -21,9 +21,9 @@
     </block>
   </reference>
   
-        <reference name="content">
-            <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.mini.phtml"/>
-        </reference>
+  <reference name="content">
+    <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.phtml"/>
+  </reference>
 	
 
 	

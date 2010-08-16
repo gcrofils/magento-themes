@@ -21,7 +21,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 /* Navigation ================================================================================ */
 .nav-container { position:relative; height:50px; font-size:50px; padding:10px 0 0 200px;  background:#000000 url(../images/bkg-navigation.png) repeat; }
 /* decoration */
-.nav-container .nav-decoration {position:absolute; width: 179px; height: 172px; top:-10px; left:-14px; background: url(../images/spt-norepeat.png) no-repeat;}
+.nav-container .nav-decoration {position:absolute; width: 172px; height: 179px; top:-10px; left:-14px; background: url(../images/spt-norepeat.png) no-repeat;}
 #anav { font-size:20px; color:#ffffff}
 /* boxes */
 #anav ul { border:1px solid #b83140; background-color: #d58a92;}
@@ -37,3 +37,5 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 /* levels 2-4 over */
 #anav ul li a:hover { color:#b83140 !important;}
 
+/* Search Form ================================================================================ */
+.form-search {position:absolute; width: 251px; height: 118px; top:-10px; left:-14px; background: url(../images/spt-norepeat.png) 175px 0px no-repeat;}
