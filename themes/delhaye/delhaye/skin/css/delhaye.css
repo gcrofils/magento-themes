@@ -3,7 +3,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 /* Layout ================================================================================ */
 .wrapper { width:90px; background:black; margin:10px auto; padding:0}
 .page {}
-.main-container { position: relative; z-index:50}
+.main-container { position: relative; z-index:50 important!}
 .main { width:950px; margin:0 auto; min-height:400px; padding:0; background:blue; text-align:left; }
 
 /* Header ================================================================================ */
@@ -21,7 +21,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#d5b7b7; }
 /* Navigation ================================================================================ */
 .nav-container { position:relative; height:50px; font-size:50px; padding:10px 0 0 200px;  background:#000000 url(../images/bkg-navigation.png) repeat; }
 /* decoration */
-.nav-container .nav-decoration {position:absolute; width: 172px; height: 179px; top:-10px; left:-14px; background: url(../images/spt-norepeat.png) no-repeat; z-index:50}
+.nav-container .nav-decoration {position:absolute; width: 172px; height: 179px; top:-10px; left:-14px; background: url(../images/spt-norepeat.png) no-repeat; z-index:60 important!}
 #anav { font-size:20px; color:#ffffff}
 /* boxes */
 #anav ul { border:1px solid #b83140; background-color: #d58a92;}
