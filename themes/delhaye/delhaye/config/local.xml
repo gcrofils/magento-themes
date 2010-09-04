@@ -16,14 +16,23 @@
    <!-- add a decoration div -->  
    <reference name="header">
    	<action method="unsetChild"><alias>topSearch</alias></action>
-    <block type="cms/block" name="cms_test_block" before="-">
-      <action method="setBlockId"><block_id>test_block</block_id></action>
-    </block>
   </reference>
   
   <reference name="content">
-    <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.phtml"/>
+    <block type="core/template" name="deco.top" as="decoTop" template="page/css/decotop.phtml" before="-" />
+    <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.phtml" />
+    <block type="cms/block" name="brands"  after="-">
+      <action method="setBlockId"><block_id>brands</block_id></action>
+    </block>
   </reference>
+
+  
+  <reference name="footer">
+     <block type="cms/block" name="seo_sitemap" before="-">
+       <action method="setBlockId"><block_id>seo_sitemap</block_id></action>
+     </block>
+     <block type="core/template" name="deco.bottom" as="decoBottom" template="page/css/decobottom.phtml" before="-" />
+   </reference>
 	
 
 	

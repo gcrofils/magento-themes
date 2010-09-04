@@ -1,27 +1,47 @@
-body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#423536; }
+body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#423536 url(../images/bkg-body.png) repeat-x; }
 
 /* Layout ================================================================================ */
-.wrapper { width:90px; color:black; background:white; margin:10px auto; padding:0}
+.wrapper { width:950px; color:black ;background:transparent;  margin:10px auto; padding:0}
 .page {}
-.main-container { background:transparent; position: relative; z-index:1 important!}
-.main { width:950px; margin:0 auto; min-height:400px; padding:0; background:transparent; text-align:left; }
+.main-container { background:white; border:#423536 solid 1px; }
+.main { position:relative; width:930px; margin:0 auto; min-height:400px; padding:10px; background:transparent; text-align:left; }
+.main-decoration { position:absolute; top:-67px; left:-12px; width:116px; height:121px; background: url(../images/bkg-main-decoration-top.png) no-repeat;}
 
 /* Header ================================================================================ */
-.header-container { border-bottom:10px solid green; border-top:1px solid #b83140; background: white; padding:0; margin:0 }
-.header { border:none important!; width:950px; height:187px; margin:0 auto; padding:0; text-align:left; position:relative; z-index:10; }
-.header .logo { float:none; position:absolute; margin:0; text-decoration:none !important; }
+.header-container { border:none; background: #dccdac; padding:0; margin:0 }
+.header { border:none important!; width:950px; height:150px; margin:0 auto; padding:0; text-align:left; position:relative; }
+.header .logo { float:none; position:absolute; margin:0; text-decoration:none !important;  }
 /* form search */
-.header .quick-access {  position:absolute; border:solid blue 3px;}
+.header .quick-access {  position:absolute; top:70px; width:700px; border:none; }
+.header .quick-access .welcome-msg {color: black;}
 .header .form-search { position:absolute; left:-50px; top:0px; border:solid green 1px; }
 /* links */
-.header .links { position:absolute; clear:both; margin:0 0 6px; }
+.header .links { position:relative; clear:both; margin:0 0 6px;}
+.header .links a { color:black;}
 /* right block */
 .header .right { background: blue; }
 
+
+
+/* footer ================================================================================ */
+.footer-container { border:none; background: transparent; padding:0; margin:0 }
+.footer { position:relative; float:none; width:auto;}
+.footer-decoration {position:absolute; top:-105px; right:-3px; width:162px; height:116px;  background: url(../images/bkg-main-decoration-bottom.png) no-repeat; }
+.footer, .footer a, .footer .seo h1{ color:#715444; text-decoration:none;  font:12px/1.55 Arial, Helvetica, sans-serif; }
+.footer a:hover { text-decoration:underline; }
+.footer .seo h1 {font-weight:bold; font-size:13px; }
+.footer .col {width:300px; float:left; padding-left:10px; text-align:left;  }
+.footer .col-2 {width:290px; padding-left:20px; }
+.footer .col-3 {width:280px; padding-left:30px; }
+.footer .col li {clear:both; display:block; background:none; padding:0; margin:0;}
+.footer .col ul {margin-top:20px;display:block;}
+.footer .quicklist {clear:both; margin-top:15px; padding-top:15px; text-align:center; }
+.main-links {font-size:15px;margin-top:15px;}
+
 /* Navigation ================================================================================ */
-.nav-container { position:relative; height:50px; font-size:50px; padding:10px 0 0 200px;  background:#000000 url(../images/bkg-navigation.png) repeat; z-index:600 important! }
+.nav-container { position:relative; height:47px; font-size:50px; padding:10px 0 0 200px;  background:#000000 url(../images/bkg-navigation.png) repeat; }
 /* decoration */
-.nav-container .nav-decoration {position:absolute; width: 172px; height: 179px; top:-10px; left:-14px; background: url(../images/spt-norepeat.png) no-repeat; z-index:600 important!}
+.nav-container .nav-decoration {position:absolute; width: 172px; height: 179px; top:-10px; left:-14px; background: url(../images/spt-norepeat.png) no-repeat; }
 #anav { font-size:20px; color:#ffffff}
 /* boxes */
 #anav ul { border:1px solid #b83140; background-color: #d58a92;}
@@ -38,7 +58,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#423536; }
 #anav ul li a:hover { color:#b83140 !important;}
 
 /* Search Form ================================================================================ */
-.form-search-decoration {position:absolute; width: 250px; height: 118px; top:0px; left:0px; background: url(../images/spt-norepeat.png) -175px 0px no-repeat; z-index:600 important!}
+.form-search-decoration {position:absolute; width: 234px; height: 109px; top:-5px; left:-2px; background: url(../images/bkg-searchform.png) no-repeat; }
 .form-search {position:absolute; top:20px; left:50px;}
 .form-search label { float:left; width:24px; height:21px; text-align:left; text-indent:-999em; overflow:hidden; }
 .form-search input.input-text { float:left; border-color:#5c7989; width:50px; margin-right:4px; }
