@@ -18,7 +18,7 @@ module MageTheme
       @@theme  = options[:theme] unless options[:theme].nil?
       @@store_code = 'default'
       @@theme_path = File.join(MAGE_THEMES,  @@client, @@theme)
-      @@magento_root = options[:root] || '/home/www/magento'
+      @@magento_root = options[:root] unless options[:root].nil?
       @@magento_app = File.join(@@magento_root, 'app', 'design', 'frontend', 'default', @@theme)
       @@magento_skin = File.join(@@magento_root, 'skin', 'frontend', 'default', @@theme)
     end
