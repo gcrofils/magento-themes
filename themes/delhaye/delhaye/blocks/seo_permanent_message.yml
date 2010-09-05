@@ -1,0 +1,10 @@
+title: Home Permanent Message
+is_active: 1
+content:
+  <h1>Pourquoi faire confiance &agrave; notre &eacute;quipe ?</h1>
+  <ul>
+  <li>Plus de <b>45 ans d'exp&eacute;riences</b></li>
+  <li><b>Nos conseillers boutique</b> sont &agrave; votre disposition</li>
+  <li>Tous les <b>bijoux</b> sont <b>certifi&eacute;s</b> par un organisme ind&eacute;pendant</li>
+  <li><b>Des prix 30% moins cher qu'en joaillerie classique</b></li>
+  </ul>

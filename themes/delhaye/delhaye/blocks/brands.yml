@@ -1,7 +1,8 @@
 title: brands
 is_active: 1
 content:
-  <div class="logos"> 
+  <div class="brands-container">
+  <div class="brands"> 
   <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/brands/gucci.png"}}" alt="Gucci" /></a>
   <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/brands/breitling.png"}}" alt="Breitling" /></a>
   <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/brands/poiray.png"}}" alt="Poiray" /></a>
@@ -9,3 +10,4 @@ content:
   <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/brands/chopard.png"}}" alt="Chopard" /></a>
   </div>
   <p><a href="{{store direct_url="shops"}}">Retrouvez nos marques dans nos boutiques.</a></p>
+  </div>

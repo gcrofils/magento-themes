@@ -16,16 +16,33 @@
    <!-- add a decoration div -->  
    <reference name="header">
    	<action method="unsetChild"><alias>topSearch</alias></action>
+   	<block type="cms/block" name="headerRight">
+      <action method="setBlockId"><block_id>header_right</block_id></action>
+    </block>
   </reference>
+  
+
   
   <reference name="content">
     <block type="core/template" name="deco.top" as="decoTop" template="page/css/decotop.phtml" before="-" />
     <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.phtml" />
-    <block type="cms/block" name="brands"  after="-">
-      <action method="setBlockId"><block_id>brands</block_id></action>
-    </block>
   </reference>
 
+<reference name="root">
+  <block type="cms/block" name="brands">
+    <action method="setBlockId"><block_id>brands</block_id></action>
+  </block>
+  <block type="cms/block" name="seotext">
+    <action method="setBlockId"><block_id>seo_text</block_id></action>
+  </block>
+  <block type="cms/block" name="homePermanentMessage">
+    <action method="setBlockId"><block_id>seo_permanent_message</block_id></action>
+  </block>
+  <block type="cms/block" name="homeSeasonalMessage">
+    <action method="setBlockId"><block_id>seo_seasonal_message</block_id></action>
+  </block>
+
+</reference>
   
   <reference name="footer">
      <block type="cms/block" name="seo_sitemap" before="-">
