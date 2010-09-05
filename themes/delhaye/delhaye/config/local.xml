@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <layout>
 <default>
   <!-- Remove callouts and rarely used stuff -->
@@ -20,12 +21,16 @@
       <action method="setBlockId"><block_id>header_right</block_id></action>
     </block>
   </reference>
-  
 
-  
   <reference name="content">
     <block type="core/template" name="deco.top" as="decoTop" template="page/css/decotop.phtml" before="-" />
     <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.phtml" />
+  </reference>
+  
+  <reference name="content">
+    <block type="catalog/product_popular" name="product_popular" as="product_popular" template="catalog/product/popular.phtml">
+      <action method="setData"><key>category_id</key><value>17</value></action>
+    </block>
   </reference>
 
 <reference name="root">
@@ -51,9 +56,8 @@
      <block type="core/template" name="deco.bottom" as="decoBottom" template="page/css/decobottom.phtml" before="-" />
    </reference>
 	
-
-	
-
-	
 </default>
+<home>
+
+</home>
 </layout>

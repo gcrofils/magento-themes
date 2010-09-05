@@ -4,7 +4,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#423536 ur
 .wrapper { width:950px; color:black ;background:transparent;  margin:10px auto; padding:0}
 .page {}
 .main-container { background:white; border:#423536 solid 1px; }
-.main { position:relative; width:910px; margin:0 auto; min-height:400px; padding:0 20px 0 20px; background:transparent; text-align:left; }
+.main { position:relative; width:910px; margin:0 auto; min-height:400px; padding:0px 20px 0 20px; background:transparent; text-align:left; }
 .main-decoration { position:absolute; top:-67px; left:-12px; width:116px; height:121px; background: url(../images/bkg-main-decoration-top.png) no-repeat;}
 .brands-container {width:100%; height:131px; border-top:#cbb8ad solid 1px; background: #dccdac url(../images/bkg-brands.png) repeat-x;}
 .brands {text-align:center;padding-top:20px;} 
@@ -28,6 +28,16 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#423536 ur
 .home-layout .col-right h1, .home-layout .col-right li {color:black; font:11px/1.2em Arial, Helvetica, sans-serif; margin:0; padding:0;}
 .home-layout .col-right h1 {font-size:15px; font-weight:bold;}
 .home-layout .col-right li {margin-top:7px;}
+
+/* popular */
+.home-layout .popular {position : absolute; top:80px; left:45px;}
+.home-layout .popular .product-details {display:none;}
+.home-layout .popular li {position:relative; width:136px; height:130px; margin-top:10px; background:transparent url(../images/bkg-home-decoration-selection.png)}
+.home-layout .popular li .product {width:100%; padding-top:15px; text-align:center;}
+.home-layout .popular li .product button.button {position:absolute; left:90px; top:90px;width:40px; height:40px; background: url(../images/btn-sprites.png) 0px 0px no-repeat; }
+.home-layout .popular li .product button.button:hover {background-position: 0 -39px;}
+.home-layout .popular li .product button.button:active {background-position: 0 -78px;}
+
 
 /* Header ================================================================================ */
 .header-container { border:none; background: #dccdac; padding:0; margin:0 }

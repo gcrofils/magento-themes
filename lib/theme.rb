@@ -11,7 +11,7 @@ module MageTheme
   
   class Base
     
-    cattr_accessor :client, :theme, :store_code, :theme_path, :magento_root, :magento_app, :magento_skin
+    cattr_accessor :client, :theme, :store_code, :theme_path, :magento_root, :magento_app, :magento_skin, :magento_code
     
     def initialize(options = {})
       @@client = options[:client] unless options[:client].nil?
@@ -21,6 +21,7 @@ module MageTheme
       @@magento_root = options[:root] unless options[:root].nil?
       @@magento_app = File.join(@@magento_root, 'app', 'design', 'frontend', 'default', @@theme)
       @@magento_skin = File.join(@@magento_root, 'skin', 'frontend', 'default', @@theme)
+      @@magento_code = File.join(@@magento_root, 'app', 'code', 'local', 'Mage')
     end
     
     def store_id
@@ -46,6 +47,7 @@ module MageTheme
       upsert_cms(:type => :pages)
       copy_skin
       copy_templates
+      copy_app
       force_design_change
     end
     
@@ -80,10 +82,26 @@ module MageTheme
       end
     end
     
+    def copy_app
+      Dir["#{app_path}/*"].select { |file| /(php)$/ =~ file }.each do |file|
+        parts = File.basename(file).split('_')
+        case parts.shift
+          when 'block'
+            tarpath = File.join(magento_code, parts.shift, 'Block', File.dirname(filename_to_path(parts.join('_'))))
+        end
+        FileUtils.makedirs tarpath
+        FileUtils.cp file, File.join(tarpath, parts.last)
+      end
+    end
+    
     private
     
     def template_path
       File.join(theme_path, 'templates')
+    end
+    
+    def app_path
+      File.join(theme_path, 'app')
     end
     
     def magento_template
