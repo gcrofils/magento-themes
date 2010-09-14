@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+  <global>
+    <page>
+      <layouts>
+        <home module="page" translate="label">
+          <label>Home</label>
+          <template>page/home.phtml</template>
+          <layout_handle>page_home</layout_handle>
+        </home>
+      </layouts>
+    </page>
+  </global>
+</config>
+

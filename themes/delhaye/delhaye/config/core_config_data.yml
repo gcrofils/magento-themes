@@ -123,10 +123,10 @@ catalog:
     save_rewrites_history: 1
     search_terms: 1
     site_map: 1
-    title_separator: -
+    title_separator: "-"
   sitemap:
-  lines_perpage: 30
-  tree_mode: 1
+    lines_perpage: 30
+    tree_mode: 1
 currency:
   options:
     allow: EUR

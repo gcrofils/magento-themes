@@ -1,4 +1,4 @@
-body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#423536 url(../images/bkg-body.png) repeat-x; }
+body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(../images/bkg-body.png) repeat-x; }
 
 /* Layout ================================================================================ */
 .wrapper { width:950px; color:black ;background:transparent;  margin:10px auto; padding:0}
@@ -13,6 +13,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#423536 ur
 .seotext {width:100%;background:white;height:110px;}
 .seotext .text  {text-align:justify; padding-right:60px; padding-top:15px; color:#dccdac; font:13px/1.65 Times, Arial, Helvetica, sans-serif;}
 .seotext .seonews {float:left; width:300px; height:100px;}
+.content_top {position:absolute; background:lightgrey; left:260px; top:5px; width:650px; height:100px;}
 
 
 /* Base Columns */
@@ -38,6 +39,15 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#423536 ur
 .home-layout .popular li .product button.button:hover {background-position: 0 -39px;}
 .home-layout .popular li .product button.button:active {background-position: 0 -78px;}
 
+
+/* col2-right-layout */
+.col2-right-layout .main {padding-top:130px;padding-bottom:50px;}
+.col2-right-layout .col-main { width:700px;}
+.col2-right-layout .col-right { width:200px;margin-top:-20px;}
+
+/* col1-layout */
+.col1-layout .main {padding-top:130px;padding-bottom:50px;}
+.col1-layout .col-main { width:100%;}
 
 /* Header ================================================================================ */
 .header-container { border:none; background: #dccdac; padding:0; margin:0 }
@@ -79,18 +89,18 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:#423536 ur
 .nav-container .nav-decoration {position:absolute; width: 172px; height: 179px; top:-10px; left:-14px; background: url(../images/spt-norepeat.png) no-repeat; }
 #anav { font-size:20px; color:#ffffff}
 /* boxes */
-#anav ul { border:1px solid #b83140; background-color: #d58a92;}
+#anav ul { border:1px dashed #423536; background-color: #dccdac; }
 /* level 1 */
 #anav a { color:#ffffff; padding:5px 50px 6px 8px; }
-#anav li.active a, #anav li.over a, #anav a:hover { color:#b83140; }
+#anav li.active a, #anav li.over a, #anav a:hover { color:#dccdac; }
 /* level 2 */
-#anav ul ul li a { color:#2c2828 !important; }
+#anav ul ul li a { color:#423536 !important; font-weight:bold  !important;}
 /* level 3 */
-#anav ul ul ul li a { color:#443C40 !important;  }
+#anav ul ul ul li a { color:#423536 !important; font-weight:normal !important; }
 /* level 4 */
-#anav ul ul ul ul li a { color:#8F8086 !important; }
+#anav ul ul ul ul li a { color:#423536 !important; font-size:17px; }
 /* levels 2-4 over */
-#anav ul li a:hover { color:#b83140 !important;}
+#anav ul li a:hover { color:white !important ;font-style: normal;}
 
 /* Search Form ================================================================================ */
 .form-search-decoration {position:absolute; width: 234px; height: 109px; top:-5px; left:-2px; background: url(../images/bkg-searchform.png) no-repeat; }

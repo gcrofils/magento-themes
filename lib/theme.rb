@@ -48,6 +48,7 @@ module MageTheme
       copy_skin
       copy_templates
       copy_app
+      config_store
       force_design_change
     end
     
@@ -65,7 +66,8 @@ module MageTheme
     
     def update_local_xml
       FileUtils.makedirs File.join(magento_app, 'layout')
-      FileUtils.cp File.join(theme_path, 'config', 'local.xml'), magento_layout
+      FileUtils.cp File.join(config_path, 'local.xml'), magento_layout
+      FileUtils.cp File.join(config_path, 'etc.xml'), File.join(magento_root, 'app', 'etc', "#{client}.xml")
     end
     
     def copy_skin
@@ -87,11 +89,24 @@ module MageTheme
         parts = File.basename(file).split('_')
         case parts.shift
           when 'block'
-            tarpath = File.join(magento_code, parts.shift, 'Block', File.dirname(filename_to_path(parts.join('_'))))
+            tarpath = File.join(magento_code, parts.shift.capitalize, 'Block', File.dirname(filename_to_path(parts.join('_'))))
         end
         FileUtils.makedirs tarpath
         FileUtils.cp file, File.join(tarpath, parts.last)
       end
+    end
+    
+    def config_store
+      @stack = []
+      @params = {}
+      dfs(YAML.load_file(File.join(config_path, 'core_config_data.yml')))
+      @params.each do |path, value|
+        value = '' if value.nil?
+        row = CoreConfigData.find_by_path(path) || CoreConfigData.new
+        row.update_attributes({:scope => 'default', :scope_id => 0, :path => path, :value => value})
+        row.save
+      end
+      
     end
     
     private
@@ -102,6 +117,10 @@ module MageTheme
     
     def app_path
       File.join(theme_path, 'app')
+    end
+    
+    def config_path
+      File.join(theme_path, 'config')
     end
     
     def magento_template
@@ -115,5 +134,22 @@ module MageTheme
     def filename_to_path(filename)
       filename.gsub('_', File::Separator)
     end
+    
+    def dfs(n)
+      case n
+      when Hash
+        n.each do |k,v|
+          @stack.push k
+          dfs(v)
+          @stack.pop
+        end
+       else
+          @params[@stack.join('/')] = n
+       end
+    end
   end
 end
+
+
+
+

@@ -3,10 +3,12 @@
 <layout>
 <default>
   <!-- Remove callouts and rarely used stuff -->
-  <!-- <remove name="right.poll"/> -->
+  <remove name="right.poll"/> 
   <remove name="right.permanent.callout"/> <!-- remove back to scholl banner in right panel -->
-  <remove name="catalog.compare.sidebar"/> <!-- remove compare block in right panel -->
-  <!-- <remove name="left.permanent.callout"/> -->
+  <remove name="left.permanent.callout"/>
+  <remove name="paypal.partner.right.logo"/>
+  <!-- <remove name="catalog.compare.sidebar"/> remove compare block in right panel -->
+
  
   <!-- add the local stylesheet -->
   <reference name="head">
@@ -22,18 +24,12 @@
     </block>
   </reference>
 
-  <reference name="content">
-    <block type="core/template" name="deco.top" as="decoTop" template="page/css/decotop.phtml" before="-" />
-    <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.phtml" />
-  </reference>
-  
-  <reference name="content">
-    <block type="catalog/product_popular" name="product_popular" as="product_popular" template="catalog/product/popular.phtml">
-      <action method="setData"><key>category_id</key><value>17</value></action>
-    </block>
-  </reference>
+
+
+
 
 <reference name="root">
+  <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
   <block type="cms/block" name="brands">
     <action method="setBlockId"><block_id>brands</block_id></action>
   </block>
@@ -46,7 +42,9 @@
   <block type="cms/block" name="homeSeasonalMessage">
     <action method="setBlockId"><block_id>seo_seasonal_message</block_id></action>
   </block>
-
+  <block type="catalog/product_popular" name="product_popular" as="product_popular" template="catalog/product/popular.phtml">
+    <action method="setData"><key>category_id</key><value>4</value></action>
+  </block>
 </reference>
   
   <reference name="footer">
@@ -55,9 +53,38 @@
      </block>
      <block type="core/template" name="deco.bottom" as="decoBottom" template="page/css/decobottom.phtml" before="-" />
    </reference>
+   
+
+     <reference name="content">
+       <block type="core/template" name="deco.top" as="decoTop" template="page/css/decotop.phtml" before="-" />
+       <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.phtml" />
+     </reference>
+
 	
 </default>
-<home>
+<catalogsearch_result_index>
+     <reference name="root">
+      <action method="setTemplate"><template>page/2columns-right.phtml</template></action>
+     </reference>
+     <remove name="catalogsearch.leftnav"/> 
+    <reference name="content">
+      <block type="cms/block" name="content.top" as="contentTop"  before="-">
+        <action method="setBlockId"><block_id>content_top</block_id></action>
+      </block>
+      <action method="setColumnCount"><columns>2</columns></action>
+    </reference>
+     <reference name="right">
+         <block type="catalogsearch/layer" name="catalogsearch.rightnav" before="-" template="catalog/layer/view.phtml"/>
+         <block type="newsletter/subscribe" name="right.newsletter" after="catalog.compare.sidebar" template="newsletter/subscribe.phtml"/>
+     </reference>
+</catalogsearch_result_index>
 
-</home>
+<catalog_product_compare>
+  <remove name="topSearch" />
+  <remove name="deco.top" />
+</catalog_product_compare>
+
+<root>
+
+</root>
 </layout>
