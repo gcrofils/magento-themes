@@ -160,4 +160,51 @@ easy_tabs:
     relatedtabbed: 1 
     tagstabbed: 1
     reviewtabbed: 0     
+payment:
+  ccsave:
+    active: 0
+  purchaseorder:
+    active: 1
+    title: "Bon de Commande"
+    order_status: pending
+    allowspecific: 0
+    specificcountry:
+    min_order_total:
+    max_order_total:
+    sort_order:
+  atos_standard:
+    active: 1
+    bin_request: "/home/www/magento/lib/atos/request"  
+    bin_response: "/home/www/magento/lib/atos/response"
+    merchant_id: "014022286611111"
+    pathfile: 
+    check_ip_address: 0
+    title: Carte de Crédit
+    order_status: pending 
+    order_status_payment_accepted: processing  
+    order_status_payment_refused: holded 
+    order_status_payment_canceled: holded
+    capture_mode: normal  
+    capture_days:
+    templatefile:
+    allowspecific: 0
+    sort_order:  
+    min_order_total:
+    max_order_total:
+    cctypes: CB,MASTERCARD,VISA 
+    data_field: NO_COPYRIGHT
+  atos_several:
+    active: 0
+  atos_aurore:
+    active: 0
+  atos_euro:
+    active: 0
+  free:
+    active: 0
+  checkmo:
+    active: 0
+  authorizenet:
+    active: 0
+       
+  
  

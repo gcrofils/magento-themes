@@ -31,7 +31,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 .home-layout .col-right li {margin-top:7px;}
 
 /* popular */
-.home-layout .popular {position : absolute; top:80px; left:45px;}
+.home-layout .popular {position : absolute; top:80px; left:45px; height:440px; overflow:hidden;}
 .home-layout .popular .product-details {display:none;}
 .home-layout .popular li {position:relative; width:136px; height:130px; margin-top:10px; background:transparent url(../images/bkg-home-decoration-selection.png)}
 .home-layout .popular li .product {width:100%; padding-top:15px; text-align:center;}
