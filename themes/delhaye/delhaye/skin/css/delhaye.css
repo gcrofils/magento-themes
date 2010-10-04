@@ -45,6 +45,11 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 .col2-right-layout .col-main { width:700px;}
 .col2-right-layout .col-right { width:200px;margin-top:-20px;}
 
+/* col2-right-layout */
+.col2-left-layout .main {padding-top:130px;padding-bottom:50px;}
+.col2-left-layout .col-main { width:700px;}
+.col2-left-layout .col-right { width:200px;margin-top:-20px;}
+
 /* col1-layout */
 .col1-layout .main {padding-top:130px;padding-bottom:50px;}
 .col1-layout .col-main { width:100%;}
@@ -110,3 +115,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 .form-search button.button {position:absolute; left:125px; top:38px;width:40px; height:40px; background: url(../images/btn-sprites.png) 0px 0px no-repeat; }
 .form-search button.button:hover {background-position: 0 -39px;}
 .form-search button.button:active {background-position: 0 -78px;}
+
+/* Account Login/Create Pages ============================================================ */
+.checkout-multishipping-address-newshipping .buttons-set ,
+.account-create .buttons-set {padding-right: 150px;}

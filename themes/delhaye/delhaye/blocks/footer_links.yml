@@ -3,6 +3,6 @@ is_active: 1
 content:
   <div class="main-links"><ul>
   <li><a href="{{store direct_url="about-us"}}">Qui sommes nous ?</a></li>
-  <li><a href="{{store direct_url="about-us"}}">Trouver un magasin</a></li>
+  <li><a href="{{store direct_url="shops"}}">Trouver un magasin</a></li>
   </ul>
   </div>

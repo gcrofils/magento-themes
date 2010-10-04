@@ -48,9 +48,12 @@ module MageTheme
       copy_skin
       copy_templates
       copy_app
+      copy_locales
       config_store
       force_design_change
     end
+    
+    private
     
     def upsert_cms(options = {})
       path = File.join(theme_path, options[:type].to_s)
@@ -106,10 +109,15 @@ module MageTheme
         row.update_attributes({:scope => 'default', :scope_id => 0, :path => path, :value => value})
         row.save
       end
-      
     end
     
-    private
+    def copy_locales
+      Dir["#{locale_path}/*"].select { |file| /(csv)$/ =~ file }.each do |file|
+        locale = File.basename(file, '.csv')
+        FileUtils.makedirs File.join(magento_locale, locale)
+        FileUtils.cp file, File.join(magento_locale, locale, 'translate.csv')
+      end
+    end
     
     def template_path
       File.join(theme_path, 'templates')
@@ -118,6 +126,10 @@ module MageTheme
     def app_path
       File.join(theme_path, 'app')
     end
+    
+    def locale_path
+       File.join(theme_path, 'skin', 'locale')
+     end
     
     def config_path
       File.join(theme_path, 'config')
@@ -129,6 +141,10 @@ module MageTheme
     
     def magento_layout
       File.join(magento_app, 'layout')
+    end
+    
+    def magento_locale
+      File.join(magento_app, 'locale')
     end
     
     def filename_to_path(filename)
