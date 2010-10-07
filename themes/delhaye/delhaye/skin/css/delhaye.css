@@ -119,3 +119,80 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 /* Account Login/Create Pages ============================================================ */
 .checkout-multishipping-address-newshipping .buttons-set ,
 .account-create .buttons-set {padding-right: 150px;}
+.account-login .content {  background:#dccdac; border:1px solid #715444; }
+.account-login .content h2 { color:#423536; }
+.account-login .new-users h2 { background:none;}
+.account-login .registered-users h2 { background:none; }
+.account-login .buttons-set { border:1px solid black; background:#423536; }
+.buttons-set a {color: #dccdac;}
+button.button span { border-color:#dccdac; background:#715444; color:#dccdac; font:bold 12px/16px Times; -moz-border-radius:5px; border-radius: 5px;}
+
+
+/* Sidebar =============================================================================== */
+.block { border:1px solid #dccdac; margin:0 0 15px; }
+.block .block-title { background:#423636; background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.95, rgb(66,54,54)),
+    color-stop(0.72, rgb(117,106,106)),
+    color-stop(0.24, rgb(66,54,54))
+); background-image: 								-moz-linear-gradient(
+		    center bottom,
+		    rgb(66,54,54) 95%,
+		    rgb(117,106,106) 72%,
+		    rgb(66,54,54) 24%
+		);  }
+.block .block-title strong { font:bold 12px/18px Times; color:white; }
+.block .block-title strong span {}
+.block .block-title a { }
+.block .block-subtitle { color:#0a263c; }
+.block .block-content { background:#dccdac; color:#715444;}
+.block .block-content li.item { }
+.block .block-content .product-name { color:#715444; }
+.block .btn-remove { }
+.block .actions { background:#ffffff; }
+.block .actions a { color:#dccdac;}
+.block .actions button.button { }
+.block .actions button.button span { background:#715444; border:none; font:bold 12px/16px Times; }
+.block .empty {  }
+
+.block li.even { background-color:#ffffff; }
+.block li.odd { background-color:#dccdac; }
+
+.product-name a { color:#715444; text-decoration:none; }
+
+a {text-decoration:none !important;}
+a strong {color:#715444;}
+
+.link-cart { color:#715444 !important; font-weight:bold; }
+
+/* Breadcrumbs */
+.breadcrumbs, .breadcrumbs a { color:#715444; text-decoration:none;}
+
+/* Global Messages  */
+.note-msg,
+.notice-msg {  }
+.error-msg { border-color:#715544; background-color:#dccdac;  color:#423636; }
+.success-msg { border-color:#715544; background-color:#dccdac;  color:#423636; }
+.note-msg,
+.notice-msg { border-color:#715544; background-color:#dccdac;  color:#423636; }
+
+/* Block: Recent Orders */
+.box-account  {background:#dccdac;}
+.box-account .box-head h2 {font:bold 12px/18px Times; color:#715444;}
+.box-account a {color:#715444;}
+
+/* Block: Account */
+.block-account .block-content li a {  }
+.block-account .block-content li a:hover { color:#715444; }
+.block-account .block-content li.current { color:white; }
+.fieldset {  background:#dccdac;  }
+.fieldset .legend { border:1px solid #715444; background:#423636; color:#ffffff;  }
+
+/* Data Table */
+.data-table { border:1px solid #715444; }
+.data-table .odd  { background:#dccdac }
+.data-table .even { background:#ffffff; }
+.data-table thead th { color:#ffffff; background:#423636; line-height:25px; }
+

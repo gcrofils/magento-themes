@@ -1,0 +1,41 @@
+title: Downloads
+root_template: two_columns_left
+meta_keywords: téléchargements
+meta_description: Découvrez l'histoire de Delhaye
+content_heading: false
+content: |
+  <div class="page-title"><h1>T&eacute;l&eacute;chargements</h1></div>
+  <a href="http://s3.amazonaws.com/sbpub/001/delhaye_baguier_xfr32.pdf">Baguier</a><br>
+  <a href="http://s3.amazonaws.com/sbpub/001/delhaye_table_de_gravure_plx93.pdf">Table de Gravure</a><br>
+  
+layout_update_xml: |
+  <reference name="content">
+  <block type="page/html_wrapper" name="my.account.wrapper">
+  <action method="setElementClass"><value>my-account</value></action>
+  </block>
+  </reference>
+  <reference name="left">
+  <action method="unsetChild"><name>catalog.navigation.all</name></action>
+  <action method="unsetChild"><name>callout.sendcard</name></action>
+  <action method="unsetChild"><name>callout.specialorder</name></action>
+  <action method="unsetChild"><name>left.newsletter</name></action>
+  <block type="customer/account_navigation" name="customer_account_navigation" before="-" template="customer/account/navigation.phtml">
+  <action method="addLink" translate="label" module="customer"><name>account</name><path>customer/account/</path><label>Account Dashboard</label></action>
+  <action method="addLink" translate="label" module="customer"><name>account_edit</name><path>customer/account/edit/</path><label>Account Information</label></action>
+  <action method="addLink" translate="label" module="customer"><name>address_book</name><path>customer/address/</path><label>Address Book</label></action>
+  <action method="addLink" translate="label" module="sales"><name>orders</name><path>sales/order/history/</path><label>My Orders</label></action>
+  <action method="addLink" translate="label" module="wishlist" ifconfig="wishlist/general/active"><name>wishlist</name><path>wishlist/</path><label>My Wishlist</label></action>
+  <action method="addLink" translate="label" module="newsletter"><name>newsletter</name><path>newsletter/manage/</path><label>Newsletter Subscriptions</label></action>
+  <action method="addLink" translate="label" module="cms/page"><name>downloads</name><url>downloads</url><label>My downloads</label></action>
+  </block>
+  <block type="checkout/cart_sidebar" name="cart_sidebar" template="checkout/cart/sidebar.phtml">
+      <action method="addItemRender"><type>simple</type><block>checkout/cart_item_renderer</block><template>checkout/cart/sidebar/default.phtml</template></action>
+      <action method="addItemRender"><type>grouped</type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/sidebar/default.phtml</template></action>
+      <action method="addItemRender"><type>configurable</type><block>checkout/cart_item_renderer_configurable</block><template>checkout/cart/sidebar/default.phtml</template></action>
+  </block>
+  <block type="catalog/product_compare_sidebar" name="catalog.compare.sidebar" template="catalog/product/compare/sidebar.phtml"/>
+  <block type="sales/reorder_sidebar" name="sale.reorder.sidebar" as="reorder" template="sales/reorder/sidebar.phtml"/>
+  <remove name="tags_popular"/>
+  </reference>
+  <remove name="breadcrumbs"/>
+is_active: 1
