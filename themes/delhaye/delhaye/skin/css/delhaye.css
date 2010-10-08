@@ -219,3 +219,16 @@ a strong {color:#715444;}
 .toolbar .sorter { background:white; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.95, rgb(255,255,255)), color-stop(0.38, rgb(220,205,172))); background-image: -moz-linear-gradient(center bottom, rgb(255,255,255) 95%, rgb(220,205,172) 38%); }
 .toolbar-bottom {}
 .pages a {color: #423636;}
+
+/* One Page Checkout */
+.opc .step-title h2 {font:bold 14px/18px Times;}
+.opc .allow .step-title { background:#423636; }
+.opc .allow .step-title .number { background:#715444; border-color:#dccdac; color:white; }
+.opc .allow .step-title h2 { color:white; }
+.opc .step { background: #dccdac; padding-bottom:30px;}
+.block.block-progress{border:none}
+.block-progress .block-content{ background:none; }
+.block-progress dt { color:#715444; }
+.block-progress dd { background:#dccdac;}
+.block-progress dt.complete { background:#dccdac; color:#423636; }
+.block-progress dd.complete {}
