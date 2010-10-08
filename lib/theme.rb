@@ -92,7 +92,7 @@ module MageTheme
         parts = File.basename(file).split('_')
         case parts.shift
           when 'block'
-            tarpath = File.join(magento_code, parts.shift.capitalize, 'Block', File.dirname(filename_to_path(parts.join('_'))))
+            tarpath = File.join(magento_code, parts.shift.capitalize, 'Block', File.dirname(filename_to_path(parts.map{|p| p.capitalize}.join('_'))))
         end
         FileUtils.makedirs tarpath
         FileUtils.cp file, File.join(tarpath, parts.last.capitalize)
