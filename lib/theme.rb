@@ -51,6 +51,7 @@ module MageTheme
       copy_locales
       config_store
       force_design_change
+      chown_chmod
     end
     
     private
@@ -149,6 +150,20 @@ module MageTheme
     
     def filename_to_path(filename)
       filename.gsub('_', File::Separator)
+    end
+    
+    def magento_media
+      File.join(magento_root, 'media')
+    end
+    
+    def magento_var
+      File.join(magento_root, 'var')
+    end
+    
+    def chown_chmod
+      FileUtils.chown_R Etc.getpwuid(File.stat(magento_root).uid).name, Etc.getgrgid(File.stat(magento_root).gid).name, "#{magento_root}/"
+      FileUtils.chmod_R 0777, magento_media
+      FileUtils.chmod_R 0777, magento_var
     end
     
     def dfs(n)
