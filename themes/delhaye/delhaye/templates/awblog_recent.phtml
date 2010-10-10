@@ -1,0 +1,8 @@
+<?php if ($posts = $this->getRecent()): ?>
+		<h2><?php echo Mage::helper('blog')->__('Blog');?></h2>
+		<ul>
+		<?php foreach ($posts as $post): ?>
+			<li><a href="<?php echo $post->getAddress(); ?>" ><?php echo $post->getTitle();?></a></li>
+		<?php endforeach; ?>
+       	</ul>
+<?php endif; ?>

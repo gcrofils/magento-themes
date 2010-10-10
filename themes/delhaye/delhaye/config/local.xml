@@ -41,6 +41,9 @@
       <block type="catalog/product_popular" name="product_popular" as="product_popular" template="catalog/product/popular.phtml">
         <action method="setData"><key>category_id</key><value>12</value></action>
       </block>
+      <!-- news affichees en home -->
+        <block type="blog/blog" name="seonews" as="seonews" template="awblog/recent.phtml">
+        </block>
     </reference>
   
     <!-- Footer -->

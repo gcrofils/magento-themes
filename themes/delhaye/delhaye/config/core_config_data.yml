@@ -205,6 +205,15 @@ payment:
     active: 0
   authorizenet:
     active: 0
+blog:
+  blog:
+    layout: page/2columns-right.phtml
+  menu:
+    recent: 5
+google:
+  analytics:
+    active: 1
+    account: UA-19021109-1
        
   
  
