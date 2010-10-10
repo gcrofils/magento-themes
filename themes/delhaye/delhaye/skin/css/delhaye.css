@@ -1,15 +1,4 @@
-body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(../images/bkg-body.png) repeat-x; background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0.95, rgb(255,255,255)),
-    color-stop(0.59, rgb(66,53,54))
-); background-image:
--moz-linear-gradient(
-    center top,
-    rgb(255,255,255) 95%,
-    rgb(66,53,54) 59%
-);}
+body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(../images/bkg-body.png) repeat-x; background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.95, rgb(255,255,255)),color-stop(0.59, rgb(66,53,54))); background-image: -moz-linear-gradient(center top,rgb(66,53,54) 59%, rgb(255,255,255) 95%)}
 
 /* Layout ================================================================================ */
 .wrapper { width:950px; color:black ;background:transparent;  margin:10px auto; padding:0}
@@ -77,12 +66,17 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 .header .links { position:relative; clear:both; margin:0 0 6px;}
 .header .links a { color:black;}
 /* right block */
-.header .right { text-align:center; padding:50px 0px 0 0; margin-top:23px;position:absolute; left:750px; width:180px; height:250px; background: transparent url(../images/bkg-header-decoration-right.png) no-repeat;}
+.header .right {text-align:center; padding:50px 0px 0 0; margin-top:23px;position:absolute; left:750px; width:180px; height:250px; background: transparent url(../images/bkg-header-decoration-right.png) no-repeat;}
 .header .right h1, .header .right h2, .header .right p {font:11px/1.2em Arial, Helvetica, sans-serif; margin:0; padding:0;}
 .header .right h1 { font-size:15px; font-weight:bold; }
 .header .right h2 {font-size:14px; padding:5px 10px 5px 10px; }
-.header .right p {text-align:right; width:100%; color:white;}
-
+.header .right p {text-align:right; width:165px; color:white;  padding-top:4px; }
+/* phone-block */
+.phone-block { position:absolute; width:202px; height: 52px; top:-56px; left:750px; border:none; overflow:hidden; text-align:left; background:#423636; z-index:12;}
+.phone-block .phone {width:180px; text-align:center; color: white; font: 22px/22px Times; letter-spacing:1px;padding:6px 0px 4px;}
+.phone-block .quicklinks {width:180px; text-align:center;}
+.phone-block .quicklinks a {color:#dccdac; font: 12px/16px Times;}
+.phone-block .quicklinks span:first-child {margin-right:10px;}
 
 /* footer ================================================================================ */
 .footer-container { border:none; background: transparent; padding:0; margin:0 }
@@ -137,23 +131,11 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 .account-login .buttons-set { border:1px solid black; background:#423536; }
 .buttons-set a {color: #dccdac;}
 button.button span { border-color:#dccdac; background:#715444; color:#dccdac; font:bold 12px/16px Times; -moz-border-radius:5px; border-radius: 5px;}
-
+button.btn-checkout span span { padding-top: 10px; background:none; }
 
 /* Sidebar =============================================================================== */
 .block { border:1px solid #dccdac; margin:0 0 15px; }
-.block .block-title { background:#423636; background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.95, rgb(66,54,54)),
-    color-stop(0.72, rgb(117,106,106)),
-    color-stop(0.24, rgb(66,54,54))
-); background-image: 								-moz-linear-gradient(
-		    center bottom,
-		    rgb(66,54,54) 95%,
-		    rgb(117,106,106) 72%,
-		    rgb(66,54,54) 24%
-		);  }
+.block .block-title { background:#423636; background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.95, rgb(66,54,54)),color-stop(0.72, rgb(117,106,106)),color-stop(0.24, rgb(66,54,54))); background: -moz-linear-gradient(center bottom,rgb(66,54,54) 95%,rgb(117,106,106) 72%,rgb(66,54,54) 24%);  }
 .block .block-title strong { font:bold 12px/18px Times; color:white; }
 .block .block-title strong span {}
 .block .block-title a { }
@@ -173,9 +155,10 @@ button.button span { border-color:#dccdac; background:#715444; color:#dccdac; fo
 
 .product-name a { color:#715444; text-decoration:none; }
 
-a {text-decoration:none !important;}
+a {color:#715444 ; text-decoration:none !important;}
 a strong {color:#715444;}
-
+.link-wishlist { color:#715444 !important;}
+.link-compare { color:#715444 !important;}
 .link-cart { color:#715444 !important; font-weight:bold; }
 
 /* Breadcrumbs */
@@ -206,6 +189,14 @@ a strong {color:#715444;}
 .data-table .odd  { background:#dccdac }
 .data-table .even { background:#ffffff; }
 .data-table thead th { color:#ffffff; background:#423636; line-height:25px; }
+.data-table tfoot tr  { background:#423536 !important; }
+.data-table tfoot tr.first td { background:none;}
+.cart-table .btn-continue span,
+.cart-table .btn-update span { border-color:#dccdac; background:#715444; }
+.cart .totals { background:#dccdac; border:1px solid #715444; }
+
+/* Compare Table */
+.compare-table tbody th {background:#715444; color:white;}
 
 /* product list */
 .block .regular-price .price {font:bold 14px/18px Arial; font-weight:bold; color:#423636; }
@@ -216,7 +207,7 @@ a strong {color:#715444;}
 /* Toolbar */
 .toolbar {border:solid 1px #dccdac;}
 .toolbar .pager, 
-.toolbar .sorter { background:white; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.95, rgb(255,255,255)), color-stop(0.38, rgb(220,205,172))); background-image: -moz-linear-gradient(center bottom, rgb(255,255,255) 95%, rgb(220,205,172) 38%); }
+.toolbar .sorter { background:white; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.95, rgb(255,255,255)), color-stop(0.38, rgb(220,205,172))); background:  -moz-linear-gradient(center bottom, rgb(220,205,172) 38%, rgb(255,255,255) 95%); }
 .toolbar-bottom {}
 .pages a {color: #423636;}
 
@@ -232,3 +223,39 @@ a strong {color:#715444;}
 .block-progress dd { background:#dccdac;}
 .block-progress dt.complete { background:#dccdac; color:#423636; }
 .block-progress dd.complete {}
+.cart .discount ,
+.cart .shipping {background:#dccdac; border:solid 1px #423536;}
+.cart .discount h2,
+.cart .shipping h2 { color:#423636; }
+.cart .discount button span,
+.cart .shipping button span { border-color:#423536; background:#715444; }
+
+/* Product */
+.product-essential { background:white; background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.99, rgb(220,205,172)),
+		color-stop(0.9, rgb(255,255,255))
+    
+); background: 
+-moz-linear-gradient(
+    center bottom,
+    rgb(255,255,255) 90%,
+    rgb(220,205,172) 99%
+)}
+.product-collateral {border-top: solid 2px #dccdac; background:white; }
+
+
+/* Tabs */
+.tabs {}
+.tabs li                { background: #dccdac; }
+.tabs li.first          {  }
+.tabs li.last           { }
+.tabs a                 { }
+.tabs a:hover           { background-color:#715444; color:#ffffff;}
+.tabs li.active a,
+.tabs li.active a:hover { background:#715444;  }
+
+/* page popup */
+.page-popup .main-decoration,  .page-popup #search_mini_form {display:none;}

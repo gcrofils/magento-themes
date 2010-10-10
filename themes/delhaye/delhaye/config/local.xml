@@ -54,6 +54,7 @@
      <!-- Main content -->
      <reference name="content">
        <block type="core/template" name="deco.top" as="decoTop" template="page/css/decotop.phtml" before="-" />
+       <block type="core/template" name="top.phone" as="topPhone" template="page/html/phone.phtml" />
        <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.phtml" />
      </reference>
 	
@@ -90,11 +91,7 @@
           <action method="removeLinkByName"><name>recurring_profiles</name></action>
           <action method="removeLinkByName"><name>billing_agreements</name></action>
           <action method="removeLinkByName"><name>downloadable_products</name></action>
-          <action method="addLink" translate="label">
-            <name>downloads</name>
-            <title>downloads</title>
-            <label>My downloads</label>
-          </action>
+          <action method="addLink" translate="label"><name>downloads</name><title>downloads</title><label>My downloads</label></action>
       </reference>
   </customer_account>
 
