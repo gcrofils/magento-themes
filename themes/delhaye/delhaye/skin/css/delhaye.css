@@ -14,7 +14,10 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 .seotext .text  {text-align:justify; padding-right:60px; padding-top:15px; color:#dccdac; font:13px/1.65 Times, Arial, Helvetica, sans-serif;}
 .seotext .seonews {float:left; width:300px; height:100px;}
 .content_top {position:absolute; background:lightgrey; left:260px; top:5px; width:650px; height:100px;}
-
+.seonews {text-align:left;padding-left:20px;}
+.seonews h2 {color:#dccdac; text-transform:uppercase;font:13px/1.65 Arial, Helvetica, sans-serif; font-weight:bold; margin:0; padding:5px 0;}
+.seonews ul, .seonews li {margin:0px; padding:0px;} 
+.seonews li, .seonews li a {color:#dccdac; font:13px/1 Times, Arial, Helvetica, sans-serif;}
 
 /* Base Columns */
 .col-left { float:left; width:150px; padding:0 0 1px; }
