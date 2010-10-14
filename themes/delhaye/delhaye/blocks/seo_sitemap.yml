@@ -4,14 +4,14 @@ content:
   <div class="seo col col-1">
   <h1>La collection Delhaye</h1>
   <ul>
-  <li><a href="{{store direct_url="shops"}}">Voir toute la collection</a></li>
-  <li><a href="{{store direct_url="shops"}}">Les meilleures ventes</a></li>
-  <li><a href="{{store direct_url="shops"}}">Les offres privil&egrave;ges</a></li>
+  <li><a href="{{store direct_url="catalogsearch/advanced/"}}">Voir toute la collection</a></li>
+  <li><a>Les meilleures ventes (prochainement)</a></li>
+  <li><a>Les offres privil&egrave;ges (prochainement)</a></li>
   </ul>
   <ul>
-  <li><a href="{{store direct_url="shops"}}">La collection Delhaye Diamant</a></li>
-  <li><a href="{{store direct_url="shops"}}">La collection Delhaye Bague</a></li>
-  <li><a href="{{store direct_url="shops"}}">La collection Delhaye Bague de Fian&ccedil;aille</a></li>
+  <li><a href="{{store direct_url="madame/madame-bagues/madame-bagues-avec-diamants.html"}}">La collection Delhaye Diamant</a></li>
+  <li><a href="{{store direct_url="madame/madame-bagues.html"}}">La collection Delhaye Bague</a></li>
+  <li><a href="{{store direct_url="les-instants-de-vie/les-instants-de-vie-fiancailles/les-instants-de-vie-fiancailles-bagues.html"}}">La collection Delhaye Bague de Fian&ccedil;aille</a></li>
   </ul>
   </div>
   <div class="seo col col-2">
@@ -25,7 +25,7 @@ content:
   <li><a href="{{store direct_url="shops"}}">R&eacute;novation de bijoux anciens</a></li>
   <li><a href="{{store direct_url="shops"}}">Changement de pile pour les montres</a></li>
   <li><a href="{{store direct_url="shops"}}">Reconstitution d'une paire de boucle d'oreilles</a></li>
-  <li><a href="{{store direct_url="shops"}}">Le carnet d'entretien Delhaye</a></li>
+  <li><a>Le carnet d'entretien Delhaye (prochainement)</a></li>
   <li><a href="{{store direct_url="shops"}}">Les boutiques Delhaye</a></li>
   </ul>
   </div>
@@ -48,39 +48,39 @@ content:
   </div>
   <div class="seo quicklist">
   <ul>
-  <li><a href="{{store direct_url="shops"}}">Boucles d'oreilles</a></li>
-  <li><a href="{{store direct_url="shops"}}">Pendentifs</a></li>
-  <li><a href="{{store direct_url="shops"}}">Bagues</a></li>
-  <li><a href="{{store direct_url="shops"}}">Alliances</a></li>
-  <li><a href="{{store direct_url="shops"}}">Bracelets</a></li>
-  <li><a href="{{store direct_url="shops"}}">Colliers</a></li>
-  <li><a href="{{store direct_url="shops"}}">Chaines</a></li>
-  <li><a href="{{store direct_url="shops"}}">Diamant</a></li>
-  <li><a href="{{store direct_url="shops"}}">M&eacute;dailles et croix</a></li>
-  <li><a href="{{store direct_url="shops"}}">Montres</a></li>
-  <li><a href="{{store direct_url="shops"}}">Delhaye</a></li>
-  <li><a href="{{store direct_url="shops"}}">Bijouterie en ligne</a></li>
-  <li><a href="{{store direct_url="shops"}}">Bijoux Diamant</a></li>
-  <li><a href="{{store direct_url="shops"}}">Bague diamant</a></li>
-  <li><a href="{{store direct_url="shops"}}">Bague de fian&ccedil;aille</a></li>
-  <li><a href="{{store direct_url="shops"}}">bague solitaire</a></li>
-  <li><a href="{{store direct_url="shops"}}">solitaire diamant</a></li>
-  <li><a href="{{store direct_url="shops"}}">pendentif</a></li>
-  <li><a href="{{store direct_url="shops"}}">pendentif diamant</a></li>
-  <li><a href="{{store direct_url="shops"}}">luxe</a></li>
-  <li><a href="{{store direct_url="shops"}}">Joaillerie Paris</a></li>
-  <li><a href="{{store direct_url="shops"}}">Boucles d'oreilles diamant</a></li>
-  <li><a href="{{store direct_url="shops"}}">Alliances mariage</a></li>
-  <li><a href="{{store direct_url="shops"}}">Bapt&ecirc;me</a></li>
-  <li><a href="{{store direct_url="shops"}}">Communion</a></li>
-  <li><a href="{{store direct_url="shops"}}">Naissance</a></li>
-  <li><a href="{{store direct_url="shops"}}">Anniversaire</a></li>
-  <li><a href="{{store direct_url="shops"}}">Saint-Valentin</a></li>
-  <li><a href="{{store direct_url="shops"}}">F&ecirc;te des m&egrave;res</a></li>
-  <li><a href="{{store direct_url="shops"}}">Vente de bijoux en ligne</a></li>
-  <li><a href="{{store direct_url="shops"}}">Achat de bijoux</a></li>
-  <li><a href="{{store direct_url="shops"}}">Vente de bijoux</a></li>
-  <li><a href="{{store direct_url="shops"}}">achat de diamant</a></li>
+  <li><a href="{{store direct_url="madame/madame-boucles-d-oreilles.html"}}">Boucles d'oreilles</a></li>
+  <li><a href="{{store direct_url="madame/madame-pendentifs.html"}}">Pendentifs</a></li>
+  <li><a href="{{store direct_url="madame/madame-bagues.html"}}">Bagues</a></li>
+  <li><a href="{{store direct_url="madame/madame-alliances.html"}}">Alliances</a></li>
+  <li><a href="{{store direct_url="madame/madame-bracelets.html"}}">Bracelets</a></li>
+  <li><a href="{{store direct_url="madame/madame-colliers-et-chaines/madame-colliers-et-chaines-colliers.html"}}">Colliers</a></li>
+  <li><a href="{{store direct_url="madame/madame-colliers-et-chaines/madame-colliers-et-chaines-chaines.html"}}">Chaines</a></li>
+  <li><a href="{{store direct_url="madame/madame-bagues/madame-bagues-avec-diamants.html"}}">Diamant</a></li>
+  <li><a href="{{store direct_url="madame/madame-medailles.html"}}">M&eacute;dailles et croix</a></li>
+  <li><a href="{{store direct_url="contacts"}}">Montres</a></li>
+  <li><a href="{{store direct_url="about-us"}}">Delhaye</a></li>
+  <li><a href="{{store direct_url="customer-service"}}">Bijouterie en ligne</a></li>
+  <li><a href="{{store direct_url="customer-service"}}">Bijoux Diamant</a></li>
+  <li><a href="{{store direct_url="madame/madame-bagues/madame-bagues-avec-diamants.html"}}">Bague diamant</a></li>
+  <li><a href="{{store direct_url="les-instants-de-vie/les-instants-de-vie-fiancailles/les-instants-de-vie-fiancailles-bagues.html"}}">Bague de fian&ccedil;aille</a></li>
+  <li><a href="{{store direct_url="madame/madame-solitaires.html"}}">bague solitaire</a></li>
+  <li><a href="{{store direct_url="madame/madame-solitaires.html"}}">solitaire diamant</a></li>
+  <li><a href="{{store direct_url="madame/madame-pendentifs.html"}}">pendentif</a></li>
+  <li><a href="{{store direct_url="madame/madame-pendentifs.html"}}">pendentif diamant</a></li>
+  <li><a href="{{store direct_url="about-us"}}">luxe</a></li>
+  <li><a href="{{store direct_url="about-us"}}">Joaillerie Paris</a></li>
+  <li><a href="{{store direct_url="madame/madame-boucles-d-oreilles.html"}}">Boucles d'oreilles diamant</a></li>
+  <li><a href="{{store direct_url="les-instants-de-vie/les-instants-de-vie-mariage/les-instants-de-vie-mariage-alliances.html"}}">Alliances mariage</a></li>
+  <li><a href="{{store direct_url="les-instants-de-vie/les-instants-de-vie-bapteme.html"}}">Bapt&ecirc;me</a></li>
+  <li><a href="{{store direct_url="les-instants-de-vie/les-instants-de-vie-communion.html"}}">Communion</a></li>
+  <li><a href="{{store direct_url="les-instants-de-vie/les-instants-de-vie-naissance.html"}}">Naissance</a></li>
+  <li><a href="{{store direct_url="les-instants-de-vie/les-instants-de-vie-anniversaire.html"}}">Anniversaire</a></li>
+  <li><a href="{{store direct_url="les-instants-de-vie/les-instants-de-vie-saint-valentin.html"}}">Saint-Valentin</a></li>
+  <li><a href="{{store direct_url="les-instants-de-vie/les-instants-de-vie-fetes-des-meres.html"}}">F&ecirc;te des m&egrave;res</a></li>
+  <li><a href="{{store direct_url="customer-service"}}">Vente de bijoux en ligne</a></li>
+  <li><a href="{{store direct_url="customer-service"}}">Achat de bijoux</a></li>
+  <li><a href="{{store direct_url="customer-service"}}">Vente de bijoux</a></li>
+  <li><a href="{{store direct_url="customer-service"}}">achat de diamant</a></li>
   </ul>
   </div>
   

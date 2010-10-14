@@ -10,7 +10,7 @@ module MageTheme
       cmsblock.update_attributes(
         :title => title,
         :is_active => is_active,
-        :content => content,
+        :content => content.htmlentities,
         :update_time => Time.now,
         :creation_time => cmsblock.creation_time || Time.now,
         :core_store_ids => [store_id]

@@ -12,6 +12,11 @@
     <reference name="head">
       <action method="addCss"><stylesheet>css/delhaye.css</stylesheet></action>
     </reference>
+    
+    <!-- add the newsletter -->
+    <reference name="right">
+        <block type="newsletter/subscribe" name="right.newsletter" template="newsletter/subscribe.phtml"/>
+    </reference>
 
     <!-- add a decoration div --> 
     <!-- topSearch block moved to main content --> 
@@ -44,6 +49,8 @@
       <!-- news affichees en home -->
         <block type="blog/blog" name="seonews" as="seonews" template="awblog/recent.phtml">
         </block>
+      <!-- newsletter -->
+      <block type="newsletter/subscribe" name="home.newsletter" template="newsletter/subscribe.phtml"/>
     </reference>
   
     <!-- Footer -->

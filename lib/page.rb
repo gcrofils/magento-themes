@@ -13,7 +13,7 @@ module MageTheme
         :meta_keywords => meta_keywords,
         :meta_description => meta_description,
         :content_heading => content_heading,
-        :content => content,
+        :content => content.htmlentities,
         :layout_update_xml => layout_update_xml,
         :is_active => is_active,
         :update_time => Time.now,

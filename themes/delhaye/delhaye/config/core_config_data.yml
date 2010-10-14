@@ -147,10 +147,10 @@ general:
     weekend: 0,6
   store_information:
     address: 
-      47 rue du Président Wilson
+      47 rue du Pr&eacute;sident Wilson
       92300 Levallois
     name: Bijouterie Delhaye
-    phone: 01 02 03 04 06
+    phone: 01 55 46 07 04
 easy_tabs:
   general:
     enabled: 1
@@ -191,7 +191,7 @@ payment:
     sort_order:  
     min_order_total:
     max_order_total:
-    cctypes: CB,MASTERCARD,VISA 
+    cctypes: CB,MASTERCARD,VISA,AMEX 
     data_field: NO_COPYRIGHT
   atos_several:
     active: 0
@@ -214,6 +214,37 @@ google:
   analytics:
     active: 1
     account: UA-19021109-1
-       
-  
- 
+contacts:
+  contacts:
+    enabled: 1
+  email:
+    email_template: contacts_email_email_template
+    sender_email_identity: general
+    recipient_email: contact@bijouterie-delhaye.com
+trans_email:
+  ident_general:
+    name: Bijouterie Delhaye
+    email: contact@bijouterie-delhaye.com
+  ident_sales:
+    name: Bijouterie Delhaye
+    email: contact@bijouterie-delhaye.com
+  ident_support:
+    name: Bijouterie Delhaye
+    email: contact@bijouterie-delhaye.com
+  ident_custom1:
+    name: Bijouterie Delhaye
+    email: contact@bijouterie-delhaye.com
+  ident_custom2:
+    name: Bijouterie Delhaye
+    email: contact@bijouterie-delhaye.com
+design:
+  footer:
+    copyright: "&copy; 2010 Delhaye SA - Tous droits r&eacute;serv&eacute;s"
+  head:
+    default_description: Bijouterie Delhaye, votre bijouterie de quartier en ligne. 
+    default_keywords: or, argent, diamants, e-commerce
+    default_title: Bijouterie Delhaye
+    demonotice: 1
+  header:
+    logo_alt: Bijouterie Delhaye
+    welcome: "&nbsp;&nbsp;"

@@ -1,13 +1,13 @@
 title: Home Seasonal Message
 is_active: 1
-content:
-  <h1>Lorem ipsum dolor</h1>
+content: |
+  <h1>Réservation en ligne</h1>
   <ul>
-  <li>Cras fermentum <b>lobortis</b> commodo</li>
-  <li>In hac habitasse platea dictumst.</li>
-  <li>Aenean <b>dictum pellentesque dolor</b> vitae suscipit. Pellentesque accumsan aliquet dolor, id ultrices tellus malesuada at.</li>
-  <li><b>Suspendisse</b> non arcu in odio tempus commodo.</li>
-  <li>Nulla vitae viverra augue.</li>
-  <li>Maecenas ut neque <b>lacus</b>, non iaculis elit. </li>
-  <li>Nulla scelerisque dapibus elit ac consectetur.</li>
+  <li>Choisissez votre bijou à toute heure et en tout lieu.</li>
+  <li>Comparez et <b>partagez avec vos proches</b>.</li>
+  <li>Réservez en quelques clics.</li>
+  <li>Sélectionnez la <a href="{{store direct_url="shops"}}"><b>boutique la plus proche de chez vous</b></a>.</li>
+  <li>Nous préparons votre commande.</li>
+  <li>Dès sa mise à disposition, nous vous appelons.</li>
+  <li><b>Règlement et retrait en boutique</b>.</li>
   </ul>

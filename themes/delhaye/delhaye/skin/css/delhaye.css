@@ -153,6 +153,8 @@ button.btn-checkout span span { padding-top: 10px; background:none; }
 .block .actions button.button span { background:#715444; border:none; font:bold 12px/16px Times; }
 .block .empty {  }
 
+.block-subscribe .actions { background:#dccdac; }
+
 .block li.even { background-color:#ffffff; }
 .block li.odd { background-color:#dccdac; }
 

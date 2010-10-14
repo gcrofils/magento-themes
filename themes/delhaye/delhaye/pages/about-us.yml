@@ -1,31 +1,79 @@
 title: about us
 root_template: one_column
 meta_keywords: About Us
-meta_description: Découvrez l'histoire de Delhaye
+meta_description: D&eacute;couvrez l'histoire de Delhaye
 content_heading: false
 content: |
+  <script type="text/javascript">domain='bijouterie-delhaye.com';</script>
   <div class="page-title">
-  <h1>L'histoire des Bijouteries Delhaye</h1>
+  <h1>Qui sommes nous?</h1>
   </div>
-  <h2>Lorem Ipsum Dolor Sit Amet</h2>
-  <p>Nam sit amet quam in sapien tincidunt ornare. Proin dui erat, convallis at consequat vel, suscipit ut nunc. Maecenas tempus justo nec lorem tincidunt lacinia a eget tortor. Fusce sed dolor non eros ultricies venenatis. Mauris elit massa, pharetra quis adipiscing ut, sagittis sed est.</p>
-  <p>Proin sed magna ac nulla tincidunt pharetra. Praesent dapibus risus quis enim tincidunt ultrices. Ut id urna ut sapien rutrum consequat euismod eget diam. Aenean tellus erat, egestas vel mollis in, faucibus dictum tellus. Sed dictum, arcu eget sollicitudin bibendum, nulla magna elementum ante, vitae egestas justo arcu eu leo.</p>
-  <p>Morbi bibendum massa sed ligula adipiscing lobortis rutrum nisi rutrum. Nam nibh leo, pharetra vitae mattis quis, suscipit non dui. Donec egestas ultrices erat eget sollicitudin. Fusce in elit leo. Nunc sodales, turpis sit amet sagittis mattis, massa felis bibendum tellus, eu aliquam sapien turpis sit amet tortor.</p>
-  <p>Sed vulputate semper nisl, et tempor sapien iaculis ac. In ornare ante arcu, in rutrum est. In vitae tortor magna, ac laoreet libero. Donec eu nulla quis eros dapibus imperdiet ut eget libero. Ut ac neque et justo mollis tincidunt.</p>
-  <h2>Consectetuer adipiscing elit</h2>
-  <div class="col3-set">
+  <h2>L'histoire des Bijouteries Delhaye</h2> 
+  <div class="col3-set"> 
   <div class="col-1">
-  <p style="line-height: 1.2em;"><small>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede.</small></p>
-  <p style="color: #888; font: 1.2em/1.4em georgia, serif;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta.</p>
-  </div><div class="col-2"><p><strong style="color: #de036f;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit.</strong></p>
-  <p>Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc augue. Aenean sed justo non leo vehicula laoreet. Praesent ipsum libero, auctor ac, tempus nec, tempor nec, justo.</p>
-  <p>Maecenas ullamcorper, odio vel tempus egestas, dui orci faucibus orci, sit amet aliquet lectus dolor et quam. Pellentesque consequat luctus purus. Nunc et risus. Etiam a nibh. Phasellus dignissim metus eget nisi. Vestibulum sapien dolor, aliquet nec, porta ac, malesuada a, libero. Praesent feugiat purus eget est. Nulla facilisi. Vestibulum tincidunt sapien eu velit. Mauris purus. Maecenas eget mauris eu orci accumsan feugiat. Pellentesque eget velit. Nunc tincidunt.</p>
+  <img src="http://s3.amazonaws.com/sbpub/001/bonjour-a-tous.png">
+  <p>La famille Delhaye est une famille d’entrepreneurs passionnés de création artistique et de belles pierres…</p>
+  <p>Depuis 1965, année d’ouverture de notre premier magasin à Clichy,
+  nous n’avons eut de cesse de créer et produire des collections de bijoux
+  précieux et originaux; de proposer à notre clientèle de quartier des pièces de qualité,
+  parfaitement adaptées à leur envies, qu’elles conserveront à vie.</p>
+  <p>C’est en  1980, que j’ai obtenu le mercure d’or, je pense que c’est
+  avant tout pour ma passion et ma pugnacité pour le travail bien fait
+  que j’ai été récompensé. C’est avec ce savoir-faire ancestral, que m’ont
+  transmis mes beaux-parents, que je crée quotidiennement.</p>
+  <p>C’est avec beaucoup d’humilité, que je me fais un point d’honneur à respecter :
+  la fluidité, la pureté et l’éclat de chaque pierre. Je travaille avec imagination, en conservant</p>
+  </div>
+  <div class="col-2">
+  <p>une grande liberté créative que ce soit dans mes choix de tailles,
+  de métaux ou de sertissage. J’aime prendre le temps de vous écouter et
+  comprendre vos souhaits. Je sais que mes bijoux deviendront les vôtres.
+  Ils entreront dans votre famille, marqueront  votre histoire, se transmettront et seront l’héritage de vos enfants.</p> 
+  <p>En  2003, avec mon équipe, nous avons ouvert une seconde boutique à Levallois.
+  Comme à Clichy, nos mots d’ordre sont : accueil écoute et conseil. 
+  Je suis un véritable bijoutier de quartier, attaché à mes clients. 
+  Ils me le rendent bien d’ailleurs !.
+  Ils viennent lors de  leur « instant de vie » et je suis toujours là,
+  avec eux, pour : trouver la bague de fiançailles de Mademoiselle, 
+  aider Monsieur à ne pas se tromper. Choisir la médaille de baptême de la 
+  petite dernière sous les conseils de sa grand-mère et de sa jeune marraine… voilà ce qui me passionne ! 
+  Finalement, c’est vous ! : Toutes ces générations qui se suivent mais qui ne se ressemblent pas. 
+  Ce sont vos goûts et vos envies qui sont satisfaits quotidiennement par mon équipe, avec plaisir et chaleur.</p>
   </div>
   <div class="col-3">
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper</p>
-  <p><strong style="color: #de036f;">Maecenas ullamcorper, odio vel tempus egestas, dui orci faucibus orci, sit amet aliquet lectus dolor et quam. Pellentesque consequat luctus purus.</strong></p>
-  <p>Nunc et risus. Etiam a nibh. Phasellus dignissim metus eget nisi.</p>
-  <p style="line-height: 1.2em;"><strong style="font: italic 2em Georgia, serif;">Norbert Kulich</strong><br /><small>Directeur</small></p>
-  </div></div>  
-layout_update_xml: 
+  <p>2010 Nous y sommes ! Nous ouvrons notre 3ème boutique : 
+  la première véritable bijouterie de quartier en ligne ! 
+  C’est l’ensemble de notre savoir-faire, notre enthousiasme et notre créativité que nous vous offrons.</p>
+  <p>Toute l’équipe se joint à moi, pour vous souhaitez la bienvenue. 
+  Que votre parcours chez nous soit riche en inspiration, 
+  découverte et trouvailles !<br/>
+  Surtout n’hésitez pas à nous téléphoner : ce sont les équipes des boutiques de Clichy 
+  ou de Levallois qui vous aideront. Quant à moi, je suis également à votre disposition,
+  demandez moi et nous partagerons, avec plaisir, autour de votre projet.</p>
+  <p>Bien à vous,</p>
+  <p style="width:100%; text-align:right;"><img src="http://s3.amazonaws.com/sbpub/001/norbert-kulich.png"></p>
+  </div>
+  </div>
+  <h2><script type="text/javascript">document.write(domain);</script></h2> 
+  <p><a href="{{store direct_url="home"}}"><script type="text/javascript">document.write(domain);</script></a> est le site de vente en ligne de la société Delhaye SA. Nous sommes une
+  entreprise familiale comprenant deux bijouteries de quartier dans l&apos;ouest parisien et ce site internet.<br/>
+  Nous sommes &agrave; ce titre la premi&egrave;re v&eacute;ritable bijouterie de quartier &agrave; mettre en ligne ses cr&eacute;ations et
+  ses s&eacute;lections, en vente directe sur internet.</p>
+  <p>Nous sommes ouverts en ligne 24h sur 24 et 7 jours sur 7. Vous laissant ainsi la possibilit&eacute; de
+  commander &agrave; tout moment de chez vous l&apos;une de nos cr&eacute;ations.<br/>
+  Nos collaborateurs sont &agrave; votre disposition en boutique ou par t&eacute;l&eacute;phone : 01 42 70 84 14 / 01 55 46
+  07 04  du mardi au samedi de  10H &agrave; 19H, sans interruption.</p>
+  <br/>
+  <p>Vous pouvez &eacute;galement nous contacter en utilisant <a href="{{store direct_url="contacts"}}">le formulaire</a> ou directement &agrave; l&apos;adresse suivante : <script type="text/javascript">username='contact'; document.write(username + '@' + domain);</script></p>
+  
+layout_update_xml: |
+ <remove name="breadcrumbs"/>
 is_active: 1
+
+
+
+
+
+
+
+

@@ -3,7 +3,21 @@ root_template: one_column
 meta_keywords: boutiques
 meta_description: retrouvez nos boutiques à Clichy et Levallois
 content_heading: false
-content:
-  <h1>Nos magasins</h1>   
-layout_update_xml: 
+content: |
+  <h1>Les boutiques Delhaye</h1> 
+  <h2>La Boutique de Levallois</h2>
+  <p>Adresse : 47 rue du Président Wilson 92 300 Levallois-Perret</p>
+  <p>N° de Téléphone : 01 55 46 07 04</p>
+  <p>Horaires & jours d’ouverture : du mardi au samedi de 10h à 19h sans interruption</p>
+  <p>Monsieur Richard Besse et Madame Isabelle Sénéchal sont à votre service</p>
+  <br/>
+  <h2>La boutique de Clichy</h2>
+  <p>Adresse : 86 boulevard Jean Jaurès 92 110 Clichy la Garenne</p>
+  <p>N° de Téléphone : 01 42 70 84 14</p>
+  <p>Horaires & jours d’ouverture : du mardi au samedi de 10h à 19h sans interruption</p>
+  <p>Monsieur Jean Filleuil et Madame Edith Flet sont à votre service </p>
+
+   
+layout_update_xml: |
+  <remove name="breadcrumbs"/>
 is_active: 1
