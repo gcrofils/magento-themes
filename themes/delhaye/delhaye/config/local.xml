@@ -47,8 +47,7 @@
         <action method="setData"><key>category_id</key><value>12</value></action>
       </block>
       <!-- news affichees en home -->
-        <block type="blog/blog" name="seonews" as="seonews" template="awblog/recent.phtml">
-        </block>
+        <block type="blog/blog" name="seonews" as="seonews" template="awblog/recent.phtml"></block>
       <!-- newsletter -->
       <block type="newsletter/subscribe" name="home.newsletter" template="newsletter/subscribe.phtml"/>
     </reference>
@@ -67,6 +66,11 @@
        <block type="core/template" name="top.phone" as="topPhone" template="page/html/phone.phtml" />
        <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.phtml" />
      </reference>
+     
+     <!-- Layered navigation -->
+     <reference name="right">
+          <block type="catalog/layer_view" name="catalog.rightnav" before="-" template="catalog/layer/view.phtml"/>
+      </reference>
 	
   </default>
 
@@ -76,16 +80,18 @@
        </reference>
        <remove name="catalogsearch.leftnav"/> 
       <reference name="content">
-        <block type="cms/block" name="content.top" as="contentTop"  before="-">
+       <!-- Ajout d'une banniere -->
+       <!-- <block type="cms/block" name="content.top" as="contentTop"  before="-">
           <action method="setBlockId"><block_id>content_top</block_id></action>
         </block>
+        -->
         <action method="setColumnCount"><columns>2</columns></action>
       </reference>
        <reference name="right">
            <block type="catalogsearch/layer" name="catalogsearch.rightnav" before="-" template="catalog/layer/view.phtml"/>
-           <block type="newsletter/subscribe" name="right.newsletter" after="catalog.compare.sidebar" template="newsletter/subscribe.phtml"/>
        </reference>
   </catalogsearch_result_index>
+
 
   <catalog_product_compare>
     <reference name="content">

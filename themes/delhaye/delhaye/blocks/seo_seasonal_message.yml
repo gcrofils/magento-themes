@@ -1,13 +1,11 @@
 title: Home Seasonal Message
 is_active: 1
 content: |
-  <h1>Réservation en ligne</h1>
+  <h1>Abonnez vous <br>à notre newsletter</h1>
   <ul>
-  <li>Choisissez votre bijou à toute heure et en tout lieu.</li>
-  <li>Comparez et <b>partagez avec vos proches</b>.</li>
-  <li>Réservez en quelques clics.</li>
-  <li>Sélectionnez la <a href="{{store direct_url="shops"}}"><b>boutique la plus proche de chez vous</b></a>.</li>
-  <li>Nous préparons votre commande.</li>
-  <li>Dès sa mise à disposition, nous vous appelons.</li>
-  <li><b>Règlement et retrait en boutique</b>.</li>
+  <li>Bénéficiez des offres exclusives.</li>
+  <li>Soyez informés avant tout le monde.</li>
   </ul>
+  <br/>
+  <br/>
+  <div>{{block type="newsletter/subscribe" name="right.newsletter" template="newsletter/subscribe.phtml"}}</div>

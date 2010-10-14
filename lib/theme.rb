@@ -11,7 +11,7 @@ module MageTheme
   
   class Base
     
-    cattr_accessor :client, :theme, :store_code, :theme_path, :magento_root, :magento_app, :magento_skin, :magento_code
+    cattr_accessor :client, :theme, :store_code, :theme_path, :magento_root, :magento_app, :magento_skin, :magento_code, :magento_email
     
     def initialize(options = {})
       @@client = options[:client] unless options[:client].nil?
@@ -21,7 +21,8 @@ module MageTheme
       @@magento_root = options[:root] unless options[:root].nil?
       @@magento_app = File.join(@@magento_root, 'app', 'design', 'frontend', 'default', @@theme)
       @@magento_skin = File.join(@@magento_root, 'skin', 'frontend', 'default', @@theme)
-      @@magento_code = File.join(@@magento_root, 'app', 'code', 'local', 'Mage')
+      @@magento_code = File.join(@@magento_root, 'app', 'code', 'local')
+      @@magento_template = File.join(@@magento_root, 'app', 'locale', 'fr_FR', 'template')
     end
     
     def store_id
@@ -49,6 +50,7 @@ module MageTheme
       copy_templates
       copy_app
       copy_locales
+      copy_emails
       config_store
       force_design_change
       chown_chmod
@@ -93,10 +95,13 @@ module MageTheme
         parts = File.basename(file).split('_')
         case parts.shift
           when 'block'
-            tarpath = File.join(magento_code, parts.shift.capitalize, 'Block', File.dirname(filename_to_path(parts.map{|p| p.capitalize}.join('_'))))
+            tarpath = File.join(magento_code, 'Mage', parts.shift.capitalize, 'Block', File.dirname(filename_to_path(parts.map{|p| p.capitalize}.join('_'))))
+          when 'hack'
+            tarpath = File.join(magento_code, File.dirname(filename_to_path(parts.map{|p| p.capitalize}.join('_'))))
         end
         FileUtils.makedirs tarpath
         FileUtils.cp file, File.join(tarpath, parts.last.capitalize)
+        puts File.join(tarpath, parts.last.capitalize)
       end
     end
     
@@ -120,6 +125,10 @@ module MageTheme
       end
     end
     
+    def copy_emails
+      FileUtils.cp_r email_path, magento_template
+    end
+    
     def template_path
       File.join(theme_path, 'templates')
     end
@@ -134,6 +143,10 @@ module MageTheme
     
     def config_path
       File.join(theme_path, 'config')
+    end
+    
+    def email_path
+      File.join(theme_path, 'email')
     end
     
     def magento_template

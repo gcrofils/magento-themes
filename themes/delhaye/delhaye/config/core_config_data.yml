@@ -164,7 +164,7 @@ payment:
   ccsave:
     active: 0
   purchaseorder:
-    active: 1
+    active: 0
     title: "Bon de Commande"
     order_status: pending
     allowspecific: 0
@@ -179,7 +179,7 @@ payment:
     merchant_id: "014022286611111"
     pathfile: 
     check_ip_address: 0
-    title: Carte de Crédit
+    title: Carte de Cr&eacute;dit
     order_status: pending 
     order_status_payment_accepted: processing  
     order_status_payment_refused: holded 
@@ -248,3 +248,6 @@ design:
   header:
     logo_alt: Bijouterie Delhaye
     welcome: "&nbsp;&nbsp;"
+wishlist:
+  general:
+    active: 0
