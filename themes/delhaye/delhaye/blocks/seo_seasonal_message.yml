@@ -1,11 +1,10 @@
 title: Home Seasonal Message
 is_active: 1
 content: |
-  <h1>Abonnez vous <br>à notre newsletter</h1>
-  <ul>
-  <li>Bénéficiez des offres exclusives.</li>
-  <li>Soyez informés avant tout le monde.</li>
-  </ul>
   <br/>
+  <!--<h1>Abonnez vous <br>à notre newsletter</h1>-->
+  <ul>
+  <li>Inscrivez vous à notre newsletter pour être informés de nos offres et nouveautés</li>
+  </ul>
   <br/>
   <div>{{block type="newsletter/subscribe" name="right.newsletter" template="newsletter/subscribe.phtml"}}</div>

@@ -101,7 +101,6 @@ module MageTheme
         end
         FileUtils.makedirs tarpath
         FileUtils.cp file, File.join(tarpath, parts.last.capitalize)
-        puts File.join(tarpath, parts.last.capitalize)
       end
     end
     

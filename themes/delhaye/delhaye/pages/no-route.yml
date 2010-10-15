@@ -1,0 +1,24 @@
+title: Error 404
+root_template: two_columns_right
+meta_keywords: 
+meta_description: retrouvez nos boutiques à Clichy et Levallois
+content_heading: false
+content: |
+  <div class="page-title">
+  <h1>Page non trouvée</h1>
+  </div>
+  <dl> <dt>La page que vous cherchez n'a pas été trouvé. </dt> <dd> 
+  <ul class="disc">
+  <li>Si vous avez tapé l'adresse directement, vérifiez qu'il n'y a pas de faute de frappe.</li>
+  <li>Si vous avez cliqué sur un lien sur un site partenaire, il est probable que ce lien soit périmé.</li>
+  </ul>
+  </dd> </dl> <dl> <dt>Que faire?</dt> <dd>Aucune crainte, il y plusieurs façons de retrouver ce que vous cherchiez dans notre boutique.</dd> <dd> 
+  <ul class="disc">
+  <li><a onclick="history.go(-1); return false;" href="#">Retourner</a> à la page précédente.</li>
+  <li>Utiliser le moteur de recherche en haut à gauche.</li>
+  <li>Utiliser la barre de navigation "Madame, Monsieur et Instants de Vie".</li>
+  <li>Voici également deux liens très utile!<br /><a href="{{store url=""}}">Page d'accueil</a> <span class="separator">|</span> <a href="{{store url="customer/account"}}">Mon Compte</a></li>
+  </ul>
+  </dd></dl>
+layout_update_xml: 
+is_active: 1
