@@ -251,3 +251,18 @@ design:
 wishlist:
   general:
     active: 0
+system:
+  smtppro:
+    option: google
+    store_adresses: 1
+    development: disabled
+    logenabled: 1
+  googlesettings:
+    email: delhaye@secondbureau.com
+    gpassword: secret09
+  smtpsettings:
+    username:
+    password:
+    host:
+    port:
+    ssl: none
