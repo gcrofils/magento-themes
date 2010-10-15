@@ -35,7 +35,7 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
 
                             <p>Pour le confirmer et vous connecter directement, utilisez <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}" style="color:#1E7EC8;">ce lien de confirmation</a>. Ce lien n'est valide qu'une seule fois.</p>
 
-                            <p style="border:1px solid #BEBCB7; padding:13px 18px; background:#F8F7F5; ">
+                            <p style="border:1px solid #BEBCB7; padding:13px 18px; background:#dccdac; ">
                                 Lors de vos futures connexions, utilisez les données suivantes dans l'écran de connexion :<br/>
                                 Email : {{var customer.email}}<br/>
                                 Mot de passe : {{htmlescape var=$customer.password}}<p>
