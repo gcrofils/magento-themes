@@ -11,7 +11,7 @@ module MageTheme
   
   class Base
     
-    cattr_accessor :client, :theme, :store_code, :theme_path, :magento_root, :magento_app, :magento_skin, :magento_code, :magento_email
+    cattr_accessor :client, :theme, :store_code, :theme_path, :magento_root, :magento_app, :magento_skin, :magento_code, :magento_email_templates
     
     def initialize(options = {})
       @@client = options[:client] unless options[:client].nil?
@@ -22,7 +22,7 @@ module MageTheme
       @@magento_app = File.join(@@magento_root, 'app', 'design', 'frontend', 'default', @@theme)
       @@magento_skin = File.join(@@magento_root, 'skin', 'frontend', 'default', @@theme)
       @@magento_code = File.join(@@magento_root, 'app', 'code', 'local')
-      @@magento_template = File.join(@@magento_root, 'app', 'locale', 'fr_FR', 'template')
+      @@magento_email_templates = File.join(@@magento_root, 'app', 'locale', 'fr_FR', 'template')
     end
     
     def store_id
@@ -125,7 +125,7 @@ module MageTheme
     end
     
     def copy_emails
-      FileUtils.cp_r email_path, magento_template
+      FileUtils.cp_r email_path, magento_email_templates
     end
     
     def template_path
