@@ -216,7 +216,7 @@ a strong {color:#715444;}
 /* Toolbar */
 .toolbar {border:solid 1px #dccdac;}
 .toolbar .pager, 
-.toolbar .sorter { background:white; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.95, rgb(255,255,255)), color-stop(0.38, rgb(220,205,172))); background:  -moz-linear-gradient(center bottom, rgb(220,205,172) 38%, rgb(255,255,255) 95%); }
+.toolbar .sorter { background:#dccdac; background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.95, rgb(255,255,255)), color-stop(0.38, rgb(220,205,172))); background:  -moz-linear-gradient(center bottom, rgb(220,205,172) 38%, rgb(255,255,255) 95%); }
 .toolbar-bottom {}
 .pages a {color: #423636;}
 
@@ -241,7 +241,7 @@ a strong {color:#715444;}
 #checkout-review-table {color:white;}
 
 /* Product */
-.product-essential { background:white; background-image: -webkit-gradient(
+.product-essential { background:#dccdac; background-image: -webkit-gradient(
     linear,
     left bottom,
     left top,
