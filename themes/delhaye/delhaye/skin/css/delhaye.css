@@ -36,6 +36,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 /* popular */
 .home-layout .popular {position : absolute; top:80px; left:45px; height:440px; overflow:hidden;}
 .home-layout .popular .product-details {display:none;}
+.home-layout .popular img {-moz-border-radius: 15px; border-radius: 15px;}
 .home-layout .popular li {position:relative; width:136px; height:130px; margin-top:10px; background:transparent url(../images/bkg-home-decoration-selection.png)}
 .home-layout .popular li .product {width:100%; padding-top:15px; text-align:center;}
 .home-layout .popular li .product button.button {position:absolute; left:90px; top:90px;width:40px; height:40px; background: url(../images/btn-sprites.png) 0px 0px no-repeat; }

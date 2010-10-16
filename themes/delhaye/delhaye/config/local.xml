@@ -11,6 +11,7 @@
     <!-- add the local stylesheet -->
     <reference name="head">
       <action method="addCss"><stylesheet>css/delhaye.css</stylesheet></action>
+      <action method="addItem"><type>skin_css</type><name>css/delhaye-ie.css</name><params/><if>lt IE 8</if></action>
     </reference>
     
     <!-- add the newsletter -->

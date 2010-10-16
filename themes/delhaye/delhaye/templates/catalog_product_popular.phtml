@@ -11,17 +11,23 @@ if($_productCollection->count()): ?>
     <?php foreach($_productCollection as $_item): ?>
       <li class="item">
         <div class="product">
-          <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>"><img src="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize(100) ?>" width="100" height="100" alt="<?php echo $this->htmlEscape($_item->getName()) ?>" /><button title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="button" /></a>
-          
-                    <div class="product-details">
-                        <p class="product-name"><a href="<?php echo $_item->getProductUrl() ?>"><?php echo $this->htmlEscape($_item->getName()) ?></a></p>
-                        <?php echo $this->getPriceHtml($_item, true, '-related') ?>
-                        <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="product-info"><?php echo $this->__('info')?></a>
-                    </div>
-                </div>
-            </li>
-        <?php endforeach ?>
-        </ol>
-
+            <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>"><img src="<?php echo $this->helper('catalog/image')->init($_item, 'thumbnail')->resize(95) ?>" width="95" height="95" alt="<?php echo $this->htmlEscape($_item->getName()) ?>" /><button title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="button"></button></a>
+            
+            <div class="product-details">
+                <p class="product-name"><a href="<?php echo $_item->getProductUrl() ?>"><?php echo $this->htmlEscape($_item->getName()) ?></a></p>
+                <?php echo $this->getPriceHtml($_item, true, '-related') ?>
+                <a href="<?php echo $_item->getProductUrl() ?>" title="<?php echo $this->htmlEscape($_item->getName()) ?>" class="product-info"><?php echo $this->__('info')?></a>
+            </div>
+        </div>
+      </li>
+    <?php endforeach ?>
+  </ol>
 </div>
 <?php endif; ?>
+
+
+
+
+          
+          
+          
