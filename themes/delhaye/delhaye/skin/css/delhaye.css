@@ -1,4 +1,5 @@
-body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(../images/bkg-body.png) repeat-x; background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.95, rgb(255,255,255)),color-stop(0.59, rgb(66,53,54))); background-image: -moz-linear-gradient(center top,rgb(66,53,54) 59%, rgb(255,255,255) 95%)}
+/* body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(../images/bkg-body.png) repeat-x; background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0.95, rgb(255,255,255)),color-stop(0.59, rgb(66,53,54))); background-image: -moz-linear-gradient(center top,rgb(66,53,54) 59%, rgb(255,255,255) 95%)} */
+body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:rgb(66,53,54); }
 
 /* Layout ================================================================================ */
 .wrapper { width:950px; color:black ;background:transparent;  margin:10px auto; padding:0}
@@ -8,7 +9,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 .main-decoration { position:absolute; top:-67px; left:-12px; width:116px; height:121px; background: url(../images/bkg-main-decoration-top.png) no-repeat;}
 .brands-container {width:100%; height:131px; border-top:#cbb8ad solid 1px; background: #dccdac url(../images/bkg-brands.png) repeat-x;}
 .brands {text-align:center;padding-top:20px;} 
-.brands-container p a {color:#847981; font-size:13px; text-decoration:none;}
+.brands-container p a {position:relative; color:#847981; font-size:13px; text-decoration:none; top:-10px;}
 .brands-container p a:hover {text-decoration:underline;}
 .seotext {width:100%;background:white;height:110px;}
 .seotext .text  {text-align:justify; padding-right:60px; padding-top:15px; color:#dccdac; font:13px/1.65 Times, Arial, Helvetica, sans-serif;}
@@ -17,7 +18,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 .seonews {text-align:left;padding-left:20px;}
 .seonews h2 {color:#dccdac; text-transform:uppercase;font:13px/1.65 Arial, Helvetica, sans-serif; font-weight:bold; margin:0; padding:5px 0;}
 .seonews ul, .seonews li {margin:0px; padding:0px;} 
-.seonews li, .seonews li a {color:#dccdac; font:13px/1 Times, Arial, Helvetica, sans-serif;}
+.seonews li, .seonews li a {color:rgb(66,53,54); font:13px/1 Times, Arial, Helvetica, sans-serif;}
 
 /* Base Columns */
 .col-left { float:left; width:150px; padding:0 0 1px; }
@@ -86,7 +87,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 .footer-container { border:none; background: transparent; padding:0; margin:0 }
 .footer { position:relative; float:none; width:auto;}
 .footer-decoration {position:absolute; top:-105px; right:-3px; width:162px; height:116px;  background: url(../images/bkg-main-decoration-bottom.png) no-repeat; }
-.footer, .footer a, .footer .seo h1{ color:#715444; text-decoration:none;  font:12px/1.55 Arial, Helvetica, sans-serif; }
+.footer, .footer a, .footer .seo h1{ color:#fff; text-decoration:none;  font:12px/1.55 Arial, Helvetica, sans-serif; }
 .footer a:hover { text-decoration:underline; }
 .footer .seo h1 {font-weight:bold; font-size:13px; }
 .footer .col {width:300px; float:left; padding-left:10px; text-align:left;  }
@@ -120,7 +121,8 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:white url(
 .form-search-decoration {position:absolute; width: 234px; height: 109px; top:-5px; left:-2px; background: url(../images/bkg-searchform.png) no-repeat; }
 .form-search {position:absolute; padding-left:30px; top:15px; left:50px;width:150px; height:90px; border:none;overflow:hidden;}
 .form-search label { float:left; width:100%; height:21px; text-align:left; overflow:hidden; text-transform: uppercase; color:white; font:12px/1.55 Arial, Helvetica, sans-serif; }
-.form-search input.input-text { float:left; border-color:#5c7989; width:120px; margin-right:4px; }
+.form-search input.input-text { float:left; border-color:#5c7989; width:120px; margin-right:4px;color:#dccdac; font-style:italic; }
+.form-search input.input-text:focus {color:black; font-style:normal; }
 .form-search button.button {position:absolute; left:125px; top:38px;width:40px; height:40px; background: url(../images/btn-sprites.png) 0px 0px no-repeat; }
 .form-search button.button:hover {background-position: 0 -39px;}
 .form-search button.button:active {background-position: 0 -78px;}

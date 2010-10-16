@@ -3,8 +3,8 @@ is_active: 1
 content:
   <div class="brands-container">
   <div class="brands"> 
-  <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/brands/gucci.png"}}" alt="Gucci" /></a>
   <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/brands/breitling.png"}}" alt="Breitling" /></a>
+  <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/brands/gucci.png"}}" alt="Gucci" /></a>
   <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/brands/poiray.png"}}" alt="Poiray" /></a>
   <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/brands/mauboussin.png"}}" alt="Mauboussin" /></a>
   <a href="{{store direct_url="shops"}}"><img src="{{skin url="images/brands/chopard.png"}}" alt="Chopard" /></a>
