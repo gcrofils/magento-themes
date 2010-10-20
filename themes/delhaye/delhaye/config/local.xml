@@ -7,6 +7,10 @@
     <remove name="right.permanent.callout"/>
     <remove name="left.permanent.callout"/>
     <remove name="paypal.partner.right.logo"/>
+    
+    <!-- Checkout -->
+    <remove name="checkout.cart.coupon"/>
+    <remove name="checkout.cart.shipping"/>
 
     <!-- add the local stylesheet -->
     <reference name="head">

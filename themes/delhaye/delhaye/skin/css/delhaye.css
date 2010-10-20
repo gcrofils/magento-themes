@@ -78,7 +78,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:rgb(66,53,
 .header .right p {text-align:right; width:165px; color:white;  padding-top:4px; }
 /* phone-block */
 .phone-block { position:absolute; width:202px; height: 52px; top:-56px; left:750px; border:none; overflow:hidden; text-align:left; background:#423636; z-index:12;}
-.phone-block .phone {width:180px; text-align:center; color: white; font: 22px/22px Times; letter-spacing:1px;padding:6px 0px 4px;}
+.phone-block .phone {width:180px; text-align:center; color: white; font: 16px/17px Times; letter-spacing:1px;padding:2px 0px 2px;}
 .phone-block .quicklinks {width:180px; text-align:center;}
 .phone-block .quicklinks a {color:#dccdac; font: 12px/16px Times;}
 .phone-block .quicklinks span:first-child {margin-right:10px;}
@@ -106,7 +106,7 @@ body { font:12px/1.55 Times, Arial, Helvetica, sans-serif; background:rgb(66,53,
 /* boxes */
 #anav ul { border:1px dashed #423536; background-color: #dccdac; }
 /* level 1 */
-#anav a { color:#ffffff; padding:5px 50px 6px 8px; }
+#anav a { color:#ffffff; padding:5px 50px 6px 8px; font-weight:normal  }
 #anav li.active a, #anav li.over a, #anav a:hover { color:#dccdac; }
 /* level 2 */
 #anav ul ul li a { color:#423536 !important; font-weight:bold  !important;}
@@ -196,7 +196,7 @@ a strong {color:#715444;}
 /* Data Table */
 .data-table { border:1px solid #715444; }
 .data-table .odd  { background:#dccdac }
-.data-table .even { background:#ffffff; }
+.data-table .even { background:#ffffff; color:#000000;}
 .data-table thead th { color:#ffffff; background:#423636; line-height:25px; }
 .data-table tfoot tr  { background:#423536 !important; }
 .data-table tfoot tr.first td { background:none;}

@@ -137,7 +137,7 @@ dev:
     active: 1
 general:
   country:
-    allow: BE,FR,CH
+    allow: FR
     default: FR
     optional_zip_countries:
   locale:
@@ -150,7 +150,7 @@ general:
       47 rue du Pr&eacute;sident Wilson
       92300 Levallois
     name: Bijouterie Delhaye
-    phone: 01 55 46 07 04
+    phone: 01 55 46 07 04 ou 01 42 70 84 14
 easy_tabs:
   general:
     enabled: 1
@@ -266,3 +266,60 @@ system:
     host:
     port:
     ssl: none
+shipping:
+  origin:
+    country_id: FR
+    region_id: 274
+    postcode: 92119
+    city: Clichy
+  option:
+    checkout_multiple: 0
+carriers:
+  flatrate:
+    active: 0
+  freeshipping:
+    active: 1
+    title: Colissimo
+    name: Gratuit
+tax:
+  calculation:
+    algorithm: TOTAL_BASE_CALCULATION
+    apply_after_discount: 0
+    apply_tax_on: 1
+    based_on: shipping
+    discount_tax: 0
+    price_includes_tax: 1
+    shipping_includes_tax: 0
+  cart_display:
+    full_summary: 0
+    grandtotal: 1
+    price: 2
+    shipping: 2
+    subtotal: 2
+    zero_tax: 0
+  classes:
+    shipping_tax_class: 0
+  defaults:
+    country: FR
+    postcode: *
+    region: 0
+  display:
+    shipping: 2
+    type: 2
+  sales_display:
+    full_summary: 1
+    grandtotal: 1
+    price: 1
+    shipping: 1
+    subtotal: 1
+    zero_tax: 0
+  weee:
+    apply_vat: 0
+    discount: 0
+    display: 0
+    display_email: 0
+    display_list: 0
+    display_sales: 0
+    enable: 0
+    include_in_subtotal: 0
+    
