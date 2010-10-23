@@ -72,10 +72,7 @@
        <block type="core/template" name="top.search" as="topSearch" template="catalogsearch/form.phtml" />
      </reference>
      
-     <!-- Layered navigation -->
-     <reference name="right">
-          <block type="catalog/layer_view" name="catalog.rightnav" before="-" template="catalog/layer/view.phtml"/>
-      </reference>
+
 	
   </default>
 
@@ -105,9 +102,20 @@
     </reference>
   </catalog_product_compare>
   
+   <!--
+  <catalog_category_default>
+    <reference name="right">
+        <block type="catalogsearch/layer" name="catalogsearch.rightnav" before="-" template="catalog/layer/view.phtml"/>
+    </reference>
+   </catalog_category_default> 
+    
+  
   <catalog_product_view>
-    <remove name="catalogsearch.rightnav" />
+    <reference name="right">
+      <remove name="catalogsearch.rightnav" />
+    </reference>
   </catalog_product_view>
+  -->
 
   <!-- Customize Customer Account links -->
   <customer_account>

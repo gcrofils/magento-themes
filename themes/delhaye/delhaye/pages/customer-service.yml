@@ -3,37 +3,69 @@ root_template: one_column
 meta_keywords: services, qualite
 meta_description: Les services offerts par les bijouteries Delhaye
 content_heading: false
-content:
+content: |
   <div class="page-title">
-  <h1>Services et Qualit&eacute;</h1>
+  <h1>Services et Garanties</h1>
   </div>
   <ul class="disc">
-  <li><a href="#answer1">Transport &amp; Livraison</a></li>
-  <li><a href="#answer2">Confidentialit&eacute; &amp; S&eacute;curit&eacute;</a></li>
-  <li><a href="#answer3">Retours &amp; Echanges</a></li>
-  <li><a href="#answer4">Commandes</a></li>
-  <li><a href="#answer5">Reglements, Prix &amp; Promotions</a></li>
-  <li><a href="#answer6">Votre Panier</a></li>
-  <li><a href="#answer7">Votre compte</a></li>
-  <li><a href="#answer8">Qualité de nos bijoux</a></li>
+  <li><a href="#answer1">Baguier Delhaye, Connaître sa taille de bijoux</a></li>
+  <li><a href="#answer2">La personnalisation et la création de vos bijoux</a></li>
+  <li><a href="#answer3">Le service client personnalisé Delhaye</a></li>
+  <li><a href="#answer4">La garantie des bijoux Delhaye</a></li>
+  <li><a href="#answer5">Echange et/ou remboursement</a></li>
+  <li><a href="#answer6">Aide au financement</a></li>
+  <li><a href="#answer7">Les garanties de livraison</a></li>
+  <li><a href="#answer8">Les certificats d’authenticité</a></li>
+  <li><a href="#answer9">Sécurité de paiement</a></li>
+  <li><a href="#answer10">Modes de paiement acceptés</a></li>
+  <li><a href="#answer11">Protection des données</a></li>
   </ul>
   <dl>
-  <dt id="answer1">Transport &amp; Livraison</dt>
-  <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc augue. Aenean sed justo non leo vehicula laoreet. Praesent ipsum libero, auctor ac, tempus nec, tempor nec, justo.</dd>
-  <dt id="answer2">Confidentialit&eacute; &amp; S&eacute;curit&eacute;</dt>
-  <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc augue. Aenean sed justo non leo vehicula laoreet. Praesent ipsum libero, auctor ac, tempus nec, tempor nec, justo.</dd>
-  <dt id="answer3">Retours &amp; Echanges</dt>
-  <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc augue. Aenean sed justo non leo vehicula laoreet. Praesent ipsum libero, auctor ac, tempus nec, tempor nec, justo.</dd>
-  <dt id="answer4">Commandes</dt>
-  <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc augue. Aenean sed justo non leo vehicula laoreet. Praesent ipsum libero, auctor ac, tempus nec, tempor nec, justo.</dd>
-  <dt id="answer5">Reglements, Prix &amp; Promotions</dt>
-  <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc augue. Aenean sed justo non leo vehicula laoreet. Praesent ipsum libero, auctor ac, tempus nec, tempor nec, justo.</dd>
-  <dt id="answer6">Votre Panier</dt>
-  <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc augue. Aenean sed justo non leo vehicula laoreet. Praesent ipsum libero, auctor ac, tempus nec, tempor nec, justo.</dd>
-  <dt id="answer7">Votre compte</dt>
-  <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc augue. Aenean sed justo non leo vehicula laoreet. Praesent ipsum libero, auctor ac, tempus nec, tempor nec, justo.</dd>
-  <dt id="answer8">Qualité de nos bijoux</dt>
-  <dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi luctus. Duis lobortis. Nulla nec velit. Mauris pulvinar erat non massa. Suspendisse tortor turpis, porta nec, tempus vitae, iaculis semper, pede. Cras vel libero id lectus rhoncus porta. Suspendisse convallis felis ac enim. Vivamus tortor nisl, lobortis in, faucibus et, tempus at, dui. Nunc risus. Proin scelerisque augue. Nam ullamcorper. Phasellus id massa. Pellentesque nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc augue. Aenean sed justo non leo vehicula laoreet. Praesent ipsum libero, auctor ac, tempus nec, tempor nec, justo.</dd>
+  <dt id="answer1">Baguier Delhaye, Connaître sa taille de bijoux</dt>
+  <dd><u>Pour une bague</u> : Notre équipe met à votre disposition, un baguier pratique. Vous le trouverez dans votre espace personnel.  Lors de votre commande vous devrez nous indiquer votre tour de doigt précis. A l’occasion de votre confirmation de commande, nos collaborateurs en boutique vous ferrons confirmer cette mesure.
+  <br/><u>Pour un collier</u> : Prenez un mètre de couturière ou un ruban et mesurez la longueur de collier que vous souhaitez. Notez la valeur en arrondissant au 1/2 cm supérieur. Lors de votre confirmation de commande, nos collaborateurs en boutique vous feront confirmer cette mesure.
+  <br/><u>Pour un bracelet</u> : Prenez un mètre de couturière ou un ruban et mesurez votre tour de poignée. Notez la valeur en ajoutant un cm et 1/2. Lors de votre confirmation de commande, nos collaborateurs en boutique vous feront confirmer cette mesure.</dd>
+  <dt id="answer2">La personnalisation et la création de vos bijoux</dt>
+  <dd><u>La personnalisation</u> : Nous vous proposons de personnaliser votre bijou par la gravure. Ce service est disponible sur une large sélection de bijoux. Vous choisissez votre message et votre typographie ou votre dessin, nous nous chargeons de la réalisation. Pour vous aidez, consulter nos idées de gravure en ligne, dans votre espace personnel ou contactez notre équipe en boutique.<br/>
+  <u>La création</u> : Norbert kulich vous propose la création de bijoux uniques sur mesure. C’est un véritable savoir-faire qu’il exerce depuis longtemps. Contactez-le, il saura traduire vos envies et vos besoins au travers de ses créations artistiques. Il créera ainsi pour vous, un objet unique pour la vie. Vous pouvez le joindre directement en magasin.  A partir de votre descriptif, il vous fera une esquisse ou une maquette en cire et un devis gratuit. Norbert Kulich peut également faire une recherche créative similaire à partir de vos pierres ou de vos bijoux.</dd>
+  <dt id="answer3">Le service client personnalisé, Delhaye</dt>
+  <dd>Norbert Kulich et son équipe sont  « la première bijouterie de quartier en ligne ». Ils vendent avant tout un véritable savoir-faire familial et une proximité avec leurs clients. C’est pour cette raison qu’ils ont mis en place un service d’appel performant et accueillant, directement dans les 2 boutiques de Levallois et de Clichy. C’est donc une équipe particulièrement chaleureuse, simple et à votre écoute qui vous aidera pour vos choix ou le suivi de vos commandes. Norbert Kulich accompagne les familles tout au long de leur vie et spécialement lors des événements particuliers : naissance, mariage, baptême… N’hésitez pas à le solliciter en personne, il se fera une joie de vous accompagner.
+  <br/>Les équipes en boutique vous proposent un service personnel pratique et de qualité sur tous vos bijoux Delhaye et vos autres bijoux :
+  <ul><li>Mise à la taille*,</li>
+  <li>Renfilage de perles*,</li>
+  <li>Nettoyage des bijoux*,</li>
+  <li>Rénovation de bijoux anciens,</li>
+  <li>Changement de pile pour les montres,</li>
+  <li>Reconstitution d'une paire de boucles d'oreilles,</li>
+  <li>Le livre d'entretien Delhaye, pour vos bijoux précieux (à venir).</li>
+  </ul>
+  (*) Services sont gratuits durant 3 ans pour les bijoux achetés sur le site grâce aux « plus » de la garantie Delhaye (valable une fois durant la période de garantie)
+  <br/>
+  L’écrin et l’emballage cadeau sont offerts, n’hésitez pas à les demander en boutique.</dd>
+  <dt id="answer4">La garantie des bijoux Delhaye</dt>
+  <dd>La garantie 30 Jours - Pour vous permettre de choisir sereinement, nous vous faisons bénéficier gratuitement de notre Garantie Delhaye. L'utilisation anormale ou l'usure ne sont pas incluses dans la garantie. Cette garantie couvre votre achat pendant 30 jours entiers. Si pour quelque raison que ce soit, votre bijou ne vous convient pas, vous avez xx jours pour nous le renvoyer dans son écrin accompagné de son certificat d'authenticité pour un échange ou un remboursement. La meilleure des garanties pour un achat en toute sérénité.<br>
+  <u>Les « plus » de la garantie Delhaye durant 3 ans, pour les bijoux achetés sur le site</u> :
+  <ul><li>La  gratuité de la gravure sur les alliances sans pierre, sur les médailles, plaques et gourmettes.</li>
+  <li>La  première mise à taille gratuite d'une bague Or achetée (jusqu'à une différence de 2 tailles en agrandissement ou en diminution) dans un délai de 3 ans après l'achat selon le modèle.</li>
+  <li>Le 1er renfilage de perles gratuit des colliers perles de culture</li>
+  <li>Le réappairage de boucles d'oreilles or : si vous perdez une boucle, on vous reconstitue la paire (hors pierre et or)</li>
+  <li>Le rhodiage gratuit sur votre bijou or blanc</li></ul></dd>
+  <dt id="answer5">Echange et/ou remboursement</dt>
+  <dd>Si votre bijou ne vous convient pas, vous avez 30 jours pour nous le renvoyer dans son écrin accompagné de son certificat d'authenticité pour un échange ou un remboursement.</dd>
+  <dt id="answer6">Aide au financement</dt>
+  <dd>Pour la plupart de nos bijoux, nous pouvons vous proposer un paiement en plusieurs mensualités, avec ou sans frais. Pour obtenir ce crédit, vous pouvez le demander par téléphone, en boutique  au 01 42 70 84 14 / 01 55 46 07 04  du mardi au samedi de  10H à 19H, sans interruption.</dd>
+  <dt id="answer7">Les garanties de livraison</dt>
+  <dd>Directement de notre bijouterie chez vous avec La Poste.<br/>
+  Votre commande sera livrée chez vous, ou à l'adresse de votre choix en 3 jours ouvrés* par Colissimo.<br/>
+  (*) Hors délai de fabrication, article indisponible, délai supplémentaire d'un jour pour gravure, commandes de modèles personnalisés spécifiques, hors jours fériés, pour une livraison du lundi au samedi en France Métropolitaine (Corse comprise).</dd>
+  <dt id="answer8">Les certificats d’authenticité</dt>
+  <dd>Chaque bijou sera livré avec un certificat d’authenticité attestant de  la qualité du bijou : titre du métal, poids, nom des pierres et caratage.</dd>
+  <dt id="answer9">Sécurité de paiement</dt>
+  <dd>Sécurité de paiement : la boutique Delhaye.com utilise le système de paiement sécurisé de la banque Crédit du nord.  Lors d’un paiement en ligne, toutes les données que vous saisissez sont immédiatement cryptées. Nous ne conservons aucun numéro de carte de crédit.</dd>
+  <dt id="answer10">Modes de paiement acceptés</dt>
+  <dd>Visa, Mastercard, Carte bleue, Américan Express. Vous pouvez également payer par virement bancaire, en contactant nos boutiques au : 01 42 70 84 14 / 01 55 46 07 04  du mardi au samedi de  10H à 19H, sans interruption.</dd>
+  <dt id="answer11">Protection des données</dt>
+  <dd>Les informations que vous saisissez sur notre site sont utilisées pour traiter vos achats et mieux vous connaître afin d’améliorer nos services. En aucun cas, vous ne serez amené à recevoir des propositions d’autres entreprises. En revanche, nous vous enverrons nos offres et actualités en avant-première par E-mail, téléphone ou par courrier. Si vous ne le désirez pas, il vous suffit de nous contacter en nous indiquant vos coordonnées. Notre fichier est enregistré auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés). Notre site respecte la loi relative à l'Informatique, aux fichiers et aux Libertés du 6 janvier 1978 concernant le traitement de vos données personnelles. Vous disposez d'un droit d'accès et de rectification ou d'opposition aux données personnelles vous concernant. Pour faire valoir votre droit, vous pouvez nous écrire à  Delhaye SA 86 boulevard Jean Jaurès 92 110 Clichy la Garenne</dd>
   </dl>
   
   

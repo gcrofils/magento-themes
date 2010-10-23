@@ -17,14 +17,14 @@ content:
   <div class="seo col col-2">
   <h1>Les services Delhaye</h1>
   <ul>
-  <li><a href="{{store direct_url="shops"}}">Baguier Delhaye</a></li>
-  <li><a href="{{store direct_url="shops"}}">La personnalisation des bijoux</a></li>
-  <li><a href="{{store direct_url="shops"}}">Mise &agrave; la taille</a></li>
-  <li><a href="{{store direct_url="shops"}}">Renfilage de perles</a></li>
-  <li><a href="{{store direct_url="shops"}}">Nettoyage des bijoux</a></li>
-  <li><a href="{{store direct_url="shops"}}">R&eacute;novation de bijoux anciens</a></li>
-  <li><a href="{{store direct_url="shops"}}">Changement de pile pour les montres</a></li>
-  <li><a href="{{store direct_url="shops"}}">Reconstitution d'une paire de boucle d'oreilles</a></li>
+  <li><a href="{{store direct_url="customer-service#answer1"}}">Baguier Delhaye</a></li>
+  <li><a href="{{store direct_url="customer-service#answer2"}}">La personnalisation des bijoux</a></li>
+  <li><a href="{{store direct_url="customer-service#answer3"}}">Mise &agrave; la taille</a></li>
+  <li><a href="{{store direct_url="customer-service#answer3"}}">Renfilage de perles</a></li>
+  <li><a href="{{store direct_url="customer-service#answer3"}}">Nettoyage des bijoux</a></li>
+  <li><a href="{{store direct_url="customer-service#answer3"}}">R&eacute;novation de bijoux anciens</a></li>
+  <li><a href="{{store direct_url="customer-service#answer3"}}">Changement de pile pour les montres</a></li>
+  <li><a href="{{store direct_url="customer-service#answer3"}}">Reconstitution d'une paire de boucle d'oreilles</a></li>
   <li><a>Le carnet d'entretien Delhaye (prochainement)</a></li>
   <li><a href="{{store direct_url="shops"}}">Les boutiques Delhaye</a></li>
   </ul>
@@ -32,18 +32,18 @@ content:
   <div class="seo col col-3">
   <h1>Les garanties Delhaye</h1>
   <ul>
-  <li><a href="{{store direct_url="shops"}}">La garantie des bijoux Delhaye</a></li>
-  <li><a href="{{store direct_url="shops"}}">Echange et/ou remboursement</a></li>
-  <li><a href="{{store direct_url="shops"}}">Aide au financement</a></li>
-  <li><a href="{{store direct_url="shops"}}">Les garanties de livraison</a></li>
-  <li><a href="{{store direct_url="shops"}}">Les certificats d'aunthenticit&eacute;</a></li>
+  <li><a href="{{store direct_url="customer-service#"}}">La garantie des bijoux Delhaye</a></li>
+  <li><a href="{{store direct_url="customer-service#answer5"}}">Echange et/ou remboursement</a></li>
+  <li><a href="{{store direct_url="customer-service#answer6"}}">Aide au financement</a></li>
+  <li><a href="{{store direct_url="customer-service#answer7"}}">Les garanties de livraison</a></li>
+  <li><a href="{{store direct_url="customer-service#answer8"}}">Les certificats d'aunthenticit&eacute;</a></li>
   </ul>
   <ul>
-  <li><a href="{{store direct_url="shops"}}">S&eacute;curit&eacute; de Paiement</a></li>
-  <li><a href="{{store direct_url="shops"}}">Engagements de la maison Delhaye</a></li>
-  <li><a href="{{store direct_url="shops"}}">Protection des donn&eacute;es</a></li>
-  <li><a href="{{store direct_url="shops"}}">Conditions g&eacute;n&eacute;rales de vente</a></li>
-  <li><a href="{{store direct_url="shops"}}">Mentions l&eacute;gales</a></li>
+  <li><a href="{{store direct_url="customer-service#answer9"}}">S&eacute;curit&eacute; de Paiement</a></li>
+  <li><a href="{{store direct_url="customer-service#"}}">Engagements de la maison Delhaye</a></li>
+  <li><a href="{{store direct_url="customer-service#11"}}">Protection des donn&eacute;es</a></li>
+  <li><a href="{{store direct_url="cgv"}}">Conditions g&eacute;n&eacute;rales de vente</a></li>
+  <li><a href="{{store direct_url="legal"}}">Mentions l&eacute;gales</a></li>
   </ul>
   </div>
   <div class="seo quicklist">

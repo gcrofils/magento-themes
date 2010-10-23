@@ -1,0 +1,12 @@
+title: cgv
+root_template: one_column
+meta_keywords: conditions générales de vente
+meta_description: conditions générales de vente
+content_heading: false
+content: |
+  <h1>Conditions générales de vente</h1> 
+
+   
+layout_update_xml: |
+  <remove name="breadcrumbs"/>
+is_active: 1

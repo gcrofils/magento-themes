@@ -1,0 +1,12 @@
+title: legal
+root_template: one_column
+meta_keywords: mentions légales
+meta_description: Mentions légales
+content_heading: false
+content: |
+  <h1>Mentions légales</h1> 
+
+   
+layout_update_xml: |
+  <remove name="breadcrumbs"/>
+is_active: 1
