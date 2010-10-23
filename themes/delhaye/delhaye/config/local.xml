@@ -104,6 +104,10 @@
     <remove name="deco.top" />
     </reference>
   </catalog_product_compare>
+  
+  <catalog_product_view>
+    <remove name="catalogsearch.rightnav" />
+  </catalog_product_view>
 
   <!-- Customize Customer Account links -->
   <customer_account>
