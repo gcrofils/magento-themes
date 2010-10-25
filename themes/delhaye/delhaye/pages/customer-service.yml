@@ -1,4 +1,4 @@
-title: customer Services
+title: Services et garanties
 root_template: one_column
 meta_keywords: services, qualite
 meta_description: Les services offerts par les bijouteries Delhaye
@@ -67,11 +67,8 @@ content: |
   <dt id="answer11">Protection des données</dt>
   <dd>Les informations que vous saisissez sur notre site sont utilisées pour traiter vos achats et mieux vous connaître afin d’améliorer nos services. En aucun cas, vous ne serez amené à recevoir des propositions d’autres entreprises. En revanche, nous vous enverrons nos offres et actualités en avant-première par E-mail, téléphone ou par courrier. Si vous ne le désirez pas, il vous suffit de nous contacter en nous indiquant vos coordonnées. Notre fichier est enregistré auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés). Notre site respecte la loi relative à l'Informatique, aux fichiers et aux Libertés du 6 janvier 1978 concernant le traitement de vos données personnelles. Vous disposez d'un droit d'accès et de rectification ou d'opposition aux données personnelles vous concernant. Pour faire valoir votre droit, vous pouvez nous écrire à  Delhaye SA 86 boulevard Jean Jaurès 92 110 Clichy la Garenne</dd>
   </dl>
+ 
   
-  
-  
-  
-  
-  
-layout_update_xml: 
+  layout_update_xml: |
+    <remove name="breadcrumbs"/>
 is_active: 1

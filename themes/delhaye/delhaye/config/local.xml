@@ -102,14 +102,14 @@
     </reference>
   </catalog_product_compare>
   
-   <!--
+ 
   <catalog_category_default>
     <reference name="right">
         <block type="catalogsearch/layer" name="catalogsearch.rightnav" before="-" template="catalog/layer/view.phtml"/>
     </reference>
    </catalog_category_default> 
     
-  
+    <!--
   <catalog_product_view>
     <reference name="right">
       <remove name="catalogsearch.rightnav" />
